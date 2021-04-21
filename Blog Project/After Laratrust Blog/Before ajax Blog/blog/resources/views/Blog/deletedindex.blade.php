@@ -40,11 +40,11 @@ $index=1;
   <td>
   <div class="row">
   
-  <form action="{{route('blog.destroy',$blog->id)}}" method="post">
+  <form action="{{route('blog.destroy',$blog->slug)}}" method="post">
   @csrf()
   @method('delete')
-  <a class="btn btn-warning" href="{{route('blog.restore',$blog->id)}}">restore</a>&emsp;
-  <a class="btn btn-primary" href="{{route('blog.show',$blog->id)}}">show</a>&emsp;
+  <a class="btn btn-warning" href="{{route('blog.restore',$blog->slug)}}">restore</a>&emsp;
+  <a class="btn btn-primary" href="{{route('blog.show',$blog->slug)}}">show</a>&emsp;
   <button class="btn btn-danger btn-sm" type="submit">delete</button>&emsp;
   </form>
   </div>

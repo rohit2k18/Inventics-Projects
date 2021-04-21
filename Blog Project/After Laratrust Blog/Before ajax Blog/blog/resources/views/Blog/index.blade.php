@@ -56,13 +56,13 @@ $index=1;
   <div class="row">
   
   
-  <form action="{{route('blog.destroy',$blog->id)}}" method="post">
+  <form action="{{route('blog.destroy',$blog->slug)}}" method="post">
   @csrf()
   @method('delete')
-  <a class="btn btn-info" href="{{route('blog.edit',$blog->id)}}">edit</a>&emsp;
-  <a class="btn btn-primary" href="{{route('blog.show',$blog->id)}}">show</a>&emsp;
+  <a class="btn btn-info" href="{{route('blog.edit',$blog)}}">edit</a>&emsp;
+  <a class="btn btn-primary" href="{{route('blog.show',$blog)}}">show</a>&emsp;
   @permission('users-read')
-  <a class="btn btn-danger" href="{{route('blog.delete',$blog->id)}}">delete</a>&emsp;
+  <a class="btn btn-danger" href="{{route('blog.delete',$blog->slug)}}">delete</a>&emsp;
   @endpermission
   </form>
   </div>

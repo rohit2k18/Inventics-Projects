@@ -28,7 +28,7 @@
   <label for="exampleInputEmail1">Image</label><br>
 <img style="height:15%;width:15%;" src="{{asset('image/'.$blog->image)}}" alt="">
 <input type="file" name="image">
-<a href="{{route('blog.deleteonlyimage',$blog->id)}}">X</a>
+<a href="{{route('blog.deleteonlyimage',$blog->slug)}}">X</a>
 </div>
 
 

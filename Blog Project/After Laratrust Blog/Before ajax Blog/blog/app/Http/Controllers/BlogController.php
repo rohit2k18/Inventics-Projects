@@ -8,6 +8,7 @@ use App\Tag;
 use Session;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image as Photo;
+use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
@@ -59,6 +60,10 @@ class BlogController extends Controller
 
 
         $blogs=new Blog();
+        $str=strtolower($request->name);
+        $slug = preg_replace('/\s+/', '-', $str);
+        $random = Str::random(5);
+        $blogs->slug=$slug.$random;
         $blogs->name=$request->name;
         $blogs->description=$request->description;
         $blogs->category_id=$request->category;
@@ -66,12 +71,12 @@ class BlogController extends Controller
         //image save
         if($request->file('image'))
         {
-            $$extension=$request->file('image')->getClientOriginalExtension();
-            if($extension!='png' || $extension!='jpg' || $extension!='jpeg')
-            {
-                session()->flash('danger', 'uploaded file is not an image! TRY AGAIN');
-                return redirect()->back();
-            }
+            // $$extension=$request->file('image')->getClientOriginalExtension();
+            // if($extension!='png' || $extension!='jpg' || $extension!='jpeg')
+            // {
+            //     session()->flash('danger', 'uploaded file is not an image! TRY AGAIN');
+            //     return redirect()->back();
+            // }
 
             $filename=$this->uploadImage($request->file('image'));
             $blogs->image=$filename;
@@ -126,6 +131,10 @@ class BlogController extends Controller
         $blog->description=$request->description;
         $blog->category_id=$request->category;
 
+        $str=strtolower($request->name);
+        $slug = preg_replace('/\s+/', '-', $str);
+        $random = Str::random(5);
+        $blog->slug=$slug.$random;
 
         //image save
         if($request->file('image'))
@@ -157,14 +166,14 @@ class BlogController extends Controller
      * @param  \App\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($slug)
     {
         
         // $blog->delete();
         // session()->flash('deleted','Blog Deleted Succesfully');
         // 
 
-         $blog=Blog::withTrashed()->find($id);
+         $blog=Blog::withTrashed()->where('slug',$slug)->first();
         if($blog->deleted_at){
             $blog->forcedelete();
             session()->flash('success', 'Blog Permanently Deleted !');
@@ -182,9 +191,9 @@ class BlogController extends Controller
         return redirect()->back();
     }
 
-    public function restore($id)
+    public function restore($slug)
     {
-        $blog=Blog::onlyTrashed()->find($id);
+        $blog=Blog::onlyTrashed()->where('slug',$slug)->first();
         $blog->restore();
         session()->flash('success', 'Blog restored !');
         return redirect()->back();
@@ -204,9 +213,9 @@ class BlogController extends Controller
         unlink($filename);
     }
 
-    public function delete_image_only($id)
+    public function delete_image_only($slug)
     {
-        $blog=Blog::find($id);
+        $blog=Blog::where('slug',$slug)->first();
         $image=$blog->image;
         $filename = public_path('image/' . $image);
         unlink($filename);
