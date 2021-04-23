@@ -12,7 +12,7 @@ class CategoryController extends Controller
     public function index(Request $request)
     {
         $categories=Category::all();
-        $response=$this->response('Category List',json_encode($categories),'1000');
+        $response=$this->response('Category List',$categories,'1000');
         return $response;
     }
 

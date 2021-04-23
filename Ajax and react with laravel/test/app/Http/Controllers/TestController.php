@@ -24,7 +24,11 @@ class TestController extends Controller
      */
     public function create()
     {
-        //
+        //while(keybord.is_pressed('q')==false):
+            //pyautogui.press('right',presses=1,interval=0.3)
+            //a=random.randomint(0,9)
+            //time.sleep()
+
     }
 
     /**

@@ -12,7 +12,7 @@ use Illuminate\Http\Request;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('/categories','API\CategoryController@index');
+Route::get('/catego','API\CategoryController@index');
 Route::post('/category/create','API\CategoryController@create');
 Route::post('/category/edit','API\CategoryController@edit');
 Route::post('/category/delete','API\CategoryController@delete');

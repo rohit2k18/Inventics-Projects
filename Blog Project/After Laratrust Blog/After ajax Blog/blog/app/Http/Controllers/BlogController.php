@@ -67,7 +67,7 @@ class BlogController extends Controller
         //image save
         if($request->file('image'))
         {
-            $extension=$request->file('image')->getClientOriginalExtension();
+            //$extension=$request->file('image')->getClientOriginalExtension();
             // if($extension!='png' || $extension!='jpg' || $extension!='jpeg')
             // {
             //     session()->flash('danger', 'uploaded file is not an image! TRY AGAIN');
@@ -84,7 +84,6 @@ class BlogController extends Controller
         session()->flash('created','Blog Created Succesfully');
         session()->put('latest',$request->name);
         return redirect()->route('blog.index');
-
     }
 
     /**
@@ -125,11 +124,10 @@ class BlogController extends Controller
         $blog->description=$request->description;
         $blog->category_id=$request->category;
 
-
         //image save
         if($request->file('image'))
         {
-            $extension=$request->file('image')->getClientOriginalExtension();
+            //$extension=$request->file('image')->getClientOriginalExtension();
             // dd($extension);
             // if($extension!=='png' || $extension!=='jpg' || $extension!=='jpeg')
             // {
@@ -196,6 +194,7 @@ class BlogController extends Controller
         Photo::make($image)->save(public_path('image/'. $filename));
         return $filename;
     }
+
     private function delete_image($image)
     {
         $filename = public_path('image/' . $image);
@@ -213,5 +212,4 @@ class BlogController extends Controller
         //session(['editblogid' => $id]);
         return redirect()->route('blog.edit',$id);
     }
-
 }

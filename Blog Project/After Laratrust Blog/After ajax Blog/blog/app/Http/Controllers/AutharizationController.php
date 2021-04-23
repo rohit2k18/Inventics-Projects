@@ -7,7 +7,6 @@ use App\Role;
 use App\Permission;
 use App\User;
 
-
 class AutharizationController extends Controller
 {
     public function role_index()
@@ -125,7 +124,5 @@ class AutharizationController extends Controller
         $role_user->roles()->sync($request->myusers);
         $role_user->save();
         return redirect()->route('role_user.index');
-    }
-
-    
+    }  
 }
