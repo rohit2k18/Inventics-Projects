@@ -3,8 +3,6 @@
     <div class="container">
         <h4>Testing Page</h4>
 
-
-
         <h8>Testing 1(text show after click)</h8>
             <button type="button" class="btn btn-primary" onclick='demothingsonbuttonclick()'>Test1</button>
         <div id="demo"></div><br><br><br>
@@ -142,10 +140,28 @@ function stringthings()
     let str = "5";
     str = str.padEnd(4,0);
     // result is 5000
-    
+    var txt = "a,b,c,d,e";   // String
+    txt.split(",");
+    var txt = "Hello";       // String
+    txt.split("");  
+    var x = 10;
+    var y = 20;
+    var z = "30";
+    var result = x + y + z;
+
+    var x = 9.656;
+    x.toFixed(0);           // returns 10
+    x.toFixed(2);           // returns 9.66
+    x.toFixed(4);           // returns 9.6560
+    x.toFixed(6);           // returns 9.656000
 
 
     document.getElementById("newstringtest").innerHTML = pos;
+}
+
+function js_array()
+{
+    var cars = ["Saab", "Volvo", "BMW"];
 }
 
 </script>
