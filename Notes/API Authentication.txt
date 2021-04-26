@@ -103,3 +103,18 @@ Authentication API
 		}
 		
 	
+For password encription
+	1.import above class
+		-use Illuminate\Support\Facades\Hash;
+	
+	2.now save the password using hash and bcrypt like-
+			$temppassword = Hash::make($password);
+            $temppassword = bcrypt($temppassword);
+            $user->password=$temppassword;
+            $user->save();
+			
+	3.for checking or at the login time use
+		if (Hash::check($user_given_password, $hashed_password_from_user_table))
+		{
+			// The passwords match...
+		}

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use Illuminate\Support\Facades\Hash;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Category;
@@ -136,7 +137,9 @@ class CategoryController extends Controller
             $user=new User;
             $user->name=$name;
             $user->email=$email;
-            $user->password=$password;
+            $temppassword = Hash::make($password);
+            $temppassword = bcrypt($temppassword);
+            $user->password=$temppassword;
             $user->save();
             $a_code=Str::random(5);
             DB::table('connection_request')->where('connection_id',$connection_id)->update(['user_id'=>$user->id,'auth_code'=>$a_code]);
