@@ -24,18 +24,25 @@ class CategoryController extends Controller
         }
         else
         {
-            //it means android user has send his connection_id but not sure for auth_id
-            $exist_user=User::where('email',$request->email)->first();
-            if($exist_user)
+            if($request->email&&$request->password)
             {
-                
-                //generate new authcode because he dont have at the starting time
-                $valid=$this->check_user($request->connection_id,$request->auth_code);
+                //it means android user has send his connection_id but not sure for auth_id
+                $exist_user=User::where('email',$request->email)->first();
+                if($exist_user)
+                {
+                    
+                    //generate new authcode because he dont have at the starting time
+                    $valid=$this->check_user($request->connection_id,$request->auth_code);
+                }
+                else    //from this we will create a new account and give new auth code for that
+                {
+                    $valid=$this->check_connection($request->connection_id,$request->name,$request->email,$request->password);
+                }
+
+            }else{
+                $valid=true;
             }
-            else    //from this we will create a new account and give new auth code for that
-            {
-                $valid=$this->check_connection($request->connection_id,$request->name,$request->email,$request->password);
-            }
+            
             if($valid)
             {
             $data=[$valid];
@@ -138,8 +145,9 @@ class CategoryController extends Controller
             $user->name=$name;
             $user->email=$email;
             $temppassword = Hash::make($password);
-            $temppassword = bcrypt($temppassword);
+            // $temppassword = bcrypt($temppassword);
             $user->password=$temppassword;
+            //$user->remember_token=Str::random(100);
             $user->save();
             $a_code=Str::random(5);
             DB::table('connection_request')->where('connection_id',$connection_id)->update(['user_id'=>$user->id,'auth_code'=>$a_code]);
