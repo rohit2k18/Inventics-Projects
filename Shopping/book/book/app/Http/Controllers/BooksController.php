@@ -17,6 +17,11 @@ class BooksController extends Controller
        return view('Books.index');
     }
 
+    public function productindex()
+    {
+        return view('Product.index');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

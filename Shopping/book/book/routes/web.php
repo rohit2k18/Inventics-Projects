@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('product','BooksController@productindex')->name('product');
 Route::resource('books','BooksController');

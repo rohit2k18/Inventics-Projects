@@ -8,7 +8,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="product.html" class="prd-img image-hover-scale image-container">
+                <a href="{{route('product',1)}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-01.png" alt="The Book 01" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -32,7 +32,7 @@
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 01", "path":"images/skins/books/products/product-01.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 01", "path":"images/skins/books/products/product-01.png", "url":"product", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -58,7 +58,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="product.html" class="prd-img image-hover-scale image-container">
+                <a href="{{route('product',1)}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-02.png" alt="The Book 02" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -103,7 +103,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 02", "path":"images/skins/books/products/product-02.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 02", "path":"images/skins/books/products/product-02.png", "url":"product", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -114,7 +114,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="product.html" class="prd-img image-hover-scale image-container">
+                <a href="{{route('product',1)}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-03.png" alt="The Book 03" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -139,7 +139,7 @@
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 03", "path":"images/skins/books/products/product-03.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 03", "path":"images/skins/books/products/product-03.png", "url":"product", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -154,7 +154,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 03", "path":"images/skins/books/products/product-03.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 03", "path":"images/skins/books/products/product-03.png", "url":"product", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -165,7 +165,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="product.html" class="prd-img image-hover-scale image-container">
+                <a href="{{route('product',1)}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-04.png" alt="The Book 04" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -189,7 +189,7 @@
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 04", "path":"images/skins/books/products/product-04.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 04", "path":"images/skins/books/products/product-04.png", "url":"product", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -204,7 +204,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 04", "path":"images/skins/books/products/product-04.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 04", "path":"images/skins/books/products/product-04.png", "url":"product", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -215,7 +215,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="product.html" class="prd-img image-hover-scale image-container">
+                <a href="{{route('product',1)}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-05.png" alt="The Book 05" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -239,7 +239,7 @@
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 05", "path":"images/skins/books/products/product-05.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 05", "path":"images/skins/books/products/product-05.png", "url":"product", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -254,7 +254,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 05", "path":"images/skins/books/products/product-05.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 05", "path":"images/skins/books/products/product-05.png", "url":"product", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
