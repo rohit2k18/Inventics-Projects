@@ -155,8 +155,8 @@ function stringthings()
     x.toFixed(4);           // returns 9.6560
     x.toFixed(6);           // returns 9.656000
 
-
     document.getElementById("newstringtest").innerHTML = pos;
+    
 }
 
 function js_array()

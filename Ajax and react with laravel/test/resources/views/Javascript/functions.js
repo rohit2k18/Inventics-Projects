@@ -1,7 +1,6 @@
 <script>
 
-
-    alert("got it");
+alert("got it");
 function checkForExternerFile()
 {
     alert("hello world")

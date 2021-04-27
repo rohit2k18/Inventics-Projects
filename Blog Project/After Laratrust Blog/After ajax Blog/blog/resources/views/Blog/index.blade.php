@@ -61,9 +61,9 @@ $index=1;
   @method('delete')
   <a class="btn btn-info" href="{{route('blog.edit',$blog->id)}}">edit</a>&emsp;
   <a class="btn btn-primary" href="{{route('blog.show',$blog->id)}}">show</a>&emsp;
-  @permission('users-read')
+  @role('superadministrator')
   <a class="btn btn-danger" href="{{route('blog.delete',$blog->id)}}">delete</a>&emsp;
-  @endpermission
+  @endrole
   </form>
   </div>
   </td>

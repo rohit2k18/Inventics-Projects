@@ -11,11 +11,7 @@ use Intervention\Image\Facades\Image as Photo;
 
 class BlogController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index(Request $request)
     {
         $name=($request->searchB) ? $request->searchB:'';
@@ -33,11 +29,7 @@ class BlogController extends Controller
         return view('Blog.deletedindex')->withBlogs($blogs);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   
     public function create()
     {
         $categories=Category::all();
@@ -45,12 +37,7 @@ class BlogController extends Controller
         return view('Blog.create',compact('categories','tags'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
         
@@ -86,23 +73,13 @@ class BlogController extends Controller
         return redirect()->route('blog.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Blog  $blog
-     * @return \Illuminate\Http\Response
-     */
+    
     public function show(Blog $blog)
     {
         return view('Blog.show')->withBlog($blog);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Blog  $blog
-     * @return \Illuminate\Http\Response
-     */
+    
     public function edit(Blog $blog)
     {
         
@@ -111,13 +88,7 @@ class BlogController extends Controller
         return view('Blog.edit',compact('categories','tags','blog'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Blog  $blog
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, Blog $blog)
     {
         $blog->name=$request->name;
@@ -147,12 +118,7 @@ class BlogController extends Controller
         return redirect()->route('blog.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Blog  $blog
-     * @return \Illuminate\Http\Response
-     */
+    
     public function destroy($id)
     {
         
