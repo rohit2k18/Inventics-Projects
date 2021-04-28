@@ -38,7 +38,7 @@
                   <i class="icon-heart"></i><span class="dropdn-link-txt">Wishlist</span><span class="wishlist-qty">3</span>
                 </a>
               </div>
-              <!-- /Header Wishlist -->
+              <!-- /Header Wishlist --> 
               <!-- Header Account -->
               <div class="dropdn dropdn_account dropdn_fullheight">
                 <a href="#" class="dropdn-link js-dropdn-link js-dropdn-link only-icon" data-panel="#dropdnAccount"><i class="icon-user"></i><span class="dropdn-link-txt">Account</span></a>
