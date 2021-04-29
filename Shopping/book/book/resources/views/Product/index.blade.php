@@ -1,7 +1,5 @@
 @extends('layout.master')
 @section('content')
-  @include('Product.header_pannel')
-  @include('Product.header_side_pannel')
   <div class="page-content">
     <div class="holder breadcrumbs-wrap mt-0">
       <div class="container">
@@ -26,6 +24,6 @@
     @include('Product.more_details')
     @include('Product.product_you_may_like')
   </div>
-  @include('Product.product_footer')
+  
 
 @endsection

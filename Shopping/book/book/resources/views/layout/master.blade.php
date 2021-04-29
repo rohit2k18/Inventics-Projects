@@ -14,7 +14,7 @@
   <link href="{{asset('css/vendor/vendor.min.css')}}" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="{{asset('css/style-books.css')}}" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="{{asset('css/style.css')}}" rel="stylesheet">
   <!-- or -->
   <!-- <link href="{{asset('css/style-books.css')}}" rel="stylesheet"> -->
   <!-- if having frontend folder under public -->
@@ -27,12 +27,22 @@
 
 </head>
 
-<body @isset($tempProduct)class="template-product has-smround-btns has-loader-bg equal-height has-sm-container"@endisset>
+<body @if(!isset($tempBooks))class="template-product has-smround-btns has-loader-bg equal-height has-sm-container"@endif>
     <div>
-      @if(isset($tempProduct)&&!$tempProduct)
-      @include('layout.navbar')
-      @endif
-    </div>
+      @php
+        if(isset($tempBooks))
+        {
+          if($tempBooks)
+          {
+            @endphp @include('layout.navbar') @php
+          }
+        }
+        else
+        {
+          @endphp @include('layout.navbar_second') @php
+        }
+      @endphp
+      </div>
     <br>
 
     <!-- main content -->
@@ -44,9 +54,20 @@
     </div>
     
     <div>
-    @if(isset($tempProduct)&&!$tempProduct)
-    @include('layout.footer')
-    @endif
+    @php
+        if(isset($tempBooks))
+        {
+          if($tempBooks)
+          {
+            @endphp @include('layout.footer') @php
+          }
+        }
+        else
+        {
+          @endphp @include('layout.second_footer') @php
+        }
+      @endphp
+ 
     </div>
     <div>
     @include('layout.stickyaddtocart')

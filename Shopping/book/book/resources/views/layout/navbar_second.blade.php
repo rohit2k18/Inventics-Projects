@@ -8,7 +8,7 @@
             <!-- /Menu Toggle -->
           </div>
           <div class="col-auto hdr-logo">
-            <a href="index.html" class="logo"><img srcset="images/skins/fashion/logo.png 1x, images/skins/fashion/logo2x.png 2x" alt="Logo"></a>
+            <a href="index.html" class="logo"><img src="{{asset('images/skins/fashion/logo.png')}}" alt="Logo"></a>
           </div>
           <!--navigation-->
           <div class="hdr-nav hide-mobile nav-holder-s">
@@ -101,10 +101,10 @@
                     <a href="#" class="dropdn-link js-dropdn-link"><span class="js-dropdn-select-current">English</span><i class="icon-angle-down"></i></a>
                     <div class="dropdn-content">
                       <ul>
-                        <li class="active"><a href="#"><img src="images/flags/en.png" alt="">English</a></li>
-                        <li><a href="#"><img src="images/flags/sp.png" alt="">Spanish</a></li>
-                        <li><a href="#"><img src="images/flags/de.png" alt="">German</a></li>
-                        <li><a href="#"><img src="images/flags/fr.png" alt="">French</a></li>
+                        <li class="active"><a href="#"><img src="{{asset('images/flags/en.png')}}" alt="">English</a></li>
+                        <li><a href="#"><img src="{{asset('images/flags/sp.png')}}" alt="">Spanish</a></li>
+                        <li><a href="#"><img src="{{asset('images/flags/de.png')}}" alt="">German</a></li>
+                        <li><a href="#"><img src="{{asset('images/flags/fr.png')}}" alt="">French</a></li>
                       </ul>
                     </div>
                   </div>
@@ -145,7 +145,7 @@
               <!-- /Menu Toggle -->
             </div>
             <div class="col-auto hdr-logo">
-              <a href="index.html" class="logo"><img srcset="images/skins/fashion/logo.png 1x, images/skins/fashion/logo2x.png 2x" alt="Logo"></a>
+              <a href="index.html" class="logo"><img src="{{asset('images/skins/fashion/logo.png')}}" alt="Logo"></a>
             </div>
             <!--navigation-->
             <div class="hdr-nav hide-mobile nav-holder justify-content-center px-4">
@@ -154,34 +154,34 @@
                 <li class="mmenu-item--simple"><a href="#" class="active">Home</a>
                   <div class="mmenu-submenu d-flex">
                     <ul class="submenu-list mt-0">
-                      <li><a href="index.html">Fashion (Default) Skin</a><span class="submenu-link-image"><img src="images/screen/screen01.png" alt=""></span></li>
-                      <li><a href="index-sport.html">Sport Skin</a><span class="submenu-link-image"><img src="images/screen/screen-sport.png" alt=""></span></li>
-                      <li><a href="index-books.html">Books Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="images/screen/screen-books.png" alt=""></span></li>
-                      <li><a href="index-electronics.html">Electronics Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="images/screen/screen-electronics.png" alt=""></span></li>
-                      <li><a href="index-viping.html">Vaping Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="images/screen/screen-vaping.png" alt=""></span></li>
-                      <li><a href="index-pets.html">Pets Skin</a><span class="submenu-link-image"><img src="images/screen/screen-pets.png" alt=""></span></li>
-                      <li><a href="index-lingeries.html">Lingeries Skin</a><span class="submenu-link-image"><img src="images/screen/screen-lingeries.png" alt=""></span></li>
-                      <li><a href="index-games.html">Games Skin</a><span class="submenu-link-image"><img src="images/screen/screen-games.png" alt=""></span></li>
-                      <li><a href="index-helloween.html">Halloween Skin</a><span class="submenu-link-image"><img src="images/screen/screen-halloween.png" alt=""></span></li>
-                      <li><a href="index-medical.html">Medical Skin</a><span class="submenu-link-image"><img src="images/screen/screen-medical.png" alt=""></span></li>
-                      <li><a href="index-food.html">Food Market Skin</a><span class="submenu-link-image"><img src="images/screen/screen-food.png" alt=""></span></li>
-                      <li><a href="index-cosmetics.html">Cosmetics Skin</a><span class="submenu-link-image"><img src="images/screen/screen-cosmetics.png" alt=""></span></li>
-                      <li><a href="index-fishing.html">Fishing Skin</a><span class="submenu-link-image"><img src="images/screen/screen-fishing.png" alt=""></span></li>
+                      <li><a href="index.html">Fashion (Default) Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen01.png')}}" alt=""></span></li>
+                      <li><a href="index-sport.html">Sport Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-sport.png')}}" alt=""></span></li>
+                      <li><a href="index-books.html">Books Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-books.png')}}" alt=""></span></li>
+                      <li><a href="index-electronics.html">Electronics Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-electronics.png')}}" alt=""></span></li>
+                      <li><a href="index-viping.html">Vaping Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-vaping.png')}}" alt=""></span></li>
+                      <li><a href="index-pets.html">Pets Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-pets.png')}}" alt=""></span></li>
+                      <li><a href="index-lingeries.html">Lingeries Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-lingeries.png')}}" alt=""></span></li>
+                      <li><a href="index-games.html">Games Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-games.png')}}" alt=""></span></li>
+                      <li><a href="index-helloween.html">Halloween Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-halloween.png')}}" alt=""></span></li>
+                      <li><a href="index-medical.html">Medical Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-medical.png')}}" alt=""></span></li>
+                      <li><a href="index-food.html">Food Market Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-food.png')}}" alt=""></span></li>
+                      <li><a href="index-cosmetics.html">Cosmetics Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-cosmetics.png')}}" alt=""></span></li>
+                      <li><a href="index-fishing.html">Fishing Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-fishing.png')}}" alt=""></span></li>
                     </ul>
                     <ul class="submenu-list mt-0">
-                      <li><a href="#">Cups&Mugs Skin <span class="menu-label menu-label--color1">Coming Soon</span></a><span class="submenu-link-image"><img src="images/screen/screen-cups.png" alt=""></span></li>
-                      <li><a href="#">Bikes Skin <span class="menu-label menu-label--color2">Coming Soon</span></a><span class="submenu-link-image"><img src="images/screen/screen-bikes.png" alt=""></span></li>
-                      <li><a href="#">T-Shirts Skin <span class="menu-label">Coming Soon</span></a><span class="submenu-link-image"><img src="images/screen/screen-tshirts.png" alt=""></span></li>
-                      <li><a href="index-02.html">Home page 2</a><span class="submenu-link-image"><img src="images/screen/screen02.png" alt=""></span></li>
-                      <li><a href="index-03.html">Home page 3</a><span class="submenu-link-image"><img src="images/screen/screen03.png" alt=""></span></li>
-                      <li><a href="index-04.html">Home page 4</a><span class="submenu-link-image"><img src="images/screen/screen04.png" alt=""></span></li>
-                      <li><a href="index-05.html">Home page 5</a><span class="submenu-link-image"><img src="images/screen/screen05.png" alt=""></span></li>
-                      <li><a href="index-06.html">Home page 6</a><span class="submenu-link-image"><img src="images/screen/screen06.png" alt=""></span></li>
-                      <li><a href="index-07.html">Home page 7</a><span class="submenu-link-image"><img src="images/screen/screen07.png" alt=""></span></li>
-                      <li><a href="index-08.html">Home page 8</a><span class="submenu-link-image"><img src="images/screen/screen08.png" alt=""></span></li>
-                      <li><a href="index-09.html">Home page 9</a><span class="submenu-link-image"><img src="images/screen/screen09.png" alt=""></span></li>
-                      <li><a href="index-10.html">Home page 10</a><span class="submenu-link-image"><img src="images/screen/screen10.png" alt=""></span></li>
-                      <li><a href="index-rtl.html">Home page RTL</a><span class="submenu-link-image"><img src="images/screen/screen-rtl.png" alt=""></span></li>
+                      <li><a href="#">Cups&Mugs Skin <span class="menu-label menu-label--color1">Coming Soon</span></a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-cups.png')}}" alt=""></span></li>
+                      <li><a href="#">Bikes Skin <span class="menu-label menu-label--color2">Coming Soon</span></a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-bikes.png')}}" alt=""></span></li>
+                      <li><a href="#">T-Shirts Skin <span class="menu-label">Coming Soon</span></a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-tshirts.png')}}" alt=""></span></li>
+                      <li><a href="index-02.html">Home page 2</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen02.png')}}" alt=""></span></li>
+                      <li><a href="index-03.html">Home page 3</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen03.png')}}" alt=""></span></li>
+                      <li><a href="index-04.html">Home page 4</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen04.png')}}" alt=""></span></li>
+                      <li><a href="index-05.html">Home page 5</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen05.png')}}" alt=""></span></li>
+                      <li><a href="index-06.html">Home page 6</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen06.png')}}" alt=""></span></li>
+                      <li><a href="index-07.html">Home page 7</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen07.png')}}" alt=""></span></li>
+                      <li><a href="index-08.html">Home page 8</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen08.png')}}" alt=""></span></li>
+                      <li><a href="index-09.html">Home page 9</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen09.png')}}" alt=""></span></li>
+                      <li><a href="index-10.html">Home page 10</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen10.png')}}" alt=""></span></li>
+                      <li><a href="index-rtl.html">Home page RTL</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-rtl.png')}}" alt=""></span></li>
                     </ul>
                   </div>
                 </li>
@@ -219,12 +219,12 @@
                       </li>
                       <li><a href="account-create.html">Account</a>
                         <ul>
-                          <li><a href="account-create.html">Login</a></li>
-                          <li><a href="account-create.html">Create account</a></li>
-                          <li><a href="account-details.html">Account details</a></li>
-                          <li><a href="account-addresses.html">Account addresses</a></li>
-                          <li><a href="account-history.html">Order History</a></li>
-                          <li><a href="account-wishlist.html">Wishlist</a></li>
+                          <li><a href="{{route('login')}}">Login</a></li>
+                          <li><a href="{{route('signup')}}">Create account</a></li>
+                          <li><a href="{{route('account','details')}}">Account details</a></li>
+                          <li><a href="{{route('account','address')}}">Account addresses</a></li>
+                          <li><a href="{{route('account','orders')}}">Order History</a></li>
+                          <li><a href="{{route('account','wishlist')}}">Wishlist</a></li>
                         </ul>
                       </li>
                       <li><a href="blog.html">Blog</a>
@@ -254,7 +254,7 @@
                       <div class="container">
                         <div class="mmenu-left width-25">
                           <div class="mmenu-bnr-wrap">
-                            <a href="#" class="image-hover-scale"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/menu/mmenu-bnr-01.png" class="lazyload fade-up" alt=""></a>
+                            <a href="#" class="image-hover-scale"><img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{asset('images/menu/mmenu-bnr-01.png')}}" class="lazyload fade-up" alt=""></a>
                           </div>
                           <h3 class="submenu-title"><a href="category.html">Pre-Collection<br>Spring-Summer 2021</a></h3>
                         </div>
@@ -330,7 +330,7 @@
                       <div class="container">
                         <div class="mmenu-right width-25">
                           <div class="mmenu-bnr-wrap">
-                            <a href="#" class="image-hover-scale"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/menu/mmenu-bnr-02.png" class="lazyload fade-up" alt=""></a>
+                            <a href="#" class="image-hover-scale"><img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="{{asset('images/menu/mmenu-bnr-02.png')}}" class="lazyload fade-up" alt=""></a>
                           </div>
                           <h3 class="submenu-title"><a href="category.html">Pre-Collection<br>Spring-Summer 2021</a></h3>
                         </div>

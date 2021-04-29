@@ -8,7 +8,7 @@
             <!-- /Menu Toggle -->
           </div>
           <div class="col-auto hdr-logo">
-            <a href="index.html" class="logo"><img srcset="images/skins/books/logo-books.png 1x, images/skins/books/logo-books2x.png 2x" alt="Logo"></a>
+            <a href="index.html" class="logo"><img src="{{asset('images/skins/fashion/logo.png')}}" alt="Logo"></a>
           </div>
           <!--navigation-->
           <div class="hdr-nav hide-mobile nav-holder-s">
@@ -34,7 +34,7 @@
               <!-- /Header Search -->
               <!-- Header Wishlist -->
               <div class="dropdn dropdn_wishlist">
-                <a href="account-wishlist.html" class="dropdn-link only-icon wishlist-link ">
+                <a href="account/wishlist" class="dropdn-link only-icon wishlist-link ">
                   <i class="icon-heart"></i><span class="dropdn-link-txt">Wishlist</span><span class="wishlist-qty">3</span>
                 </a>
               </div>
@@ -140,12 +140,12 @@
                       </li>
                       <li><a href="account-create.html">Account</a>
                         <ul>
-                          <li><a href="account-create.html">Login</a></li>
-                          <li><a href="account-create.html">Create account</a></li>
-                          <li><a href="account-details.html">Account details</a></li>
-                          <li><a href="account-addresses.html">Account addresses</a></li>
-                          <li><a href="account-history.html">Order History</a></li>
-                          <li><a href="account-wishlist.html">Wishlist</a></li>
+                          <li><a href="login">Login</a></li>
+                          <li><a href="signup">Create account</a></li>
+                          <li><a href="account/details">Account details</a></li>
+                          <li><a href="account/address">Account addresses</a></li>
+                          <li><a href="account/history">Order History</a></li>
+                          <li><a href="account/wishlist">Wishlist</a></li>
                         </ul>
                       </li>
                       <li><a href="blog.html">Blog</a>
