@@ -7,22 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Foxic HTML Template - Index Page</title>
+  <title>Foxic HTML Template - Index Page - Books</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
   <!-- Vendor CSS -->
   <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
   <link href="css/vendor/vendor.min.css" rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-books.css" rel="stylesheet">
   <!-- Custom font -->
   <link href="fonts/icomoon/icons.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open%20Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind%20Siliguri:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body class="has-smround-btns has-loader-bg equal-height">
-  <!--header-->
-  <header class="hdr-wrap">
+<body>
+  <header class="hdr-wrap hdr-transparent">
     <div class="hdr-content hdr-content-sticky">
       <div class="container">
         <div class="row">
@@ -32,7 +30,7 @@
             <!-- /Menu Toggle -->
           </div>
           <div class="col-auto hdr-logo">
-            <a href="index.html" class="logo"><img srcset="images/skins/fashion/logo.png 1x, images/skins/fashion/logo2x.png 2x" alt="Logo"></a>
+            <a href="index.html" class="logo"><img srcset="images/skins/books/logo-books.png 1x, images/skins/books/logo-books2x.png 2x" alt="Logo"></a>
           </div>
           <!--navigation-->
           <div class="hdr-nav hide-mobile nav-holder-s">
@@ -80,86 +78,7 @@
         </div>
       </div>
     </div>
-    <div class="hdr">
-      <div class="hdr-topline hdr-topline--dark js-hdr-top">
-        <div class="container">
-          <div class="row flex-nowrap">
-            <div class="col hdr-topline-left hide-mobile">
-              <!-- Header Social -->
-              <div class="hdr-line-separate">
-                <ul class="social-list list-unstyled">
-                  <li>
-                    <a href="#"><i class="icon-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icon-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icon-google"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icon-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icon-vimeo"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icon-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /Header Social -->
-            </div>
-            <div class="col hdr-topline-center">
-              <div class="custom-text js-custom-text-carousel" data-slick='{"speed": 1000, "autoplaySpeed": 3000}'>
-                <div class="custom-text-item"><i class="icon-fox"></i> Use promocode <span>FOXIC</span> to get 15% discount!</div>
-                <div class="custom-text-item"><i class="icon-air-freight"></i> <span>Free</span> plane shipping over <span>$250</span></div>
-                <div class="custom-text-item"><i class="icon-gift"></i> Today only! Post <span>holiday</span> Flash Sale! 2 for $20</div>
-              </div>
-            </div>
-            <div class="col hdr-topline-right hide-mobile">
-              <div class="hdr-inline-link">
-                <!-- Header Language -->
-                <div class="dropdn_language">
-                  <div class="dropdn dropdn_language dropdn_language--noimg dropdn_caret">
-                    <a href="#" class="dropdn-link js-dropdn-link"><span class="js-dropdn-select-current">English</span><i class="icon-angle-down"></i></a>
-                    <div class="dropdn-content">
-                      <ul>
-                        <li class="active"><a href="#"><img src="images/flags/en.png" alt="">English</a></li>
-                        <li><a href="#"><img src="images/flags/sp.png" alt="">Spanish</a></li>
-                        <li><a href="#"><img src="images/flags/de.png" alt="">German</a></li>
-                        <li><a href="#"><img src="images/flags/fr.png" alt="">French</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Header Language -->
-                <!-- Header Currency -->
-                <div class="dropdn_currency">
-                  <div class="dropdn dropdn_caret">
-                    <a href="#" class="dropdn-link js-dropdn-link">US dollars<i class="icon-angle-down"></i></a>
-                    <div class="dropdn-content">
-                      <ul>
-                        <li class="active"><a href="#"><span>US dollars</span></a></li>
-                        <li><a href="#"><span>Euro</span></a></li>
-                        <li><a href="#"><span>UK pounds</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!-- /Header Currency -->
-                <div class="hdr_container_desktop">
-                  <!-- Header Account -->
-                  <div class="dropdn dropdn_account dropdn_fullheight">
-                    <a href="#" class="dropdn-link js-dropdn-link" data-panel="#dropdnAccount"><i class="icon-user"></i><span class="dropdn-link-txt">Account</span></a>
-                  </div>
-                  <!-- /Header Account -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="hdr hdr-style6">
       <div class="hdr-content">
         <div class="container">
           <div class="row">
@@ -169,13 +88,13 @@
               <!-- /Menu Toggle -->
             </div>
             <div class="col-auto hdr-logo">
-              <a href="index.html" class="logo"><img srcset="images/skins/fashion/logo.png 1x, images/skins/fashion/logo2x.png 2x" alt="Logo"></a>
+              <a href="index.html" class="logo"><img srcset="images/skins/books/logo-books.png 1x, images/skins/books/logo-books2x.png 2x" alt="Logo"></a>
             </div>
             <!--navigation-->
-            <div class="hdr-nav hide-mobile nav-holder justify-content-center px-4">
+            <div class="hdr-nav hide-mobile nav-holder justify-content-center">
               <!--mmenu-->
               <ul class="mmenu mmenu-js">
-                <li class="mmenu-item--simple"><a href="#" class="active">Home</a>
+                <li class="mmenu-item--simple"><a href="#" class="active"><span>Home</span></a>
                   <div class="mmenu-submenu d-flex">
                     <ul class="submenu-list mt-0">
                       <li><a href="index.html">Fashion (Default) Skin</a><span class="submenu-link-image"><img src="images/screen/screen01.png" alt=""></span></li>
@@ -271,16 +190,16 @@
                     </ul>
                   </div>
                 </li>
-                <li><a href="category.html">Accessories<span class="menu-label">SALE</span></a></li>
-                <li class="mmenu-item--mega"><a href="category.html">Men</a>
+                <li class="mmenu-item--mega"><a href="collections.html"><span>Books<span class="menu-label menu-label--color1">SKIN</span></span></a>
                   <div class="mmenu-submenu mmenu-submenu--has-bottom">
                     <div class="mmenu-submenu-inside">
                       <div class="container">
                         <div class="mmenu-left width-25">
                           <div class="mmenu-bnr-wrap">
-                            <a href="#" class="image-hover-scale"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/menu/mmenu-bnr-01.png" class="lazyload fade-up" alt=""></a>
+                            <a href="product.html" class="image-hover-scale image-container w-100" style="padding-bottom: 102.91%">
+                              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/skins/books/menu/mmenu-bnr-01.png" class="lazyload fade-up" alt="Banner">
+                            </a>
                           </div>
-                          <h3 class="submenu-title"><a href="category.html">Pre-Collection<br>Spring-Summer 2021</a></h3>
                         </div>
                         <div class="mmenu-cols column-4">
                           <div class="mmenu-col">
@@ -348,116 +267,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="mmenu-item--mega"><a href="category.html">Women</a>
-                  <div class="mmenu-submenu mmenu-submenu--has-bottom">
-                    <div class="mmenu-submenu-inside">
-                      <div class="container">
-                        <div class="mmenu-right width-25">
-                          <div class="mmenu-bnr-wrap">
-                            <a href="#" class="image-hover-scale"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/menu/mmenu-bnr-02.png" class="lazyload fade-up" alt=""></a>
-                          </div>
-                          <h3 class="submenu-title"><a href="category.html">Pre-Collection<br>Spring-Summer 2021</a></h3>
-                        </div>
-                        <div class="mmenu-cols column-4">
-                          <div class="mmenu-col">
-                            <h3 class="submenu-title"><a href="category.html">Collections</a></h3>
-                            <ul class="submenu-list">
-                              <li><a href="category.html">Martins d'Art 2020/21<span class="submenu-link-txt">Available in boutiques from June 2019</span></a></li>
-                              <li><a href="category.html">Spring-Summer 2021<span class="submenu-link-txt">Available in boutiques from March 2019</span></a></li>
-                              <li><a href="category.html">Spring-Summer 2021 Pre-Collection<span class="submenu-link-txt">In boutiques</span></a></li>
-                              <li><a href="category.html">Cruise 2020/21<span class="submenu-link-txt">In boutiques</span></a></li>
-                              <li><a href="category.html">Fall-Winter 2020/21</a></li>
-                            </ul>
-                          </div>
-                          <div class="mmenu-col">
-                            <h3 class="submenu-title"><a href="category.html">Ready-to-wear</a></h3>
-                            <ul class="submenu-list">
-                              <li><a href="category.html">Jackets</a></li>
-                              <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-                              <li><a href="category.html">Blouses & Tops</a>
-                                <ul>
-                                  <li><a href="category.html">Jackets</a></li>
-                                  <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-                                  <li><a href="category.html">Blouses & Tops</a>
-                                    <ul>
-                                      <li><a href="category.html">Jackets</a></li>
-                                      <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
-                                        <ul>
-                                          <li><a href="category.html">Jackets</a></li>
-                                          <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a>
-                                            <ul>
-                                              <li><a href="category.html">Jackets</a></li>
-                                              <li><a href="category.html">Dresses<span class="menu-label menu-label--color3">SALE</span></a></li>
-                                              <li><a href="category.html">Blouses & Tops</a></li>
-                                              <li><a href="category.html">Cardigans & Pullovers</a></li>
-                                              <li><a href="category.html">Skirts</a></li>
-                                              <li><a href="category.html">Pants & Shorts</a></li>
-                                              <li><a href="category.html">Outerwear</a></li>
-                                              <li><a href="category.html">Swimwear</a></li>
-                                            </ul>
-                                          </li>
-                                          <li><a href="category.html">Blouses & Tops</a></li>
-                                          <li><a href="category.html">Cardigans & Pullovers</a></li>
-                                          <li><a href="category.html">Skirts</a></li>
-                                          <li><a href="category.html">Pants & Shorts</a></li>
-                                          <li><a href="category.html">Outerwear</a></li>
-                                          <li><a href="category.html">Swimwear</a></li>
-                                        </ul>
-                                      </li>
-                                      <li><a href="category.html">Blouses & Tops</a></li>
-                                      <li><a href="category.html">Cardigans & Pullovers</a></li>
-                                      <li><a href="category.html">Skirts</a></li>
-                                      <li><a href="category.html">Pants & Shorts</a></li>
-                                      <li><a href="category.html">Outerwear</a></li>
-                                      <li><a href="category.html">Swimwear</a></li>
-                                    </ul>
-                                  </li>
-                                  <li><a href="category.html">Cardigans & Pullovers</a></li>
-                                  <li><a href="category.html">Skirts</a></li>
-                                  <li><a href="category.html">Pants & Shorts</a></li>
-                                  <li><a href="category.html">Outerwear</a></li>
-                                  <li><a href="category.html">Swimwear</a></li>
-                                </ul>
-                              </li>
-                              <li><a href="category.html">Cardigans & Pullovers</a></li>
-                              <li><a href="category.html">Skirts</a></li>
-                              <li><a href="category.html">Pants & Shorts</a></li>
-                              <li><a href="category.html">Outerwear</a></li>
-                              <li><a href="category.html">Swimwear</a></li>
-                            </ul>
-                          </div>
-                          <div class="mmenu-col">
-                            <h3 class="submenu-title"><a href="category.html">Accessories</a></h3>
-                            <ul class="submenu-list">
-                              <li><a href="category.html">Jackets</a></li>
-                              <li><a href="category.html">Dresses</a></li>
-                              <li><a href="category.html">Blouses & Tops</a></li>
-                              <li><a href="category.html">Cardigans & Pullovers</a></li>
-                              <li><a href="category.html">Skirts<span class="menu-label">SALE</span></a></li>
-                              <li><a href="category.html">Pants & Shorts</a></li>
-                              <li><a href="category.html">Outerwear</a></li>
-                            </ul>
-                          </div>
-                          <div class="mmenu-col">
-                            <h3 class="submenu-title"><a href="category.html">Brands</a></h3>
-                            <ul class="submenu-list">
-                              <li><a href="category.html">Jackets</a></li>
-                              <li><a href="category.html">Dresses</a></li>
-                              <li><a href="category.html">Blouses & Tops</a></li>
-                              <li><a href="category.html">Cardigans & Pullovers</a></li>
-                              <li><a href="category.html">Skirts<span class="menu-label menu-label--color1">SALE</span></a></li>
-                              <li><a href="category.html">Pants & Shorts</a></li>
-                              <li><a href="category.html">Outerwear</a></li>
-                            </ul>
-                          </div>
-                          <div class="mmenu-bottom justify-content-center">
-                            <a href="#"><i class="icon-fox icon--lg"></i><b>FOXshop News</b><i class="icon-arrow-right"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
+                <li><a href="#buytheme" style="color:#d63434"><span>Buy Theme</span></a></li>
               </ul>
               <!--/mmenu-->
             </div>
@@ -480,22 +290,20 @@
                   </div>
                 </div>
                 <!-- /Header Search -->
-                <!-- Header Wishlist -->
-                <div class="dropdn dropdn_wishlist">
-                  <a href="account-wishlist.html" class="dropdn-link only-icon wishlist-link ">
-                    <i class="icon-heart"></i><span class="dropdn-link-txt">Wishlist</span><span class="wishlist-qty">3</span>
+                <!-- Header Compare -->
+                <div class="dropdn dropdn_compare">
+                  <a href="#" class="dropdn-link only-icon compare-link ">
+                    <i class="icon-compare"></i><span class="dropdn-link-txt">Wishlist</span><span class="compare-qty">3</span>
                   </a>
                 </div>
-                <!-- /Header Wishlist -->
-                <div class="hdr_container_mobile show-mobile">
-                  <!-- Header Account -->
-                  <div class="dropdn dropdn_account dropdn_fullheight">
-                    <a href="#" class="dropdn-link js-dropdn-link" data-panel="#dropdnAccount"><i class="icon-user"></i><span class="dropdn-link-txt">Account</span></a>
-                  </div>
-                  <!-- /Header Account -->
+                <!-- /Header Compare -->
+                <!-- Header Account -->
+                <div class="dropdn dropdn_account dropdn_fullheight">
+                  <a href="#" class="dropdn-link js-dropdn-link js-dropdn-link only-icon" data-panel="#dropdnAccount"><i class="icon-user"></i><span class="dropdn-link-txt">Account</span></a>
                 </div>
+                <!-- /Header Account -->
                 <div class="dropdn dropdn_fullheight minicart">
-                  <a href="#" class="dropdn-link js-dropdn-link minicart-link" data-panel="#dropdnMinicart">
+                  <a href="#" class="dropdn-link js-dropdn-link minicart-link only-icon" data-panel="#dropdnMinicart">
                     <i class="icon-basket"></i>
                     <span class="minicart-qty">3</span>
                     <span class="minicart-total hide-mobile">$34.99</span>
@@ -508,7 +316,6 @@
       </div>
     </div>
   </header>
-  
   <div class="header-side-panel">
     <!-- Mobile Menu -->
     <div class="mobilemenu js-push-mbmenu">
@@ -820,71 +627,22 @@
       <div class="drop-overlay js-dropdn-close"></div>
     </div>
   </div>
-  
-  <!--//header-->
   <div class="page-content">
-    <!-- Main Slider -->
-    <div class="holder fullwidth full-nopad mt-0">
+    <div class="holder fullwidth mt-0 full-nopad">
       <div class="container">
         <div class="bnslider-wrapper">
-          <div class="bnslider bnslider--lg keep-scale" id="bnslider-001" data-slick='{"arrows": true, "dots": true}' data-autoplay="false" data-speed="12000" data-start-width="1917" data-start-height="764" data-start-mwidth="1550" data-start-mheight="1000">
-            <div class="bnslider-slide">
-              <div class="bnslider-image-mobile lazyload" data-bgset="images/skins/fashion/slider/slide-fashion-02-m.png"></div>
-              <div class="bnslider-image lazyload" data-bgset="images/skins/fashion/slider/slide-fashion-02.png"></div>
+          <div class="bnslider keep-scale" data-start-width='1920' data-start-height='864' data-start-mwidth='1200' data-start-mheight='1100' id="bnslider-1586195671359" data-autoplay="true" data-speed="15000" style="background-color: #49d8d9">
+            <div class="bnslider-slide" data-autoplay="true" data-video-type="video">
+              <div class="bnslider-image-mobile lazyload fade-up-fast" data-bgset="images/skins/books/slider/slide-books-01.png" data-sizes="auto"></div>
+              <div class="bnslider-image lazyload fade-up-fast" data-bgset="images/skins/books/slider/slide-books-01.png" data-sizes="auto"></div>
               <div class="bnslider-text-wrap bnslider-overlay ">
-                <div class="bnslider-text-content txt-middle txt-right txt-middle-m txt-center-m">
+                <div class="bnslider-text-content txt-middle txt-right txt-middle-m txt-right-m">
                   <div class="bnslider-text-content-flex ">
-                    <div class="bnslider-vert w-s-60 w-ms-100" style="padding: 0px">
-                      <div class="bnslider-text order-1 mt-sm bnslider-text--md text-center data-ini" data-animation="fadeInUp" data-animation-delay="800" data-fontcolor="#282828" data-fontweight="700" data-fontline="1.5">Best Price This Year</div>
-                      <div class="bnslider-text order-2 mt-sm bnslider-text--xs text-center data-ini" data-animation="fadeInUp" data-animation-delay="1000" data-fontcolor="#7c7c7c" data-fontweight="400" data-fontline="1.5">eCommerce HTML Template</div>
-                      <div class="btn-wrap text-center  order-4 mt-md" data-animation="fadeIn" data-animation-delay="2000" style="opacity: 1;">
-                        <a href="https://bit.ly/3eJX5XE" target="_blank" class="btn">
-                          Shop now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bnslider-slide">
-              <div class="bnslider-image-mobile lazyload" data-bgset="images/skins/fashion/slider/slide-fashion-01-m.png"></div>
-              <div class="bnslider-image lazyload" data-bgset="images/skins/fashion/slider/slide-fashion-01.png"></div>
-              <div class="bnslider-text-wrap bnslider-overlay ">
-                <div class="bnslider-text-content txt-middle txt-left txt-middle-m txt-center-m">
-                  <div class="bnslider-text-content-flex ">
-                    <div class="bnslider-vert w-s-60 w-ms-100" style="padding: 0px">
-                      <div class="bnslider-text order-1 mt-0 bnslider-text--md text-center data-ini" data-animation="fadeInUp" data-animation-delay="800" data-fontcolor="#282828" data-fontweight="700" data-fontline="1.5">Best Rated Theme 2020</div>
-                      <div class="bnslider-text order-2 mt-sm bnslider-text--xs text-center data-ini" data-animation="fadeInUp" data-animation-delay="1000" data-fontcolor="#7c7c7c" data-fontweight="400" data-fontline="1.5">eCommerce HTML Template</div>
-                      <div class="btn-wrap text-center  order-4 mt-md" data-animation="fadeIn" data-animation-delay="2000" style="opacity: 1;">
-                        <a href="https://bit.ly/3eJX5XE" target="_blank" class="btn">
-                          Shop now
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="bnslider-slide slick-slide is-paused" data-autoplay="true" data-video-type="video" data-slick-index="2" aria-hidden="true" style="width: 1903px; position: relative; left: -3806px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" id="slick-slide02">
-              <div class="video-wrap">
-                <video playsinline="" loop="" preload="auto">
-                  <source src="https://cdn.shopify.com/s/files/1/0201/0942/6742/files/video-girl.mp4?v=1594287483" type="video/mp4">
-                </video>
-                <div class="video-control visible">
-                  <div class="video-play js-video-slider-play"><i class="icon-play"></i></div>
-                  <div class="video-stop js-video-slider-stop"><i class="icon-pause"></i></div>
-                </div>
-              </div>
-              <div class="bnslider-text-wrap bnslider-overlay ">
-                <div class="bnslider-text-content txt-middle txt-center txt-middle-m txt-center-m">
-                  <div class="bnslider-text-content-flex ">
-                    <div class="bnslider-vert " style="padding: 0px">
-                      <div class="bnslider-text order-1 mt-sm bnslider-text--md text-center data-ini" data-animation="fadeInUp" data-animation-delay="800" data-fontcolor="#282828" data-fontweight="700" data-fontline="1.5">Live life in Comfort</div>
-                      <div class="btn-wrap text-center  order-4 mt-md" data-animation="fadeIn" data-animation-delay="2000" style="opacity: 1;">
-                        <a href="#" target="_self" class="btn">
-                          Shop now
-                        </a>
+                    <div class="bnslider-vert w-s-40 w-ms-50 p-0">
+                      <div class="bnslider-text order-1 mt-0 bnslider-text--lg text-left heading-font" data-animation="fadeInUp" data-animation-delay="800" data-fontcolor="#000000" data-bgcolor="" data-fontweight="700" data-fontline="1.15" data-otherstyle="">A wide range <br>of books</div>
+                      <div class="bnslider-text order-2 mt-sm bnslider-text--xs text-left heading-font d-none d-md-block " data-animation="fadeInUp" data-animation-delay="1000" data-fontcolor="#000000" data-bgcolor="" data-fontweight="600" data-fontline="1.75" data-otherstyle="">To meet any taste and budget.<br>Find the book you need!</div>
+                      <div class="btn-wrap text-left order-4 mt-lg" data-animation="fadeIn" data-animation-delay="3000">
+                        <a href="#" target="_self" class="btn" data-color="#000000" data-bgcolor="#ffffff" data-hover-color="" data-hover-bgcolor="" style="color:#000000; background-color:#ffffff">Shop now</a>
                       </div>
                     </div>
                   </div>
@@ -892,103 +650,304 @@
               </div>
             </div>
           </div>
-          <div class="bnslider-arrows container-fluid">
+          <div class="bnslider-loader"></div>
+          <div class="bnslider-arrows  container-fluid">
             <div></div>
           </div>
-          <div class="bnslider-dots container-fluid"></div>
-        </div>
-      </div>
-    </div>
-    <!-- //Main Slider -->
-    <div class="holder holder-mt-xsmall">
-      <div class="container">
-        <div class="row vert-margin-small">
-          <div class="col-sm">
-            <a href="category.html" class="collection-grid-3-item image-hover-scale">
-              <div class="collection-grid-3-item-img image-container" style="padding-bottom: 93.68%">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/banner-fashion-2-02.png" class="lazyload fade-up" alt="Banner">
-                <div class="foxic-loader"></div>
-              </div>
-              <div class="collection-grid-3-caption-bg">
-                <h3 class="collection-grid-3-title">Accessories</h3>
-                <h4 class="collection-grid-3-subtitle">The&nbsp;Best&nbsp;Look&nbsp;Anywhere</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm">
-            <a href="category.html" class="collection-grid-3-item image-hover-scale">
-              <div class="collection-grid-3-item-img image-container" style="padding-bottom: 93.68%">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/banner-fashion-2-04.png" class="lazyload fade-up" alt="Banner">
-                <div class="foxic-loader"></div>
-              </div>
-              <div class="collection-grid-3-caption-bg">
-                <h3 class="collection-grid-3-title">Fashion</h3>
-                <h4 class="collection-grid-3-subtitle">Live&nbsp;According&nbsp;to&nbsp;Fashion</h4>
-              </div>
-            </a>
-          </div>
+          <div class="bnslider-dots d-none container-fluid"></div>
         </div>
       </div>
     </div>
     <div class="holder holder-mt-medium">
       <div class="container">
-        <ul class="brand-grid flex-wrap justify-content- js-color-hover-brand-grid">
-          <li>
-            <a href="#" target="_self" class="d-block image-container" title="Brand">
-              <img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/brands/brand-fashion-06.png" alt="Brand">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="d-block image-container" title="Brand">
-              <img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/brands/brand-fashion-05.png" alt="Brand">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="d-block image-container" title="Brand">
-              <img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/brands/brand-fashion-01.png" alt="Brand">
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_self" class="d-block image-container" title="Brand">
-              <img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/brands/brand-fashion-02.png" alt="Brand">
-            </a>
-          </li>
-          <li class="visuallyhidden js-hidden">
-            <a href="#" target="_self" class="d-block image-container" title="Brand">
-              <img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/brands/brand-fashion-03.png" alt="Brand">
-            </a>
-          </li>
-          <li class="visuallyhidden js-hidden">
-            <a href="#" target="_self" class="d-block image-container" title="Brand">
-              <img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/brands/brand-fashion-04.png" alt="Brand">
-            </a>
-          </li>
-        </ul>
-        <div class="text-center mt-3 d-md-none">
-          <a href="#" class="btn btn--grey brands-show-more js-brands-show-more"><span>Show More</span><span>Show Less</span></a>
+        <div class="title-wrap text-center">
+          <h2 class="h1-style"><a href="#" title="View all">Best Sellers</a></h2>
+          <div class="carousel-arrows"></div>
+        </div>
+        <div class="prd-grid prd-carousel js-prd-carousel data-to-show-4 data-to-show-md-2 data-to-show-sm-2 data-to-show-xs-1 js-product-grid-sm">
+          <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a href="product.html" class="prd-img image-hover-scale image-container">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-01.png" alt="The Book 01" class="js-prd-img lazyload fade-up">
+                  <div class="foxic-loader"></div>
+                  <div class="prd-big-squared-labels">
+                  </div>
+                </a>
+                <div class="prd-circle-labels">
+                  <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
+                  <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
+                </div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-info-wrap">
+                  <div class="prd-info-top">
+                    <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                  </div>
+                  <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                  <div class="prd-tag"><a href="#">Foxic</a></div>
+                  <h2 class="prd-title"><a href="product.html">The Book 01</a></h2>
+                  <div class="prd-description">
+                    Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
+                  </div>
+                  <div class="prd-action">
+                    <form action="#">
+                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 01", "path":"images/skins/books/products/product-01.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="prd-hovers">
+                  <div class="prd-circle-labels">
+                    <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                    <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                  </div>
+                  <div class="prd-price">
+                    <div class="price-new">$ 18</div>
+                  </div>
+                  <div class="prd-action">
+                    <div class="prd-action-left">
+                      <form action="#">
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 01", "path":"images/skins/books/products/product-01.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a href="product.html" class="prd-img image-hover-scale image-container">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-02.png" alt="The Book 02" class="js-prd-img lazyload fade-up">
+                  <div class="foxic-loader"></div>
+                  <div class="prd-big-squared-labels">
+                    <div class="label-sale"><span>-10% <span class="sale-text">Sale</span></span>
+                      <div class="countdown-circle">
+                        <div class="countdown js-countdown" data-countdown="2021/07/01"></div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="prd-circle-labels">
+                  <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
+                  <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
+                </div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-info-wrap">
+                  <div class="prd-info-top">
+                    <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                  </div>
+                  <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                  <div class="prd-tag"><a href="#">Foxic</a></div>
+                  <h2 class="prd-title"><a href="product.html">The Book 02</a></h2>
+                  <div class="prd-description">
+                    Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
+                  </div>
+                  <div class="prd-action">
+                    <form action="#">
+                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 02", "path":"images/skins/books/products/product-02.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="prd-hovers">
+                  <div class="prd-circle-labels">
+                    <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                    <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                  </div>
+                  <div class="prd-price">
+                    <div class="price-old">$ 20</div>
+                    <div class="price-new">$ 18</div>
+                  </div>
+                  <div class="prd-action">
+                    <div class="prd-action-left">
+                      <form action="#">
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 02", "path":"images/skins/books/products/product-02.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a href="product.html" class="prd-img image-hover-scale image-container">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-03.png" alt="The Book 03" class="js-prd-img lazyload fade-up">
+                  <div class="foxic-loader"></div>
+                  <div class="prd-big-squared-labels">
+                    <div class="label-new"><span>New</span></div>
+                  </div>
+                </a>
+                <div class="prd-circle-labels">
+                  <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
+                  <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
+                </div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-info-wrap">
+                  <div class="prd-info-top">
+                    <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                  </div>
+                  <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                  <div class="prd-tag"><a href="#">Foxic</a></div>
+                  <h2 class="prd-title"><a href="product.html">The Book 03</a></h2>
+                  <div class="prd-description">
+                    Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
+                  </div>
+                  <div class="prd-action">
+                    <form action="#">
+                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 03", "path":"images/skins/books/products/product-03.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="prd-hovers">
+                  <div class="prd-circle-labels">
+                    <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                    <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                  </div>
+                  <div class="prd-price">
+                    <div class="price-new">$ 18</div>
+                  </div>
+                  <div class="prd-action">
+                    <div class="prd-action-left">
+                      <form action="#">
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 03", "path":"images/skins/books/products/product-03.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a href="product.html" class="prd-img image-hover-scale image-container">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-04.png" alt="The Book 04" class="js-prd-img lazyload fade-up">
+                  <div class="foxic-loader"></div>
+                  <div class="prd-big-squared-labels">
+                  </div>
+                </a>
+                <div class="prd-circle-labels">
+                  <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
+                  <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
+                </div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-info-wrap">
+                  <div class="prd-info-top">
+                    <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                  </div>
+                  <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                  <div class="prd-tag"><a href="#">Foxic</a></div>
+                  <h2 class="prd-title"><a href="product.html">The Book 04</a></h2>
+                  <div class="prd-description">
+                    Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
+                  </div>
+                  <div class="prd-action">
+                    <form action="#">
+                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 04", "path":"images/skins/books/products/product-04.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="prd-hovers">
+                  <div class="prd-circle-labels">
+                    <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                    <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                  </div>
+                  <div class="prd-price">
+                    <div class="price-new">$ 18</div>
+                  </div>
+                  <div class="prd-action">
+                    <div class="prd-action-left">
+                      <form action="#">
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 04", "path":"images/skins/books/products/product-04.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+            <div class="prd-inside">
+              <div class="prd-img-area">
+                <a href="product.html" class="prd-img image-hover-scale image-container">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-05.png" alt="The Book 05" class="js-prd-img lazyload fade-up">
+                  <div class="foxic-loader"></div>
+                  <div class="prd-big-squared-labels">
+                  </div>
+                </a>
+                <div class="prd-circle-labels">
+                  <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
+                  <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
+                </div>
+              </div>
+              <div class="prd-info">
+                <div class="prd-info-wrap">
+                  <div class="prd-info-top">
+                    <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                  </div>
+                  <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
+                  <div class="prd-tag"><a href="#">Foxic</a></div>
+                  <h2 class="prd-title"><a href="product.html">The Book 05</a></h2>
+                  <div class="prd-description">
+                    Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
+                  </div>
+                  <div class="prd-action">
+                    <form action="#">
+                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 05", "path":"images/skins/books/products/product-05.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="prd-hovers">
+                  <div class="prd-circle-labels">
+                    <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                    <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                  </div>
+                  <div class="prd-price">
+                    <div class="price-new">$ 18</div>
+                  </div>
+                  <div class="prd-action">
+                    <div class="prd-action-left">
+                      <form action="#">
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 05", "path":"images/skins/books/products/product-05.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="holder holder-mt-medium section-name-products-grid" id="productsGrid01">
+    <div class="holder holder-mt-medium section-name-products-grid holder-with-bg holder-pt-medium holder-pb-medium" id="productsGrid01" style="background-color: #fcfcfc">
       <div class="container">
         <div class="title-wrap text-center">
-          <h2 class="h1-style">Collections</h2>
+          <h2 class="h1-style">Trending Books</h2>
           <div class="title-wrap title-tabs-wrap text-center js-title-tabs">
             <div class="title-tabs">
               <h2 class="h3-style">
-                <a href="ajax/ajax-product-tab-01.json" data-total="8" data-loaded="4" data-grid-tab-title><span class="title-tabs-text theme-font">Women</span></a>
+                <a href="ajax/ajax-product-tab-books-01.json" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Romance</span></a>
               </h2>
               <h2 class="h3-style">
-                <a href="ajax/ajax-product-tab-02.json" data-total="8" data-loaded="4" data-grid-tab-title><span class="title-tabs-text theme-font">Men</span></a>
+                <a href="ajax/ajax-product-tab-books-02.json" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Adventure</span></a>
               </h2>
               <h2 class="h3-style">
-                <a href="ajax/ajax-product-tab-03.json" data-total="8" data-loaded="4" data-grid-tab-title><span class="title-tabs-text theme-font">Accessories</span></a>
+                <a href="ajax/ajax-product-tab-books-03.json" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Poetry</span></a>
+              </h2>
+              <h2 class="h3-style">
+                <a href="ajax/ajax-product-tab-books-04.json" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Thriller</span></a>
               </h2>
             </div>
           </div>
         </div>
         <div class="prd-grid-wrap">
-          <div class="prd-grid data-to-show-4 data-to-show-md-3 data-to-show-sm-2 data-to-show-xs-2" data-grid-tab-content></div>
+          <div class="prd-grid data-to-show-5 data-to-show-md-3 data-to-show-sm-2 data-to-show-xs-2" data-grid-tab-content></div>
           <div class="loader-horizontal-sm js-loader-horizontal-sm d-none" data-loader-horizontal style="opacity: 0;"><span></span></div>
           <!--<div class="circle-loader-wrap d-none">-->
           <!--<div class="circle-loader">-->
@@ -1009,61 +968,132 @@
         </div>
       </div>
     </div>
-    <div class="holder holder-mt-medium ">
+    <div class="holder mt-0 holder-with-bg pt-0 holder-pb-medium" style="background-color: #fcfcfc">
       <div class="container">
-        <a href="https://bit.ly/3eJX5XE" target="_blank" class="bnr-wrap bnr-">
-          <div class="bnr custom-caption image-hover-scale bnr--middle bnr--right bnr--fullwidth">
-            <div class="bnr-img d-none d-sm-block image-container" style="padding-bottom: 41.36752136752137%">
-              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/banner-fashion2-full.png" class="lazyload fade-up" alt="">
+        <div class="title-wrap text-center">
+          <h2 class="h1-style">Author Of The Week</h2>
+        </div>
+        <div class="row vert-margin-small">
+          <div class="col-18 col-md-6 align-self-center col-text pr-lg-6 pl-lg-15">
+            <div class="text-center text-md-right">
+              <h2 class="h1-style mb-2"><a href="#">Lorenso Lamas</a></h2>
+              <h2 style="color: #b6b6b6;">Romance, Classics</h2>
+              <p style="font-size: 16px; line-height: 2em;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"</p>
             </div>
-            <div class="bnr-img d-sm-none image-container" style="padding-bottom: 74.3139407244786%">
-              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/banner-fashion2-full-m.png" class="lazyload fade-up" alt="">
-            </div>
-            <div class="bnr-caption text-center" style="padding: 4% 4%; ">
-              <div class="bnr-caption-inside w-s-50 w-ms-100 title-wrap">
-                <h2 class="h1-style">The best trends<br class="d-sm-none"> of summer 2020</h2>
-                <div class="h-sub mt-0">eCommerce HTML Template</div>
-                <div class="bnr-btn inherit mt-sm order-3">
-                  <div class="btn">Buy Now</div>
+          </div>
+          <div class="col-18 col-md-6">
+            <a href="blog-post.html" class="image-container d-block" style="padding-bottom: 137.2703412%">
+              <img class="lazyload fade-up" data-src="images/skins/books/image-book-01.png" alt="">
+            </a>
+          </div>
+          <div class="col-18 col-md-6 align-self-center">
+            <div class="prd-grid prd-carousel js-prd-carousel-dots prd-carousel--single-sm data-to-show-1 data-to-show-lg-1 data-to-show-md-1 data-to-show-sm-2 data-to-show-xs-1" data-slick='{"dots": true, "arrows": false }'>
+              <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                <div class="prd-inside">
+                  <div class="prd-img-area">
+                    <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-24.png" alt="The Book 24" class="js-prd-img lazyload fade-up">
+                      <div class="foxic-loader"></div>
+                      <div class="prd-big-squared-labels">
+                        <div class="label-new"><span>New</span></div>
+                      </div>
+                    </a>
+                    <div class="prd-circle-labels">
+                      <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
+                      <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
+                    </div>
+                  </div>
+                  <div class="prd-info">
+                    <div class="prd-info-wrap">
+                      <h2 class="prd-title"><a href="product.html">The Book 24</a></h2>
+                      <div class="prd-description">
+                        Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
+                      </div>
+                    </div>
+                    <div class="prd-hovers">
+                      <div class="prd-circle-labels">
+                        <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                        <div><a href="#" class="circle-label-qview prd-hide-mobile js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                      </div>
+                      <div class="prd-price">
+                        <div class="price-new">$ 18</div>
+                      </div>
+                      <div class="prd-action">
+                        <div class="prd-action-left">
+                          <form action="#">
+                            <button class="btn js-prd-addtocart" data-product='{"name": "The Book 24", "path":"images/skins/books/products/product-24.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+                <div class="prd-inside">
+                  <div class="prd-img-area">
+                    <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-26.png" alt="The Book 25" class="js-prd-img lazyload fade-up">
+                      <div class="foxic-loader"></div>
+                      <div class="prd-big-squared-labels">
+                      </div>
+                    </a>
+                    <div class="prd-circle-labels">
+                      <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
+                      <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
+                    </div>
+                  </div>
+                  <div class="prd-info">
+                    <div class="prd-info-wrap">
+                      <h2 class="prd-title"><a href="product.html">The Book 25</a></h2>
+                      <div class="prd-description">
+                        Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
+                      </div>
+                    </div>
+                    <div class="prd-hovers">
+                      <div class="prd-circle-labels">
+                        <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
+                        <div><a href="#" class="circle-label-qview prd-hide-mobile js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
+                      </div>
+                      <div class="prd-price">
+                        <div class="price-new">$ 18</div>
+                      </div>
+                      <div class="prd-action">
+                        <div class="prd-action-left">
+                          <form action="#">
+                            <button class="btn js-prd-addtocart" data-product='{"name": "The Book 25", "path":"images/skins/books/products/product-26.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </a>
+        </div>
       </div>
     </div>
     <div class="holder">
       <div class="container">
         <div class="title-wrap text-center">
-          <h2 class="h1-style">New arrival</h2>
-          <div class="h-sub maxW-825">Hurry up! Limited</div>
+          <h2 class="h-lg-style">Books for Knowledge</h2>
         </div>
         <div class="prd-grid-wrap position-relative">
-          <div class="prd-grid data-to-show-4 data-to-show-lg-4 data-to-show-md-3 data-to-show-sm-2 data-to-show-xs-2 js-category-grid" data-grid-tab-content>
+          <div class="prd-grid data-to-show-5 data-to-show-lg-4 data-to-show-md-3 data-to-show-sm-2 data-to-show-xs-1 js-category-grid">
             <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
               <div class="prd-inside">
                 <div class="prd-img-area">
                   <a href="product.html" class="prd-img image-hover-scale image-container">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-03-1.jpg" alt="Oversized Cotton Blouse" class="js-prd-img lazyload fade-up">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-21.png" alt="The Book 21" class="js-prd-img lazyload fade-up">
                     <div class="foxic-loader"></div>
                     <div class="prd-big-squared-labels">
-                      <div class="label-new"><span>New</span></div>
-                      <div class="label-sale"><span>-10% <span class="sale-text">Sale</span></span>
-                        <div class="countdown-circle">
-                          <div class="countdown js-countdown" data-countdown="2021/07/01"></div>
-                        </div>
-                      </div>
                     </div>
                   </a>
                   <div class="prd-circle-labels">
                     <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
                     <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
                   </div>
-                  <ul class="list-options color-swatch">
-                    <li data-image="images/skins/fashion/products/product-03-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-03-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-03-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-03-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-03-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-03-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  </ul>
                 </div>
                 <div class="prd-info">
                   <div class="prd-info-wrap">
@@ -1071,14 +1101,14 @@
                       <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                     </div>
                     <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    <div class="prd-tag"><a href="#">Banita</a></div>
-                    <h2 class="prd-title"><a href="product.html">Oversized Cotton Blouse</a></h2>
+                    <div class="prd-tag"><a href="#">Foxic</a></div>
+                    <h2 class="prd-title"><a href="product.html">The Book 21</a></h2>
                     <div class="prd-description">
                       Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                     </div>
                     <div class="prd-action">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"images/skins/fashion/products/product-03-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 21", "path":"images/skins/books/products/product-21.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -1088,13 +1118,12 @@
                       <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
                     </div>
                     <div class="prd-price">
-                      <div class="price-old">$ 200</div>
-                      <div class="price-new">$ 180</div>
+                      <div class="price-new">$ 18</div>
                     </div>
                     <div class="prd-action">
                       <div class="prd-action-left">
                         <form action="#">
-                          <button class="btn js-prd-addtocart" data-product='{"name": "Oversized Cotton Blouse", "path":"images/skins/fashion/products/product-03-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                          <button class="btn js-prd-addtocart" data-product='{"name": "The Book 21", "path":"images/skins/books/products/product-21.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
                         </form>
                       </div>
                     </div>
@@ -1106,70 +1135,7 @@
               <div class="prd-inside">
                 <div class="prd-img-area">
                   <a href="product.html" class="prd-img image-hover-scale image-container">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-1.jpg" alt="Midi Dress with Belt" class="js-prd-img lazyload fade-up">
-                    <div class="foxic-loader"></div>
-                    <div class="prd-big-squared-labels">
-                    </div>
-                  </a>
-                  <div class="prd-circle-labels">
-                    <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
-                    <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
-                    <div class="colorswatch-label colorswatch-label--variants js-prd-colorswatch">
-                      <i class="icon-palette"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span></i>
-                      <ul>
-                        <li data-image="images/skins/fashion/products/product-06-1.jpg"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-grey.png" alt=""></a></li>
-                        <li data-image="images/skins/fashion/products/product-06-color-2.jpg"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-green.png" alt=""></a></li>
-                        <li data-image="images/skins/fashion/products/product-06-color-3.jpg"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-black.png" alt=""></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <ul class="list-options color-swatch">
-                    <li data-image="images/skins/fashion/products/product-06-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-06-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-06-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  </ul>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-info-wrap">
-                    <div class="prd-info-top">
-                      <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    </div>
-                    <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    <div class="prd-tag"><a href="#">Seiko</a></div>
-                    <h2 class="prd-title"><a href="product.html">Midi Dress with Belt</a></h2>
-                    <div class="prd-description">
-                      Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
-                    </div>
-                    <div class="prd-action">
-                      <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="prd-hovers">
-                    <div class="prd-circle-labels">
-                      <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
-                      <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
-                    </div>
-                    <div class="prd-price">
-                      <div class="price-new">$ 180</div>
-                    </div>
-                    <div class="prd-action">
-                      <div class="prd-action-left">
-                        <form action="#">
-                          <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a href="product.html" class="prd-img image-hover-scale image-container">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-10-1.jpg" alt="Short Sleeve Blouse" class="js-prd-img lazyload fade-up">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-22.png" alt="The Book 22" class="js-prd-img lazyload fade-up">
                     <div class="foxic-loader"></div>
                     <div class="prd-big-squared-labels">
                       <div class="label-sale"><span>-10% <span class="sale-text">Sale</span></span>
@@ -1183,11 +1149,6 @@
                     <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
                     <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
                   </div>
-                  <ul class="list-options color-swatch">
-                    <li data-image="images/skins/fashion/products/product-10-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-10-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-10-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-10-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-10-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-10-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  </ul>
                 </div>
                 <div class="prd-info">
                   <div class="prd-info-wrap">
@@ -1195,14 +1156,14 @@
                       <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                     </div>
                     <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    <div class="prd-tag"><a href="#">FOXic</a></div>
-                    <h2 class="prd-title"><a href="product.html">Short Sleeve Blouse</a></h2>
+                    <div class="prd-tag"><a href="#">Foxic</a></div>
+                    <h2 class="prd-title"><a href="product.html">The Book 22</a></h2>
                     <div class="prd-description">
                       Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                     </div>
                     <div class="prd-action">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"images/skins/fashion/products/product-10-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 22", "path":"images/skins/books/products/product-22.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -1212,13 +1173,13 @@
                       <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
                     </div>
                     <div class="prd-price">
-                      <div class="price-old">$ 200</div>
-                      <div class="price-new">$ 180</div>
+                      <div class="price-old">$ 20</div>
+                      <div class="price-new">$ 18</div>
                     </div>
                     <div class="prd-action">
                       <div class="prd-action-left">
                         <form action="#">
-                          <button class="btn js-prd-addtocart" data-product='{"name": "Short Sleeve Blouse", "path":"images/skins/fashion/products/product-10-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                          <button class="btn js-prd-addtocart" data-product='{"name": "The Book 22", "path":"images/skins/books/products/product-22.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
                         </form>
                       </div>
                     </div>
@@ -1230,7 +1191,7 @@
               <div class="prd-inside">
                 <div class="prd-img-area">
                   <a href="product.html" class="prd-img image-hover-scale image-container">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-13-1.jpg" alt="Peg Cropped Cuffed Pants" class="js-prd-img lazyload fade-up">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-23.png" alt="The Book 23" class="js-prd-img lazyload fade-up">
                     <div class="foxic-loader"></div>
                     <div class="prd-big-squared-labels">
                       <div class="label-new"><span>New</span></div>
@@ -1240,11 +1201,6 @@
                     <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
                     <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
                   </div>
-                  <ul class="list-options color-swatch">
-                    <li data-image="images/skins/fashion/products/product-13-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-13-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-13-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-13-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-13-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-13-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  </ul>
                 </div>
                 <div class="prd-info">
                   <div class="prd-info-wrap">
@@ -1252,14 +1208,14 @@
                       <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                     </div>
                     <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    <div class="prd-tag"><a href="#">FOXic</a></div>
-                    <h2 class="prd-title"><a href="product.html">Peg Cropped Cuffed Pants</a></h2>
+                    <div class="prd-tag"><a href="#">Foxic</a></div>
+                    <h2 class="prd-title"><a href="product.html">The Book 23</a></h2>
                     <div class="prd-description">
                       Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                     </div>
                     <div class="prd-action">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Peg Cropped Cuffed Pants", "path":"images/skins/fashion/products/product-13-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 23", "path":"images/skins/books/products/product-23.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -1269,12 +1225,12 @@
                       <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
                     </div>
                     <div class="prd-price">
-                      <div class="price-new">$ 180</div>
+                      <div class="price-new">$ 18</div>
                     </div>
                     <div class="prd-action">
                       <div class="prd-action-left">
                         <form action="#">
-                          <button class="btn js-prd-addtocart" data-product='{"name": "Peg Cropped Cuffed Pants", "path":"images/skins/fashion/products/product-13-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                          <button class="btn js-prd-addtocart" data-product='{"name": "The Book 23", "path":"images/skins/books/products/product-23.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
                         </form>
                       </div>
                     </div>
@@ -1286,74 +1242,9 @@
               <div class="prd-inside">
                 <div class="prd-img-area">
                   <a href="product.html" class="prd-img image-hover-scale image-container">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-16-1.jpg" alt="Cascade Casual Shirt" class="js-prd-img lazyload fade-up">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-24.png" alt="The Book 24" class="js-prd-img lazyload fade-up">
                     <div class="foxic-loader"></div>
                     <div class="prd-big-squared-labels">
-                    </div>
-                  </a>
-                  <div class="prd-circle-labels">
-                    <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
-                    <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
-                    <div class="colorswatch-label colorswatch-label--variants js-prd-colorswatch">
-                      <i class="icon-palette"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span></i>
-                      <ul>
-                        <li data-image="images/skins/fashion/products/product-16-1.jpg"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-grey.png" alt=""></a></li>
-                        <li data-image="images/skins/fashion/products/product-16-color-2.jpg"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-green.png" alt=""></a></li>
-                        <li data-image="images/skins/fashion/products/product-16-color-3.jpg"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-black.png" alt=""></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <ul class="list-options color-swatch">
-                    <li data-image="images/skins/fashion/products/product-16-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-16-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-16-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-16-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-16-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-16-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  </ul>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-info-wrap">
-                    <div class="prd-info-top">
-                      <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    </div>
-                    <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    <div class="prd-tag"><a href="#">FOXic</a></div>
-                    <h2 class="prd-title"><a href="product.html">Cascade Casual Shirt</a></h2>
-                    <div class="prd-description">
-                      Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
-                    </div>
-                    <div class="prd-action">
-                      <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Cascade Casual Shirt", "path":"images/skins/fashion/products/product-16-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="prd-hovers">
-                    <div class="prd-circle-labels">
-                      <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
-                      <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
-                    </div>
-                    <div class="prd-price">
-                      <div class="price-new">$ 180</div>
-                    </div>
-                    <div class="prd-action">
-                      <div class="prd-action-left">
-                        <form action="#">
-                          <button class="btn js-prd-addtocart" data-product='{"name": "Cascade Casual Shirt", "path":"images/skins/fashion/products/product-16-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd--style2 prd-labels--max prd-labels-shadow prd-outstock">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a href="product.html" class="prd-img image-hover-scale image-container">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-18-1.jpg" alt="Sport Cotton T-shirt" class="js-prd-img lazyload fade-up">
-                    <div class="foxic-loader"></div>
-                    <div class="prd-big-squared-labels">
-                      <div class="label-new"><span>New</span></div>
-                      <div class="label-outstock"><span>Sold Out</span></div>
                     </div>
                   </a>
                   <div class="prd-circle-labels">
@@ -1367,14 +1258,14 @@
                       <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                     </div>
                     <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    <div class="prd-tag"><a href="#">FOXic</a></div>
-                    <h2 class="prd-title"><a href="product.html">Sport Cotton T-shirt</a></h2>
+                    <div class="prd-tag"><a href="#">Foxic</a></div>
+                    <h2 class="prd-title"><a href="product.html">The Book 24</a></h2>
                     <div class="prd-description">
                       Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                     </div>
                     <div class="prd-action">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Sport Cotton T-shirt", "path":"images/skins/fashion/products/product-18-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 24", "path":"images/skins/books/products/product-24.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -1384,12 +1275,12 @@
                       <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
                     </div>
                     <div class="prd-price">
-                      <div class="price-new">$ 180</div>
+                      <div class="price-new">$ 18</div>
                     </div>
                     <div class="prd-action">
                       <div class="prd-action-left">
                         <form action="#">
-                          <button class="btn js-prd-addtocart" data-product='{"name": "Sport Cotton T-shirt", "path":"images/skins/fashion/products/product-18-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                          <button class="btn js-prd-addtocart" data-product='{"name": "The Book 24", "path":"images/skins/books/products/product-24.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
                         </form>
                       </div>
                     </div>
@@ -1401,25 +1292,15 @@
               <div class="prd-inside">
                 <div class="prd-img-area">
                   <a href="product.html" class="prd-img image-hover-scale image-container">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-1.jpg" alt="Genuine Leather Strap Watch" class="js-prd-img lazyload fade-up">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-25.png" alt="The Book 25" class="js-prd-img lazyload fade-up">
                     <div class="foxic-loader"></div>
                     <div class="prd-big-squared-labels">
-                      <div class="label-sale"><span>-10% <span class="sale-text">Sale</span></span>
-                        <div class="countdown-circle">
-                          <div class="countdown js-countdown" data-countdown="2021/07/01"></div>
-                        </div>
-                      </div>
                     </div>
                   </a>
                   <div class="prd-circle-labels">
                     <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
                     <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
                   </div>
-                  <ul class="list-options color-swatch">
-                    <li data-image="images/skins/fashion/products/product-21-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-21-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-21-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  </ul>
                 </div>
                 <div class="prd-info">
                   <div class="prd-info-wrap">
@@ -1427,14 +1308,14 @@
                       <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                     </div>
                     <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    <div class="prd-tag"><a href="#">FOXic</a></div>
-                    <h2 class="prd-title"><a href="product.html">Genuine Leather Strap Watch</a></h2>
+                    <div class="prd-tag"><a href="#">Foxic</a></div>
+                    <h2 class="prd-title"><a href="product.html">The Book 25</a></h2>
                     <div class="prd-description">
                       Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                     </div>
                     <div class="prd-action">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"images/skins/fashion/products/product-21-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 25", "path":"images/skins/books/products/product-25.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -1444,68 +1325,12 @@
                       <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
                     </div>
                     <div class="prd-price">
-                      <div class="price-old">$ 200</div>
-                      <div class="price-new">$ 180</div>
+                      <div class="price-new">$ 18</div>
                     </div>
                     <div class="prd-action">
                       <div class="prd-action-left">
                         <form action="#">
-                          <button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"images/skins/fashion/products/product-21-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
-              <div class="prd-inside">
-                <div class="prd-img-area">
-                  <a href="product.html" class="prd-img image-hover-scale image-container">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-25-1.jpg" alt="Fashion Waist Bag" class="js-prd-img lazyload fade-up">
-                    <div class="foxic-loader"></div>
-                    <div class="prd-big-squared-labels">
-                    </div>
-                  </a>
-                  <div class="prd-circle-labels">
-                    <a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a>
-                    <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
-                  </div>
-                  <ul class="list-options color-swatch">
-                    <li data-image="images/skins/fashion/products/product-25-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-25-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-25-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-25-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                    <li data-image="images/skins/fashion/products/product-25-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-25-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  </ul>
-                </div>
-                <div class="prd-info">
-                  <div class="prd-info-wrap">
-                    <div class="prd-info-top">
-                      <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    </div>
-                    <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                    <div class="prd-tag"><a href="#">FOXic</a></div>
-                    <h2 class="prd-title"><a href="product.html">Fashion Waist Bag</a></h2>
-                    <div class="prd-description">
-                      Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
-                    </div>
-                    <div class="prd-action">
-                      <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Fashion Waist Bag", "path":"images/skins/fashion/products/product-25-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="prd-hovers">
-                    <div class="prd-circle-labels">
-                      <div><a href="#" class="circle-label-compare circle-label-wishlist--add js-add-wishlist mt-0" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a><a href="#" class="circle-label-compare circle-label-wishlist--off js-remove-wishlist mt-0" title="Remove From Wishlist"><i class="icon-heart-hover"></i></a></div>
-                      <div class="prd-hide-mobile"><a href="#" class="circle-label-qview js-prd-quickview" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a></div>
-                    </div>
-                    <div class="prd-price">
-                      <div class="price-new">$ 180</div>
-                    </div>
-                    <div class="prd-action">
-                      <div class="prd-action-left">
-                        <form action="#">
-                          <button class="btn js-prd-addtocart" data-product='{"name": "Fashion Waist Bag", "path":"images/skins/fashion/products/product-25-1.jpg", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
+                          <button class="btn js-prd-addtocart" data-product='{"name": "The Book 25", "path":"images/skins/books/products/product-25.png", "url":"product.html", "aspect_ratio":0.778}'>Add To Cart</button>
                         </form>
                       </div>
                     </div>
@@ -1517,198 +1342,230 @@
         </div>
       </div>
     </div>
-    <div class="holder holder-mt-medium">
+    <div class="holder holder-with-bg holder-pb-medium" style="background-color: #fcfcfc">
       <div class="container">
-        <div class="title-wrap text-center ">
-          <h2 class="h1-style text-center"><a href="blog.html" title="View all">Latest From Blog</a></h2>
-          <div class="carousel-arrows" style="margin:0 auto 65px; width:50px;"></div>
+        <div class="row bnr-grid vert-margin-small">
+          <div class="col-18 col-sm-6">
+            <a href="product.html" target="_self" class="bnr-wrap">
+              <div class="bnr custom-caption image-hover-scale image-hover-scale--slow bnr--top bnr--left" data-fontratio=5.7>
+                <div class="bnr-img  image-container" style="padding-bottom: 140.526%">
+                  <img data-srcset="images/skins/books/banners/banner-books-01.png" class="lazyload fade-up" alt="">
+                </div>
+                <div class="bnr-caption" style="padding: 20% 14%; width: 100%;">
+                  <div class="bnr-text3 mt-sm order-1 inherit" style="color:#000000; font-size:0.725em; font-weight:700; line-height:1em">Get One<br>Now</div>
+                  <div class="bnr-text3 mt-lg order-2 inherit" style="color:#000000; font-size:0.275em; font-weight:800; line-height:1.4em;">Pcychologys Books<br>sale 25% off</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-18 col-sm-6">
+            <a href="product.html" target="_self" class="bnr-wrap">
+              <div class="bnr custom-caption image-hover-scale image-hover-scale--slow bnr--bottom bnr--left" data-fontratio=5.7>
+                <div class="bnr-img  image-container" style="padding-bottom: 140.526%">
+                  <img data-srcset="images/skins/books/banners/banner-books-02.png" class="lazyload fade-up" alt="">
+                </div>
+                <div class="bnr-caption" style="padding: 12% 12%; width: 100%;">
+                  <div class="bnr-text3 mt-sm order-2 inherit" style="color:#000000; font-size:0.725em; font-weight:700; line-height:1em">Discount</div>
+                  <div class="bnr-text3 mt-sm order-1 inherit" style="color:#000000; font-size:0.3em; font-weight:800; line-height:1.5em;">Today Only</div>
+                  <div class="bnr-text3 mt-lg order-3 inherit" style="font-size:0.275em; font-weight:800; line-height:1em;">For Childrens Bokks</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-18 col-sm-6">
+            <a href="product.html" target="_self" class="bnr-wrap">
+              <div class="bnr custom-caption image-hover-scale image-hover-scale--slow bnr--top bnr--left" data-fontratio=5.7>
+                <div class="bnr-img  image-container" style="padding-bottom: 140.526%">
+                  <img data-srcset="images/skins/books/banners/banner-books-03.png" class="lazyload fade-up" alt="">
+                </div>
+                <div class="bnr-caption" style="padding: 18% 14%; width: 100%;">
+                  <div class="bnr-text3 mt-0 order-1 inherit" style="color:#000000; font-size:0.725em; font-weight:700; line-height:1em">Hot<br>Proposition</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-18 col-sm-6">
+            <a href="product.html" target="_self" class="bnr-wrap">
+              <div class="bnr custom-caption image-hover-scale image-hover-scale--slow bnr--top bnr--left" data-fontratio=5.7>
+                <div class="bnr-img  image-container" style="padding-bottom: 73.684%">
+                  <img data-srcset="images/skins/books/banners/banner-books-04.png" class="lazyload fade-up" alt="">
+                </div>
+                <div class="bnr-caption" style="padding: 16% 14%; width: 100%;">
+                  <div class="bnr-text3 mt-sm order-1  text-left" style="color:#000000; font-size:0.45em; font-weight:700; line-height:1.3em">Happy<br>Book Day</div>
+                  <div class="bnr-text3 mt-sm order-2 inherit" style="color:#000000; font-size:0.275em; font-weight:800; line-height:1.4em;">Discount 30%<br>for All Book’s</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-18 col-sm-6">
+            <a href="product.html" target="_self" class="bnr-wrap">
+              <div class="bnr custom-caption image-hover-scale image-hover-scale--slow bnr--top bnr--left" data-fontratio=5.7>
+                <div class="bnr-img  image-container" style="padding-bottom: 73.684%">
+                  <img data-srcset="images/skins/books/banners/banner-books-05.png" class="lazyload fade-up" alt="">
+                </div>
+                <div class="bnr-caption" style="padding: 16% 14%; width: 100%;">
+                  <div class="bnr-text3 mt-sm order-1  text-left" style="color:#000000; font-size:0.45em; font-weight:700; line-height:1.3em">New<br>Collection</div>
+                  <div class="bnr-text3 mt-sm order-2 inherit" style="color:#000000; font-size:0.275em; font-weight:800; line-height:1.4em;">Get Book<br>Therapy</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-18 col-sm-6">
+            <a href="product.html" target="_self" class="bnr-wrap bnr-1597392231186">
+              <div class="bnr custom-caption image-hover-scale image-hover-scale--slow bnr--top bnr--left" data-fontratio=5.7>
+                <div class="bnr-img  image-container" style="padding-bottom: 73.684%">
+                  <img data-srcset="images/skins/books/banners/banner-books-06.png" class="lazyload fade-up" alt="">
+                </div>
+                <div class="bnr-caption" style="padding: 16% 14%; width: 100%;">
+                  <div class="bnr-text3 mt-sm order-1  text-left" style="color:#000000; font-size:0.45em; font-weight:700; line-height:1.3em">Science &<br>Education</div>
+                  <div class="bnr-text3 mt-sm order-2 inherit" style="color:#000000; font-size:0.275em; font-weight:800; line-height:1.4em;">Books For<br>Knowledge</div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="post-prws post-prws-carousel post-prws--row js-post-prws-carousel" data-slick='{"slidesToShow": 3, "responsive": [{"breakpoint": 992,"settings": {"slidesToShow": 2 }},{"breakpoint": 480,"settings": {"slidesToShow": 1 }}]}'>
-          <div class="post-prw-vert col">
-            <a href="blog-post.html" class="post-prw-img image-hover-scale image-container" style="padding-bottom: 54.44%">
-              <img class="fade-up w-100 lazyload" alt="The High-Street Brand Fashion" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/blog/blog-fashion-02.png">
-            </a>
-            <h4 class="post-prw-title"><a href="blog-post.html">The High-Street Brand Fashion</a></h4>
-            <div class="post-prw-links">
-              <div class="post-prw-date"><i class="icon-calendar1"></i>
-                June 9, 2020
-              </div>
-            </div>
-          </div>
-          <div class="post-prw-vert col">
-            <a href="blog-post.html" class="post-prw-img image-hover-scale image-container" style="padding-bottom: 54.44%">
-              <img class="fade-up w-100 lazyload" alt="The High-Street Brand Fashion" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/blog/blog-fashion-03.png">
-            </a>
-            <h4 class="post-prw-title"><a href="blog-post.html">Trends to Try This Season</a></h4>
-            <div class="post-prw-links">
-              <div class="post-prw-date"><i class="icon-calendar1"></i>
-                June 3, 2020
-              </div>
-            </div>
-          </div>
-          <div class="post-prw-vert col">
-            <a href="blog-post.html" class="post-prw-img image-hover-scale image-container" style="padding-bottom: 54.44%">
-              <img class="fade-up w-100 lazyload" alt="The High-Street Brand Fashion" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/blog/blog-fashion-04.png">
-            </a>
-            <h4 class="post-prw-title"><a href="blog-post.html">Working From Home</a></h4>
-            <div class="post-prw-links">
-              <div class="post-prw-date"><i class="icon-calendar1"></i>
-                June 1, 2020
-              </div>
+      </div>
+    </div>
+    <div class="holder holder-subscribe-simple fullwidth mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="subscribe-form">
+              <form action="#" id="newsletterSubsribe" class="contact-form">
+                <div class="form-inline">
+                  <div class="form-control-wrap">
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <input type="email" name="contact[email]" required class="form-control form-control--sm" value="" placeholder="Email address" style="background-color: #ffffff;">
+                  </div>
+                  <button type="submit" class="btn">Subscribe</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
-  
-  <footer class="page-footer footer-style-6 ">
-    <div class="holder ">
-      <div class="footer-shop-info">
-        <div class="container">
-          <div class="text-icn-blocks-bg-row">
-            <div class="text-icn-block-footer">
-              <div class="icn">
-                <i class="icon-trolley"></i>
+  <footer class="page-footer footer-style-2 holder-mt-small">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 col-lg">
+            <div class="footer-block collapsed-mobile">
+              <div class="title">
+                <h4>About Us</h4>
+                <span class="toggle-arrow"><span></span><span></span></span>
               </div>
-              <div class="text">
-                <h4>Extra fast delivery</h4>
-                <p>Your order will be delivered 3-5 business days after all of your items are available</p>
-              </div>
-            </div>
-            <div class="text-icn-block-footer">
-              <div class="icn">
-                <i class="icon-currency"></i>
-              </div>
-              <div class="text">
-                <h4>Best price</h4>
-                <p>We'll match the product prices of key online and local competitors for immediately</p>
+              <div class="collapsed-content">
+                <div class="footer-txt-block">
+                  But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                  pain was born and I will give you a complete account of the system, and expound know how
+                  to pursue pleasure rationally encounter.
+                </div>
               </div>
             </div>
-            <div class="text-icn-block-footer">
-              <div class="icn">
-                <i class="icon-diplom"></i>
+          </div>
+          <div class="col-md-9 col-lg">
+            <div class="footer-block collapsed-mobile">
+              <div class="title">
+                <h4>Contact Info</h4>
+                <span class="toggle-arrow"><span></span><span></span></span>
               </div>
-              <div class="text">
-                <h4>Guarantee</h4>
-                <p>If the item you want is available, we can process a return and place a new order</p>
+              <div class="collapsed-content">
+                <ul>
+                  <li>Phone: +01 234 567 89</li>
+                  <li>E-mail: <a href="mailto:Foxshop@gmail.com">Foxshop@gmail.com</a></li>
+                  <li>Hours: 10:00 - 18:00, Mon - Fri</li>
+                  <li><a href="#">Video Presentation</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 col-lg">
+            <div class="footer-block collapsed-mobile">
+              <div class="title">
+                <h4>Links</h4>
+                <span class="toggle-arrow"><span></span><span></span></span>
+              </div>
+              <div class="collapsed-content">
+                <ul>
+                  <li><a href="#" class="custom-color">Online Support</a></li>
+                  <li><a href="#" class="custom-color">Online Doc</a></li>
+                  <li><a href="#" class="custom-color">Money Back</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 col-lg">
+            <div class="footer-block collapsed-mobile">
+              <div class="title">
+                <h4>Socials</h4>
+                <span class="toggle-arrow"><span></span><span></span></span>
+              </div>
+              <div class="collapsed-content">
+                <ul class="social-list-circle-sm">
+                  <li>
+                    <a href="#"><i class="icon-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-google"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-fancy"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-vimeo"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon-pinterest"></i></a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer-top">
+    <div class="footer-bottom">
       <div class="container">
-        <div class="row mt-0">
-          <div class="col-lg col-xl last-mobile">
-            <div class="footer-block">
-              <div class="footer-logo">
-                <a href="index.html"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/logo-footer.png 1x, images/logo-footer2x.png 2x" alt="Logo"></a>
-              </div>
-              <div class="collapsed-content">
-                <ul>
-                  <li>E-mail: <a href="mailto:Foxshop@gmail.com">Foxshop@gmail.com</a></li>
-                  <li>Hours: 10:00 - 18:00, Mon - Fri</li>
-                </ul>
-              </div>
-              <ul class="social-list">
-                <li>
-                  <a href="#" class="icon icon-facebook"></a>
-                </li>
-                <li>
-                  <a href="#" class="icon icon-twitter"></a>
-                </li>
-                <li>
-                  <a href="#" class="icon icon-google"></a>
-                </li>
-                <li>
-                  <a href="#" class="icon icon-vimeo"></a>
-                </li>
-                <li>
-                  <a href="#" class="icon icon-youtube"></a>
-                </li>
-                <li>
-                  <a href="#" class="icon icon-pinterest"></a>
-                </li>
-              </ul>
-              <div class="d-lg-none mt-3">
-                <div class="box-coupon">
-                  <div class="box-coupon-icon"><i class="icon-scissors"></i></div>
-                  <div class="box-coupon-text"><span class="custom-color">FOXIC</span> THEME</div>
-                </div>
-              </div>
+        <div class="row vert-margin-middle">
+          <div class="col-sm footer-bottom-col-left">
+            <div class="footer-logo">
+              <a href="index.html" class="logo"><img srcset="images/skins/books/logo-books-footer.png 1x, images/skins/books/logo-books-footer2x.png 2x" alt="Logo"></a>
             </div>
           </div>
-          <div class="col-lg col-xl">
-            <div class="footer-block collapsed-mobile">
-              <div class="title">
-                <h4>Information</h4>
-                <span class="toggle-arrow"><span></span><span></span></span>
-              </div>
-              <div class="collapsed-content">
-                <ul>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="typography.html">Terms & Conditions</a></li>
-                  <li><a href="typography.html">Returns & Exchanges</a></li>
-                  <li><a href="typography.html">Shipping & Delivery</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg col-xl">
-            <div class="footer-block collapsed-mobile">
-              <div class="title">
-                <h4>Account details</h4>
-                <span class="toggle-arrow"><span></span><span></span></span>
-              </div>
-              <div class="collapsed-content">
-                <ul>
-                  <li><a href="account-details.html">My Account</a></li>
-                  <li><a href="cart.html">View Cart</a></li>
-                  <li><a href="account-wishlist.html">My Wishlist</a></li>
-                  <li><a href="account-history.html">Order Status</a></li>
-                  <li><a href="account-history.html">Track My Order</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg col-xl">
-            <div class="footer-block collapsed-mobile">
-              <div class="title">
-                <h4>Safe payments</h4>
-                <span class="toggle-arrow"><span></span><span></span></span>
-              </div>
-              <div class="collapsed-content">
-                <ul class="payment-link">
-                  <li><i class="icon-google-pay-logo"></i></li>
+          <div class="col-sm footer-bottom-col-right">
+            <div class="row vert-margin-middle">
+              <div class="col-sm">
+                <ul class="payment-link payment-link--sm">
+                  <li><i class="icon-amazon-logo"></i></li>
                   <li><i class="icon-visa-pay-logo"></i></li>
+                  <li><i class="icon-skrill-logo"></i></li>
+                  <li><i class="icon-master-card-logo"></i></li>
+                  <li><i class="icon-paypal-logo"></i></li>
                   <li><i class="icon-apple-pay-logo"></i></li>
                 </ul>
               </div>
-              <div class="d-none d-lg-block">
-                <div class="box-coupon">
-                  <div class="box-coupon-icon"><i class="icon-scissors"></i></div>
-                  <div class="box-coupon-text"><span class="custom-color">FOXIC</span> THEME</div>
+              <div class="col-sm-auto">
+                <div class="footer-copyright">
+                  <a href="#">FOXshop</a> ©2020 copyright
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom footer-bottom--bg">
-      <div class="container">
-        <div class="footer-copyright text-center">
-          <a href="#">FOXshop</a> ©2020 copyright
         </div>
       </div>
     </div>
   </footer>
-  
-  
   <div class="footer-sticky">
     <!--  sticky add to cart -->
     <div class="sticky-addcart js-stickyAddToCart closed">
@@ -1832,7 +1689,6 @@
       </div>
     </div>
   </div>
-  
   <!-- payment note -->
   <div class="footer-sticky">
     <div class="payment-notification-wrap js-pn" data-visible-time="3000" data-hidden-time="3000" data-delay="500" data-from="Aberdeen,Bakersfield,Birmingham,Cambridge,Youngstown" data-products='[{"productname":"Leather Pegged Pants", "productlink":"product.html","productimage":"images/skins/fashion/products/product-01-1.jpg"},{"productname":"Black Fabric Backpack", "productlink":"product.html","productimage":"images/skins/fashion/products/product-28-1.jpg"},{"productname":"Combined Chunky Sneakers", "productlink":"product.html","productimage":"images/skins/fashion/products/product-23-1.jpg"}]'>
@@ -1858,33 +1714,6 @@
         </div>
       </div>
     </div>
-  </div>
-  
-  
-  <div id="popupNewsletter" class="modal-info-content js-newslettermodal newslettermodal--classic p-0" style="display: none;" data-pause="12000" data-expires="0" data-only-index="false">
-    <div class="row align-items-center">
-      <div class="col-sm-8 d-none d-sm-block">
-        <div class="popup-newsletter-image image-container" style="padding-bottom: 160.0%">
-          <img class="lazyload w-100" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/popup-image.png" alt="">
-        </div>
-      </div>
-      <div class="col-sm-10">
-        <div class="popup-newsletter-content">
-          <form method="post" action="#" class="newslettermodal-content-form">
-            <h3 class="newslettermodal-content-title">Be The First To Know</h3>
-            <div class="newslettermodal-content-text">About our newest arrivals, special offers plus 10% off on your first order.</div>
-            <div class="form-group mt-3">
-              <input type="hidden" name="contact[tags]" value="newsletter">
-              <div class="form-label">Email address</div>
-              <input type="email" name="contact[email]" class="form-control form-control--sm" value="" placeholder="Email address">
-            </div>
-            <button type="submit" class="btn w-100">Subscribe</button>
-            <div class="popup-newsletter-info-sm mt-2">By subscribing, you accept the <a href="#" class="modal-info-link" data-src="#agreementInfo">Terms of Use</a></div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div data-fancybox-close class="fancybox-close-small modal-close"><i class="icon-close"></i></div>
   </div>
   <script src="js/vendor-special/lazysizes.min.js"></script>
   <script src="js/vendor-special/ls.bgset.min.js"></script>

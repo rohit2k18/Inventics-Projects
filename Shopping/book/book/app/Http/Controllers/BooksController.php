@@ -19,7 +19,8 @@ class BooksController extends Controller
 
     public function productindex()
     {
-        return view('Product.index');
+        $tempProduct=true;
+        return view('Product.index',compact('tempProduct'));
     }
 
     /**
