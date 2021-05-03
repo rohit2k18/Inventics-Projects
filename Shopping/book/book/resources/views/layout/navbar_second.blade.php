@@ -156,7 +156,7 @@
                     <ul class="submenu-list mt-0">
                       <li><a href="index.html">Fashion (Default) Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen01.png')}}" alt=""></span></li>
                       <li><a href="index-sport.html">Sport Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-sport.png')}}" alt=""></span></li>
-                      <li><a href="index-books.html">Books Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-books.png')}}" alt=""></span></li>
+                      <li><a href="{{route('books')}}">Books Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-books.png')}}" alt=""></span></li>
                       <li><a href="index-electronics.html">Electronics Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-electronics.png')}}" alt=""></span></li>
                       <li><a href="index-viping.html">Vaping Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-vaping.png')}}" alt=""></span></li>
                       <li><a href="index-pets.html">Pets Skin</a><span class="submenu-link-image"><img src="{{asset('images/screen/screen-pets.png')}}" alt=""></span></li>
@@ -190,13 +190,8 @@
                     <ul class="submenu-list">
                       <li><a href="product.html">Product page</a>
                         <ul>
-                          <li><a href="product.html">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
-                          <li><a href="product-2.html">Product page variant 2</a></li>
-                          <li><a href="product-3.html">Product page variant 3</a></li>
-                          <li><a href="product-4.html">Product page variant 4</a></li>
-                          <li><a href="product-5.html">Product page variant 5</a></li>
-                          <li><a href="product-6.html">Product page variant 6</a></li>
-                          <li><a href="product-7.html">Product page variant 7</a></li>
+                          <li><a href="{{route('product')}}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
+                          
                         </ul>
                       </li>
                       <li><a href="category.html">Category page</a>
@@ -237,13 +232,13 @@
                           <li><a href="blog-post.html">Blog post</a></li>
                         </ul>
                       </li>
-                      <li><a href="gallery.html">Gallery</a></li>
-                      <li><a href="faq.html">Faq</a></li>
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="404.html">404 Page</a></li>
+                      <li><a href="{{route('gallery')}}">Gallery</a></li>
+                      <li><a href="{{route('faq')}}">Faq</a></li>
+                      <li><a href="{{route('aboutus')}}">About Us</a></li>
+                      <li><a href="{{route('contactus')}}">Contact Us</a></li>
+                      <li><a href="{{route('error')}}">404 Page</a></li>
                       <li><a href="typography.html">Typography</a></li>
-                      <li><a href="coming-soon.html" target="_blank">Coming soon</a></li>
+                      <li><a href="{{route('commingsoon')}}" target="_blank">Coming soon</a></li>
                     </ul>
                   </div>
                 </li>

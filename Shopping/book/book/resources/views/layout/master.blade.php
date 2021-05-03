@@ -27,7 +27,13 @@
 
 </head>
 
-<body @if(!isset($tempBooks))class="template-product has-smround-btns has-loader-bg equal-height has-sm-container"@endif>
+<body
+@if(isset($tempcategory))
+class="template-collection has-smround-btns has-loader-bg equal-height has-sm-container"
+@elseif(!isset($tempBooks))
+class="template-product has-smround-btns has-loader-bg equal-height has-sm-container"
+@endif
+>
     <div>
       @php
         if(isset($tempBooks))
@@ -59,12 +65,12 @@
         {
           if($tempBooks)
           {
-            @endphp @include('layout.footer') @php
+            @endphp @include('layout.footer.footer') @php
           }
         }
         else
         {
-          @endphp @include('layout.second_footer') @php
+          @endphp @include('layout.footer.second_footer') @php
         }
       @endphp
  

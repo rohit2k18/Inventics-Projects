@@ -24,6 +24,4 @@
     @include('Product.more_details')
     @include('Product.product_you_may_like')
   </div>
-  
-
 @endsection

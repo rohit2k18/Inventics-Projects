@@ -11,9 +11,9 @@
           </div>
           <div class="col-md-auto prd-block-prevnext-wrap">
             <div class="prd-block-prevnext">
-              <a href="#"><span class="prd-img"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-02-1.jpg" alt=""><i class="icon-arrow-left"></i></span></a>
-              <a href="#"><span class="prd-img"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-01-1.jpg" alt=""></span></a>
-              <a href="#"><span class="prd-img"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-15-1.jpg" alt=""><i class="icon-arrow-right"></i></span></a>
+              <a href="#"><span class="prd-img"><img class="lazyload fade-up" src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-02-1.jpg')}}" alt=""><i class="icon-arrow-left"></i></span></a>
+              <a href="#"><span class="prd-img"><img class="lazyload fade-up" src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-01-1.jpg')}}" alt=""></span></a>
+              <a href="#"><span class="prd-img"><img class="lazyload fade-up" src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-15-1.jpg')}}" alt=""><i class="icon-arrow-right"></i></span></a>
             </div>
           </div>
         </div>

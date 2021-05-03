@@ -79,15 +79,58 @@ class AccountController extends Controller
         //
     }
 
-     // public function loginindex()
-    // {
-    //     return view('Account.Login.index');
-    // }
+    public function loginindex()
+    {
+        return view('Account.Login.index');
+    }
 
-    // public function signupindex()
-    // {
-    //     return view('Account.SignUp.index');
-    // }
+    public function signupindex()
+    {
+        return view('Account.SignUp.index');
+    }
+
+    public function galleryindex()
+    {
+        return view('Gallery.index');
+    }
+
+    public function faqindex()
+    {
+        return view('Faq.index');
+    }
+
+    public function aboutusindex()
+    {
+        return view('AboutUs.index');
+    }
+
+    public function errorindex()
+    {
+        return view('Error.index');
+    }
+
+    public function commingsoonindex()
+    {
+        return view('CommingSoon.index');
+    }
+
+    public function ecategoryindex()
+    {
+        $tempcategory=true;
+        return view('Category.EmptyCategory.index',compact('tempcategory'));
+    }
+
+    public function categoryindex()
+    {
+        $tempcategory=true;
+        return view('Category.index',compact('tempcategory'));
+    }
+
+    public function contactusindex()
+    {
+        $hidefooterinfo=true;
+        return view('ContactUs.index',compact('hidefooterinfo'));
+    }
     
     // public function accountaddressindex()
     // {

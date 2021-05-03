@@ -8,8 +8,6 @@
     @include('Books.booksforknowledge')
     @include('Books.collection')
     
-    
-    
   </div>
   
 @endsection
