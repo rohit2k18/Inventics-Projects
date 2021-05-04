@@ -14,27 +14,37 @@
 
 Route::get('/', function () {
     //return view('welcome');
-    return redirect()->route('books');
+    return redirect()->route('Books');
 });
 
-Route::get('account/{name}','AccountController@index')->name('account');
+Route::get('account/{name}','AccountController@index')->name('Account');
+Route::get('login','AccountController@loginindex')->name('Login');
+Route::get('signup','AccountController@signupindex')->name('SignUp');
 
-Route::get('login','AccountController@loginindex')->name('login');
-Route::get('signup','AccountController@signupindex')->name('signup');
-Route::get('gallery','AccountController@galleryindex')->name('gallery');
-Route::get('faq','AccountController@faqindex')->name('faq');
-Route::get('aboutus','AccountController@aboutusindex')->name('aboutus');
-Route::get('contactus','AccountController@contactusindex')->name('contactus');
-Route::get('error','AccountController@errorindex')->name('error');
-Route::get('commingsoon','AccountController@commingsoonindex')->name('commingsoon');
-Route::get('emptycategory','AccountController@ecategoryindex')->name('ecategory');
-Route::get('category','AccountController@categoryindex')->name('category');
+Route::get('gallery','AccountController@galleryindex')->name('Gallery');
+Route::get('faq','AccountController@faqindex')->name('FAQ');
+Route::get('aboutus','AccountController@aboutusindex')->name('AboutUs');
+Route::get('contactus','AccountController@contactusindex')->name('ContactUs');
+Route::get('error','AccountController@errorindex')->name('Error');
+Route::get('commingsoon','AccountController@commingsoonindex')->name('CommingSoon');
+
+Route::get('emptycategory','AccountController@ecategoryindex')->name('EmptyCategory');
+Route::get('category','AccountController@categoryindex')->name('Category');
+
+Route::get('cart','AccountController@cartpageindex')->name('Cart');
+Route::get('emptycart','AccountController@cartpageindex')->name('EmptyCart');
+Route::get('checkout','AccountController@cehckoutindex')->name('Checkout');
+
+Route::get('blogcategory','AccountController@blogcategoryindex')->name('BlogCategory');
+Route::get('bloglist','AccountController@bloglistindex')->name('BlogList');
+Route::get('blogpost','AccountController@blogpostindex')->name('BlogPost');
+
+Route::get('product','BooksController@productindex')->name('Product');
+Route::get('books','BooksController@index')->name('Books');
+Route::resource('book','BooksController');
+
 
 // Route::get('orders','AccountController@accountorderhistoryindex')->name('orders');
 // Route::get('wishlist','AccountController@accountwishlistindex')->name('wishlist');
 // Route::get('address','AccountController@accountaddressindex')->name('address');
 // Route::get('details','AccountController@accountdetailsindex')->name('details');
-
-Route::get('product','BooksController@productindex')->name('product');
-Route::get('books','BooksController@index')->name('books');
-Route::resource('book','BooksController');

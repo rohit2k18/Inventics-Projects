@@ -8,7 +8,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('product',1)}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product',1)}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-01.png" alt="The Book 01" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -58,7 +58,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('product',1)}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product',1)}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-02.png" alt="The Book 02" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -114,7 +114,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('product',1)}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product',1)}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-03.png" alt="The Book 03" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -165,7 +165,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('product',1)}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product',1)}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-04.png" alt="The Book 04" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -215,7 +215,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('product',1)}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product',1)}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/books/products/product-05.png" alt="The Book 05" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">

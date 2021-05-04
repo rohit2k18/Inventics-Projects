@@ -1,3 +1,10 @@
+@php
+if(isset($titlename))
+$temptitle=$titlename;
+else
+$temptitle = Route::currentRouteName();
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Books</title>
+  <title>{{$temptitle}}</title>
   <link rel="shortcut icon" type="image/x-icon" href="{{asset('images/favicon.ico')}}" />
   <!-- Vendor CSS -->
   <link href="{{asset('css/vendor/bootstrap.min.css')}}" rel="stylesheet">
@@ -40,12 +47,12 @@ class="template-product has-smround-btns has-loader-bg equal-height has-sm-conta
         {
           if($tempBooks)
           {
-            @endphp @include('layout.navbar') @php
+            @endphp @include('layout.Navigation.navbar') @php
           }
         }
         else
         {
-          @endphp @include('layout.navbar_second') @php
+          @endphp @include('layout.Navigation.navbar_second') @php
         }
       @endphp
       </div>

@@ -7,9 +7,21 @@ use Illuminate\Http\Request;
 
 class AccountController extends Controller
 {
-    
+    public $accountPages=array("details","orders","wishlist","address");
+
     public function index($page)
     {
+        $flag=false;
+        foreach($this->accountPages as $ss)
+        {
+            if($page==$ss)
+            {
+                $flag=true;
+            }
+        }
+        if(!$flag)
+        return redirect()->route('Error');
+
         return view('Account.index',compact('page'));
     }
 
@@ -79,6 +91,7 @@ class AccountController extends Controller
         //
     }
 
+
     public function loginindex()
     {
         return view('Account.Login.index');
@@ -113,7 +126,13 @@ class AccountController extends Controller
     {
         return view('CommingSoon.index');
     }
+    public function contactusindex()
+    {
+        $hidefooterinfo=true;
+        return view('ContactUs.index',compact('hidefooterinfo'));
+    }
 
+    //-------------------------------------category-------------------------
     public function ecategoryindex()
     {
         $tempcategory=true;
@@ -123,14 +142,42 @@ class AccountController extends Controller
     public function categoryindex()
     {
         $tempcategory=true;
-        return view('Category.index',compact('tempcategory'));
+        $titlename="Account Category";
+        return view('Category.index',compact('tempcategory','titlename'));
+    }
+    //--------------------------------------------------------------categoryend
+
+    //-------------------------------------cart-------------------------
+    public function cartpageindex()
+    {
+        return view('Cart.CartPage.index');
     }
 
-    public function contactusindex()
+    public function emptycartpageindex()
     {
-        $hidefooterinfo=true;
-        return view('ContactUs.index',compact('hidefooterinfo'));
+        return view('Cart.EmptyCart.index');
     }
+
+    public function cehckoutindex()
+    {
+        return view('Cart.CheckOut.index');
+    }
+    //----------------------------------------------------end cart-
+
+    //----------------------------------------blog--------------
+    public function blogcategoryindex()
+    {
+        return view('Blog.BlogCategory.index');
+    }
+    public function bloglistindex()
+    {
+        return view('Blog.BlogList.index');
+    }
+    public function blogpostindex()
+    {
+        return view('Blog.BlogPost.index');
+    }
+    //-----------------------------------------------end blog
     
     // public function accountaddressindex()
     // {
