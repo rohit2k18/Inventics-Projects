@@ -110,7 +110,7 @@
               <div class="post-prw">
                 <div class="row vert-margin-middle">
                   <div class="post-prw-img col-sm-9">
-                    <a href="blog-post.html" class="d-block image-container" style="padding-bottom: 88.92%">
+                    <a href="{{route('BlogPost')}}" class="d-block image-container" style="padding-bottom: 88.92%">
                       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/blog/blog-07.png" class="lazyload fade-up" alt="Blog Title">
                     </a>
                   </div>
@@ -128,7 +128,7 @@
               <div class="post-prw">
                 <div class="row vert-margin-middle">
                   <div class="post-prw-img col-sm-9">
-                    <a href="blog-post.html" class="d-block image-container" style="padding-bottom: 88.92%">
+                    <a href="{{route('BlogPost')}}" class="d-block image-container" style="padding-bottom: 88.92%">
                       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/blog/blog-08.png" class="lazyload fade-up" alt="Blog Title">
                     </a>
                   </div>

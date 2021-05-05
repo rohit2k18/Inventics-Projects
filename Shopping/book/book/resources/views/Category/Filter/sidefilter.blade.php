@@ -35,7 +35,7 @@
                 </div>
                 <div class="sidebar-block_content">
                   <ul class="category-list">
-                    <li class="active"><a href="category.html" title="Casual" class="open">Casual&nbsp;<span>(30)</span></a>
+                    <li class="active"><a href="{{route('Category')}}" title="Casual" class="open">Casual&nbsp;<span>(30)</span></a>
                       <div class="toggle-category js-toggle-category"><span><i class="icon-angle-down"></i></span></div>
                       <ul class="category-list category-list">
                         <li><a href="category.html" title="Men">Men&nbsp;<span>(10)</span></a></li>

@@ -11,7 +11,7 @@
           <div class="col-sm-9 col-md-6">
             <div class="post-prw-simple">
               <div class="post-prw-img">
-                <a href="blog-post.html" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
+                <a href="{{route('BlogPost')}}" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/blog/blog-02.png" class="lazyload fade-up" alt="Post name">
                 </a>
               </div>
@@ -19,13 +19,13 @@
                 <div class="post-prw-date">4 days ago</div>
                 <div class="post-prw-author">by admin</div>
               </div>
-              <h4 class="post-prw-title"><a href="blog-post.html">Premium Template</a></h4>
+              <h4 class="post-prw-title"><a href="{{route('BlogPost')}}">Premium Template</a></h4>
             </div>
           </div>
           <div class="col-sm-9 col-md-6">
             <div class="post-prw-simple">
               <div class="post-prw-img">
-                <a href="blog-post.html" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
+                <a href="{{route('BlogPost')}}" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/blog/blog-06.png" class="lazyload fade-up" alt="Post name">
                 </a>
               </div>
@@ -33,13 +33,13 @@
                 <div class="post-prw-date">5 days ago</div>
                 <div class="post-prw-author">by admin</div>
               </div>
-              <h4 class="post-prw-title"><a href="blog-post.html">Youtube Slider</a></h4>
+              <h4 class="post-prw-title"><a href="{{route('BlogPost')}}">Youtube Slider</a></h4>
             </div>
           </div>
           <div class="col-sm-9 col-md-6">
             <div class="post-prw-simple">
               <div class="post-prw-img">
-                <a href="blog-post.html" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
+                <a href="{{route('BlogPost')}}" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/blog/blog-03.png" class="lazyload fade-up" alt="Post name">
                 </a>
               </div>
@@ -47,13 +47,13 @@
                 <div class="post-prw-date">10 days ago</div>
                 <div class="post-prw-author">by admin</div>
               </div>
-              <h4 class="post-prw-title"><a href="blog-post.html">FOXic eCommerce</a></h4>
+              <h4 class="post-prw-title"><a href="{{route('BlogPost')}}">FOXic eCommerce</a></h4>
             </div>
           </div>
           <div class="col-sm-9 col-md-6">
             <div class="post-prw-simple">
               <div class="post-prw-img">
-                <a href="blog-post.html" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
+                <a href="{{route('BlogPost')}}" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/blog/blog-04.png" class="lazyload fade-up" alt="Post name">
                 </a>
               </div>
@@ -61,13 +61,13 @@
                 <div class="post-prw-date">14 days ago</div>
                 <div class="post-prw-author">by admin</div>
               </div>
-              <h4 class="post-prw-title"><a href="blog-post.html">20+ Awesome Skins</a></h4>
+              <h4 class="post-prw-title"><a href="{{route('BlogPost')}}">20+ Awesome Skins</a></h4>
             </div>
           </div>
           <div class="col-sm-9 col-md-6">
             <div class="post-prw-simple">
               <div class="post-prw-img">
-                <a href="blog-post.html" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
+                <a href="{{route('BlogPost')}}" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/blog/blog-05.png" class="lazyload fade-up" alt="Post name">
                 </a>
               </div>
@@ -75,18 +75,18 @@
                 <div class="post-prw-date">18 days ago</div>
                 <div class="post-prw-author">by admin</div>
               </div>
-              <h4 class="post-prw-title"><a href="blog-post.html">Creative Template</a></h4>
+              <h4 class="post-prw-title"><a href="{{route('BlogPost')}}">Creative Template</a></h4>
             </div>
           </div>
           <div class="col-sm-9 col-md-6">
             <div class="post-prw-simple">
               <div class="post-prw-img">
-                <a href="blog-post.html" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
+                <a href="{{route('BlogPost')}}" class="image-hover-scale image-container" style="padding-bottom: 54.44%">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/blog/blog-01.png" class="lazyload fade-up" alt="Post name">
                 </a>
               </div>
               <div class="post-prw-date">20 days ago</div>
-              <h4 class="post-prw-title"><a href="blog-post.html">SEO Optimized</a></h4>
+              <h4 class="post-prw-title"><a href="{{route('BlogPost')}}">SEO Optimized</a></h4>
             </div>
           </div>
         </div>

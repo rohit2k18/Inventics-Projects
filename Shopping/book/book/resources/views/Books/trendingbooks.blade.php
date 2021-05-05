@@ -5,16 +5,16 @@
           <div class="title-wrap title-tabs-wrap text-center js-title-tabs">
             <div class="title-tabs">
               <h2 class="h3-style">
-                <a href="ajax/ajax-product-tab-books-01.json" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Romance</span></a>
+                <a href="{{asset('ajax/ajax-product-tab-books-01.json')}}" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Romance</span></a>
               </h2>
               <h2 class="h3-style">
-                <a href="ajax/ajax-product-tab-books-02.json" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Adventure</span></a>
+                <a href="{{asset('ajax/ajax-product-tab-books-02.json')}}" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Adventure</span></a>
               </h2>
               <h2 class="h3-style">
-                <a href="ajax/ajax-product-tab-books-03.json" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Poetry</span></a>
+                <a href="{{asset('ajax/ajax-product-tab-books-03.json')}}" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Poetry</span></a>
               </h2>
               <h2 class="h3-style">
-                <a href="ajax/ajax-product-tab-books-04.json" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Thriller</span></a>
+                <a href="{{asset('ajax/ajax-product-tab-books-04.json')}}" data-total="5" data-loaded="5" data-grid-tab-title><span class="title-tabs-text theme-font">Thriller</span></a>
               </h2>
             </div>
           </div>

@@ -58,13 +58,13 @@
                           
                         </ul>
                       </li>
-                      <li><a href="account-create.html">Account</a>
+                      <li><a href="{{route('Account','details')}}">Account</a>
                         <ul>
                           <li><a href="{{route('Login')}}">Login</a></li>
                           <li><a href="{{route('SignUp')}}">Create account</a></li>
                           <li><a href="{{route('Account','details')}}">Account details</a></li>
                           <li><a href="{{route('Account','address')}}">Account addresses</a></li>
-                          <li><a href="{{route('Account','history')}}">Order History</a></li>
+                          <li><a href="{{route('Account','orders')}}">Order History</a></li>
                           <li><a href="{{route('Account','wishlist')}}">Wishlist</a></li>
                         </ul>
                       </li>

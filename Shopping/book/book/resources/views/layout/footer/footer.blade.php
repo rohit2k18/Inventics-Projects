@@ -112,7 +112,7 @@
         <div class="row vert-margin-middle">
           <div class="col-sm footer-bottom-col-left">
             <div class="footer-logo">
-              <a href="index.html" class="logo"><img srcset="images/skins/books/logo-books-footer.png 1x, images/skins/books/logo-books-footer2x.png 2x" alt="Logo"></a>
+              <a href="{{route('Books')}}" class="logo"><img srcset="images/skins/books/logo-books-footer.png 1x, images/skins/books/logo-books-footer2x.png 2x" alt="Logo"></a>
             </div>
           </div>
           <div class="col-sm footer-bottom-col-right">

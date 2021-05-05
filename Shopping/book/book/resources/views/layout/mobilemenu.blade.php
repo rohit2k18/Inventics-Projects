@@ -12,7 +12,7 @@
               <a href="#" class="nav-viewall">view all</a>
             </div>
             <ul class="nav nav-level-1">
-              <li><a href="index.html">Layouts<span class="menu-label menu-label--color1">New</span><span class="arrow"><i class="icon-angle-right"></i></span></a>
+              <li><a href="{{route('Books')}}">Layouts<span class="menu-label menu-label--color1">New</span><span class="arrow"><i class="icon-angle-right"></i></span></a>
                 <ul class="nav-level-2">
                   <li><a href="index.html">Fashion (Default) Skin</a></li>
                   <li><a href="index-sport.html">Sport Skin</a></li>
@@ -21,7 +21,7 @@
                   <li><a href="index-food.html">Food Market Skin</a></li>
                   <li><a href="index-cosmetics.html">Cosmetics Skin</a></li>
                   <li><a href="index-fishing.html">Fishing Skin</a></li>
-                  <li><a href="#">Books Skin<span class="menu-label menu-label--color1">Coming Soon</span></a></li>
+                  <li><a href="{{route('Books')}}">Books Skin<span class="menu-label menu-label--color1">Coming Soon</span></a></li>
                   <li><a href="#">Electronics Skin<span class="menu-label menu-label--color2">Coming Soon</span></a></li>
                   <li><a href="#">Games Skin<span class="menu-label menu-label--color3">Coming Soon</span></a></li>
                   <li><a href="#">Vaping Skin<span class="menu-label">Coming Soon</span></a></li>
@@ -39,65 +39,51 @@
               </li>
               <li><a href="#">Pages<span class="arrow"><i class="icon-angle-right"></i></span></a>
                 <ul class="nav-level-2">
-                  <li><a href="product.html">Product page<span class="arrow"><i class="icon-angle-right"></i></span></a>
+                  <li><a href="{{route('Product')}}">Product page<span class="arrow"><i class="icon-angle-right"></i></span></a>
                     <ul class="nav-level-3">
-                      <li><a href="product.html">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
-                      <li><a href="product-2.html">Product page variant 2</a></li>
-                      <li><a href="product-3.html">Product page variant 3</a></li>
-                      <li><a href="product-4.html">Product page variant 4</a></li>
-                      <li><a href="product-5.html">Product page variant 5</a></li>
-                      <li><a href="product-6.html">Product page variant 6</a></li>
-                      <li><a href="product-7.html">Product page variant 7</a></li>
+                      <li><a href="{{route('Product')}}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
                     </ul>
                   </li>
-                  <li><a href="category.html">Category page<span class="arrow"><i class="icon-angle-right"></i></span></a>
+                  <li><a href="{{route('Category')}}">Category page<span class="arrow"><i class="icon-angle-right"></i></span></a>
                     <ul class="nav-level-3">
-                      <li><a href="category.html">Left sidebar filters</a></li>
-                      <li><a href="category-closed-filter.html">Closed filters</a></li>
-                      <li><a href="category-horizontal-filter.html">Horizontal filters</a></li>
-                      <li><a href="category-listview.html">Listing View</a></li>
-                      <li><a href="category-empty.html">Empty category</a></li>
+                      <li><a href="{{route('Category')}}">Listing View</a></li>
+                      <li><a href="{{route('EmptyCategory')}}">Empty category</a></li>
                     </ul>
                   </li>
-                  <li><a href="cart.html">Cart & Checkout<span class="arrow"><i class="icon-angle-right"></i></span></a>
+                  <li><a href="{{route('Cart')}}">Cart & Checkout<span class="arrow"><i class="icon-angle-right"></i></span></a>
                     <ul class="nav-level-3">
-                      <li><a href="cart.html">Cart Page</a></li>
-                      <li><a href="cart-empty.html">Empty cart</a></li>
-                      <li><a href="checkout.html">Checkout variant 1</a></li>
-                      <li><a href="checkout-2.html">Checkout variant 2</a></li>
-                      <li><a href="checkout-3.html">Checkout variant 3</a></li>
+                      <li><a href="{{route('Cart')}}">Cart Page</a></li>
+                      <li><a href="{{route('EmptyCart')}}">Empty cart</a></li>
+                      <li><a href="{{route('Checkout')}}">Checkout variant 1</a></li>
                     </ul>
                   </li>
-                  <li><a href="account-create.html">Account<span class="arrow"><i class="icon-angle-right"></i></span></a>
+                  <li><a href="{{route('Account','details')}}">Account<span class="arrow"><i class="icon-angle-right"></i></span></a>
                     <ul class="nav-level-3">
-                      <li><a href="account-create.html">Login</a></li>
-                      <li><a href="account-create.html">Create account</a></li>
-                      <li><a href="account-details.html">Account details</a></li>
-                      <li><a href="account-addresses.html">Account addresses</a></li>
-                      <li><a href="account-history.html">Order History</a></li>
-                      <li><a href="account-wishlist.html">Wishlist</a></li>
+                      <li><a href="{{route('Login')}}">Login</a></li>
+                      <li><a href="{{route('SignUp')}}">Create account</a></li>
+                      <li><a href="{{route('Account','details')}}">Account details</a></li>
+                      <li><a href="{{route('Account','address')}}">Account addresses</a></li>
+                      <li><a href="{{route('Account','orders')}}">Order History</a></li>
+                      <li><a href="{{route('Account','wishlist')}}">Wishlist</a></li>
                     </ul>
                   </li>
-                  <li><a href="blog.html">Blog<span class="arrow"><i class="icon-angle-right"></i></span></a>
+                  <li><a href="{{route('BlogCategory')}}">Blog<span class="arrow"><i class="icon-angle-right"></i></span></a>
                     <ul class="nav-level-3">
-                      <li><a href="blog.html">Right sidebar</a></li>
-                      <li><a href="blog-left-sidebar.html">Left sidebar</a></li>
-                      <li><a href="blog-without-sidebar.html">No sidebar</a></li>
-                      <li><a href="blog-sticky-sidebar.html">Sticky sidebar</a></li>
-                      <li><a href="blog-grid.html">Grid</a></li>
-                      <li><a href="blog-post.html">Blog post</a></li>
+                      <li><a href="{{route('BlogList')}}">Sticky sidebar</a></li>
+                      <li><a href="{{route('BlogCategory')}}">Grid</a></li>
+                      <li><a href="{{route('BlogPost')}}">Blog post</a></li>
                     </ul>
                   </li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="faq.html">Faq</a></li>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="404.html">404 Page</a></li>
+                  <li><a href="{{route('Gallery')}}">Gallery</a></li>
+                  <li><a href="{{route('FAQ')}}">Faq</a></li>
+                  <li><a href="{{route('AboutUs')}}">About Us</a></li>
+                  <li><a href="{{route('ContactUs')}}">Contact Us</a></li>
+                  <li><a href="{{route('Error')}}">404 Page</a></li>
                   <li><a href="typography.html">Typography</a></li>
-                  <li><a href="coming-soon.html" target="_blank">Coming soon</a></li>
+                  <li><a href="{{route('CommingSoon')}}" target="_blank">Coming soon</a></li>
                 </ul>
               </li>
-              <li><a href="category.html">New Arrivals<span class="arrow"><i class="icon-angle-right"></i></span></a>
+              <li><a href="{{route('Category')}}">New Arrivals<span class="arrow"><i class="icon-angle-right"></i></span></a>
                 <ul class="nav-level-2">
                   <li><a href="category.html">Shoes<span class="arrow"><i class="icon-angle-right"></i></span></a>
                     <ul class="nav-level-3">
@@ -199,9 +185,9 @@
       <div class="dropdn-content-block">
         <div class="dropdn-close"><span class="js-dropdn-close">Close</span></div>
         <ul>
-          <li><a href="account-create.html"><span>Log In</span><i class="icon-login"></i></a></li>
-          <li><a href="account-create.html"><span>Register</span><i class="icon-user2"></i></a></li>
-          <li><a href="checkout.html"><span>Checkout</span><i class="icon-card"></i></a></li>
+          <li><a href="{{route('Login')}}"><span>Log In</span><i class="icon-login"></i></a></li>
+          <li><a href="{{route('SignUp')}}"><span>Register</span><i class="icon-user2"></i></a></li>
+          <li><a href="{{route('Checkout')}}"><span>Checkout</span><i class="icon-card"></i></a></li>
         </ul>
         <div class="dropdn-form-wrapper">
           <h5>Quick Login</h5>
@@ -225,7 +211,7 @@
         <div class="minicart-drop-content js-dropdn-content-scroll">
           <div class="minicart-prd row">
             <div class="minicart-prd-image image-hover-scale-circle col">
-              <a href="product.html"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-01-1.jpg" alt=""></a>
+              <a href="{{route('Product')}}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-01-1.jpg" alt=""></a>
             </div>
             <div class="minicart-prd-info col">
               <div class="minicart-prd-tag">FOXic</div>
@@ -242,7 +228,7 @@
           </div>
           <div class="minicart-prd row">
             <div class="minicart-prd-image image-hover-scale-circle col">
-              <a href="product.html"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-16-1.jpg" alt=""></a>
+              <a href="{{route('Product')}}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-16-1.jpg" alt=""></a>
             </div>
             <div class="minicart-prd-info col">
               <div class="minicart-prd-tag">FOXic</div>
@@ -293,8 +279,8 @@
             <div class="minicart-drop-total-price col" data-header-cart-total="">$340</div>
           </div>
           <div class="minicart-drop-actions">
-            <a href="cart.html" class="btn btn--md btn--grey"><i class="icon-basket"></i><span>Cart Page</span></a>
-            <a href="checkout.html" class="btn btn--md"><i class="icon-checkout"></i><span>Check out</span></a>
+            <a href="{{route('Cart')}}" class="btn btn--md btn--grey"><i class="icon-basket"></i><span>Cart Page</span></a>
+            <a href="{{route('Checkout')}}" class="btn btn--md"><i class="icon-checkout"></i><span>Check out</span></a>
           </div>
           <ul class="payment-link mb-2">
             <li><i class="icon-amazon-logo"></i></li>

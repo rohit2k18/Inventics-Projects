@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-auto sticky-addcart_image">
-            <a href="product.html">
+            <a href="{{route('Product')}}">
               <img src="images/skins/fashion/products/product-01-1.jpg" alt="" />
             </a>
           </div>
@@ -50,20 +50,20 @@
           </div>
           <div class="col popup-addedtocart_info">
             <div class="row">
-              <a href="product.html" class="col-auto popup-addedtocart_image">
+              <a href="{{route('Product')}}" class="col-auto popup-addedtocart_image">
                 <span class="image-container w-100">
                   <img src="images/skins/fashion/products/product-01-1.jpg" alt="" />
                 </span>
               </a>
               <div class="col popup-addedtocart_text">
-                <a href="product.html" class="popup-addedtocart_title"></a>
-                <span class="popup-addedtocart_message">Added to <a href="cart.html" class="underline">Cart</a></span>
+                <a href="{{route('Product')}}" class="popup-addedtocart_title"></a>
+                <span class="popup-addedtocart_message">Added to <a href="{{route('Cart')}}" class="underline">Cart</a></span>
                 <span class="popup-addedtocart_error_message"></span>
               </div>
             </div>
           </div>
           <div class="col-auto popup-addedtocart_actions">
-            <span>You can continue</span> <a href="#" class="btn btn--grey btn--sm js-open-drop" data-panel="#dropdnMinicart"><i class="icon-basket"></i><span>Check Cart</span></a> <span>or</span> <a href="checkout.html" class="btn btn--invert btn--sm"><i class="icon-envelope-1"></i><span>Check out</span></a>
+            <span>You can continue</span> <a href="#" class="btn btn--grey btn--sm js-open-drop" data-panel="#dropdnMinicart"><i class="icon-basket"></i><span>Check Cart</span></a> <span>or</span> <a href="{{route('Checkout')}}" class="btn btn--invert btn--sm"><i class="icon-envelope-1"></i><span>Check out</span></a>
           </div>
         </div>
       </div>

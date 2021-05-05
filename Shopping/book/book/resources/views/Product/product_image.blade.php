@@ -9,7 +9,7 @@
                     <div data-value="Beige"><span class="prd-img"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/product-page/product-02.jpg" class="lazyload fade-up elzoom" alt="" data-zoom-image="images/skins/fashion/product-page/product-02.jpg" /></span></div>
                     <div class="inner-video js-inner-video">
                       <video preload="metadata" controls="controls" playsinline="playsinline">
-                        <source src="images/skins/fashion/product-page/product-video.mp4" type="video/mp4">
+                        <source src="{{asset('images/skins/fashion/product-page/product-video.mp4')}}" type="video/mp4">
                       </video>
                     </div>
                     <div data-value="Beige"><span class="prd-img"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/product-page/product-03.jpg" class="lazyload fade-up elzoom" alt="" data-zoom-image="images/skins/fashion/product-page/product-03.jpg" /></span></div>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="prd-block_main-image-links">
                   <a data-fancybox data-width="900" href="https://www.youtube.com/watch?v=Zk3kr7J_v3Q" class="prd-block_video-link"><i class="icon-video"></i></a>
-                  <a href="images/products//product-01.jpg" class="prd-block_zoom-link"><i class="icon-zoom-in"></i></a>
+                  <a href="{{asset('images/products//product-01.jpg')}}" class="prd-block_zoom-link"><i class="icon-zoom-in"></i></a>
                 </div>
               </div>
               <div class="product-previews-wrapper">

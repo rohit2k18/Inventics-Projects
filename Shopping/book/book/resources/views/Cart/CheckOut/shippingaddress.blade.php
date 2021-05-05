@@ -1,7 +1,7 @@
 <div class="card">
               <div class="card-body">
                 <h2>Shipping Address</h2>
-                <p><a href="account-create.html">Login</a> or <a href="account-create.html">Register</a> for faster payment.</p>
+                <p><a href="{{route('Login')}}">Login</a> or <a href="{{route('SignUp')}}">Register</a> for faster payment.</p>
                 <div class="row mt-2">
                   <div class="col-sm-9">
                     <label>First Name:</label>

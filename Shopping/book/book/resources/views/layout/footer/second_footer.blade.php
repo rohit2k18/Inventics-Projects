@@ -17,7 +17,7 @@
           <div class="col-lg col-xl last-mobile">
             <div class="footer-block">
               <div class="footer-logo">
-                <a href="index.html"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/logo-footer.png 1x, images/logo-footer2x.png 2x" alt="Logo"></a>
+                <a href="{{route('Books')}}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-srcset="images/logo-footer.png 1x, images/logo-footer2x.png 2x" alt="Logo"></a>
               </div>
               <div class="collapsed-content">
                 <ul>
@@ -61,8 +61,8 @@
               </div>
               <div class="collapsed-content">
                 <ul>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="{{route('AboutUs')}}">About Us</a></li>
+                  <li><a href="{{route('ContactUs')}}">Contact Us</a></li>
                   <li><a href="typography.html">Terms & Conditions</a></li>
                   <li><a href="typography.html">Returns & Exchanges</a></li>
                   <li><a href="typography.html">Shipping & Delivery</a></li>
@@ -78,11 +78,11 @@
               </div>
               <div class="collapsed-content">
                 <ul>
-                  <li><a href="account-details.html">My Account</a></li>
-                  <li><a href="cart.html">View Cart</a></li>
-                  <li><a href="account-wishlist.html">My Wishlist</a></li>
-                  <li><a href="account-history.html">Order Status</a></li>
-                  <li><a href="account-history.html">Track My Order</a></li>
+                  <li><a href="{{route('Account','details')}}">My Account</a></li>
+                  <li><a href="{{route('Cart')}}">View Cart</a></li>
+                  <li><a href="{{route('Account','wishlist')}}">My Wishlist</a></li>
+                  <li><a href="{{route('Account','orders')}}">Order Status</a></li>
+                  <li><a href="{{route('Account','orders')}}">Track My Order</a></li>
                 </ul>
               </div>
             </div>
@@ -125,7 +125,7 @@
       <div class="container">
         <div class="row">
           <div class="col-auto sticky-addcart_image">
-            <a href="product.html">
+            <a href="{{route('Product')}}">
               <img src="images/skins/fashion/products/product-01-1.jpg" alt="" />
             </a>
           </div>
@@ -171,20 +171,20 @@
           </div>
           <div class="col popup-addedtocart_info">
             <div class="row">
-              <a href="product.html" class="col-auto popup-addedtocart_image">
+              <a href="{{route('Product')}}" class="col-auto popup-addedtocart_image">
                 <span class="image-container w-100">
                   <img src="images/skins/fashion/products/product-01-1.jpg" alt="" />
                 </span>
               </a>
               <div class="col popup-addedtocart_text">
-                <a href="product.html" class="popup-addedtocart_title"></a>
-                <span class="popup-addedtocart_message">Added to <a href="cart.html" class="underline">Cart</a></span>
+                <a href="{{route('Product')}}" class="popup-addedtocart_title"></a>
+                <span class="popup-addedtocart_message">Added to <a href="{{route('Cart')}}" class="underline">Cart</a></span>
                 <span class="popup-addedtocart_error_message"></span>
               </div>
             </div>
           </div>
           <div class="col-auto popup-addedtocart_actions">
-            <span>You can continue</span> <a href="#" class="btn btn--grey btn--sm js-open-drop" data-panel="#dropdnMinicart"><i class="icon-basket"></i><span>Check Cart</span></a> <span>or</span> <a href="checkout.html" class="btn btn--invert btn--sm"><i class="icon-envelope-1"></i><span>Check out</span></a>
+            <span>You can continue</span> <a href="#" class="btn btn--grey btn--sm js-open-drop" data-panel="#dropdnMinicart"><i class="icon-basket"></i><span>Check Cart</span></a> <span>or</span> <a href="{{route('Checkout')}}" class="btn btn--invert btn--sm"><i class="icon-envelope-1"></i><span>Check out</span></a>
           </div>
         </div>
       </div>
@@ -254,7 +254,7 @@
             <div class="payment-notification-content-wrapper">
               <div class="payment-notification-content">
                 <div class="payment-notification-text">Someone purchased</div>
-                <a href="product.html" class="payment-notification-name js-pn-name js-pn-link">Applewatch</a>
+                <a href="{{route('Product')}}" class="payment-notification-name js-pn-name js-pn-link">Applewatch</a>
                 <div class="payment-notification-bottom">
                   <div class="payment-notification-when"><span class="js-pn-time">32</span> min ago</div>
                   <div class="payment-notification-from">from <span class="js-pn-from">Riverside</span></div>

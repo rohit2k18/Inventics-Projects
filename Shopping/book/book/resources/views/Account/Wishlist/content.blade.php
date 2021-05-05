@@ -4,7 +4,7 @@
             <div class="empty-wishlist js-empty-wishlist text-center py-3 py-sm-5 d-none" style="opacity: 0;">
               <h3>Your Wishlist is empty</h3>
               <div class="mt-5">
-                <a href="index.html" class="btn">Continue shopping</a>
+                <a href="{{route('Books')}}" class="btn">Continue shopping</a>
               </div>
             </div>
             <div class="prd-grid-wrap position-relative">
@@ -12,7 +12,7 @@
                 <div class="prd prd--in-wishlist prd--style2 prd-labels--max prd-labels-shadow "> 
                   <div class="prd-inside">
                     <div class="prd-img-area">
-                      <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
                         <img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-04-1.jpg')}}" alt="Suede Leather Mini Skirt" class="js-prd-img lazyload fade-up">
                         <div class="foxic-loader"></div>
                         <div class="prd-big-squared-labels">
@@ -35,7 +35,7 @@
                         </div>
                         <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                         <div class="prd-tag"><a href="#">Bigsteps</a></div>
-                        <h2 class="prd-title"><a href="product.html">Suede Leather Mini Skirt</a></h2>
+                        <h2 class="prd-title"><a href="{{route('Product')}}">Suede Leather Mini Skirt</a></h2>
                         <div class="prd-description">
                           Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                         </div>
@@ -62,7 +62,7 @@
                 <div class="prd prd--in-wishlist prd--style2 prd-labels--max prd-labels-shadow ">
                   <div class="prd-inside">
                     <div class="prd-img-area">
-                      <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
                         <img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-11-1.jpg')}}" alt="Jogger Lounge Pants" class="js-prd-img lazyload fade-up">
                         <div class="foxic-loader"></div>
                         <div class="prd-big-squared-labels">
@@ -90,7 +90,7 @@
                         </div>
                         <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                         <div class="prd-tag"><a href="#">FOXic</a></div>
-                        <h2 class="prd-title"><a href="product.html">Jogger Lounge Pants</a></h2>
+                        <h2 class="prd-title"><a href="{{route('Product')}}">Jogger Lounge Pants</a></h2>
                         <div class="prd-description">
                           Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                         </div>
@@ -118,7 +118,7 @@
                 <div class="prd prd--in-wishlist prd--style2 prd-labels--max prd-labels-shadow ">
                   <div class="prd-inside">
                     <div class="prd-img-area">
-                      <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
                         <img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-15-1.jpg')}}" alt="Stand Up Collar Shirt" class="js-prd-img lazyload fade-up">
                         <div class="foxic-loader"></div>
                         <div class="prd-big-squared-labels">
@@ -142,7 +142,7 @@
                         </div>
                         <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                         <div class="prd-tag"><a href="#">FOXic</a></div>
-                        <h2 class="prd-title"><a href="product.html">Stand Up Collar Shirt</a></h2>
+                        <h2 class="prd-title"><a href="{{route('Product')}}">Stand Up Collar Shirt</a></h2>
                         <div class="prd-description">
                           Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                         </div>
@@ -169,7 +169,7 @@
                 <div class="prd prd--in-wishlist prd--style2 prd-labels--max prd-labels-shadow ">
                   <div class="prd-inside">
                     <div class="prd-img-area">
-                      <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
                         <img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-16-1.jpg')}}" alt="Cascade Casual Shirt" class="js-prd-img lazyload fade-up">
                         <div class="foxic-loader"></div>
                         <div class="prd-big-squared-labels">
@@ -200,7 +200,7 @@
                         </div>
                         <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                         <div class="prd-tag"><a href="#">FOXic</a></div>
-                        <h2 class="prd-title"><a href="product.html">Cascade Casual Shirt</a></h2>
+                        <h2 class="prd-title"><a href="{{route('Product')}}">Cascade Casual Shirt</a></h2>
                         <div class="prd-description">
                           Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                         </div>
@@ -227,7 +227,7 @@
                 <div class="prd prd--in-wishlist prd--style2 prd-labels--max prd-labels-shadow ">
                   <div class="prd-inside">
                     <div class="prd-img-area">
-                      <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
                         <img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-17-1.jpg')}}" alt="Stand Collar Shirt" class="js-prd-img lazyload fade-up">
                         <div class="foxic-loader"></div>
                         <div class="prd-big-squared-labels">
@@ -255,7 +255,7 @@
                         </div>
                         <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                         <div class="prd-tag"><a href="#">FOXic</a></div>
-                        <h2 class="prd-title"><a href="product.html">Stand Collar Shirt</a></h2>
+                        <h2 class="prd-title"><a href="{{route('Product')}}">Stand Collar Shirt</a></h2>
                         <div class="prd-description">
                           Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                         </div>
@@ -283,7 +283,7 @@
                 <div class="prd prd--in-wishlist prd--style2 prd-labels--max prd-labels-shadow ">
                   <div class="prd-inside">
                     <div class="prd-img-area">
-                      <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
                         <img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-22-1.jpg')}}" alt="Watch with Black Leather Strap" class="js-prd-img lazyload fade-up">
                         <div class="foxic-loader"></div>
                         <div class="prd-big-squared-labels">
@@ -307,7 +307,7 @@
                         </div>
                         <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                         <div class="prd-tag"><a href="#">FOXic</a></div>
-                        <h2 class="prd-title"><a href="product.html">Watch with Black Leather Strap</a></h2>
+                        <h2 class="prd-title"><a href="{{route('Product')}}">Watch with Black Leather Strap</a></h2>
                         <div class="prd-description">
                           Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                         </div>
@@ -334,7 +334,7 @@
                 <div class="prd prd--in-wishlist prd--style2 prd-labels--max prd-labels-shadow ">
                   <div class="prd-inside">
                     <div class="prd-img-area">
-                      <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
                         <img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-23-1.jpg')}}" alt="Combined Chunky Sneakers" class="js-prd-img lazyload fade-up">
                         <div class="foxic-loader"></div>
                         <div class="prd-big-squared-labels">
@@ -357,7 +357,7 @@
                         </div>
                         <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                         <div class="prd-tag"><a href="#">FOXic</a></div>
-                        <h2 class="prd-title"><a href="product.html">Combined Chunky Sneakers</a></h2>
+                        <h2 class="prd-title"><a href="{{route('Product')}}">Combined Chunky Sneakers</a></h2>
                         <div class="prd-description">
                           Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                         </div>
@@ -384,7 +384,7 @@
                 <div class="prd prd--in-wishlist prd--style2 prd-labels--max prd-labels-shadow ">
                   <div class="prd-inside">
                     <div class="prd-img-area">
-                      <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
                         <img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-24-1.jpg')}}" alt="Lace up Fashion Sneaker" class="js-prd-img lazyload fade-up">
                         <div class="foxic-loader"></div>
                         <div class="prd-big-squared-labels">
@@ -412,7 +412,7 @@
                         </div>
                         <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                         <div class="prd-tag"><a href="#">FOXic</a></div>
-                        <h2 class="prd-title"><a href="product.html">Lace up Fashion Sneaker</a></h2>
+                        <h2 class="prd-title"><a href="{{route('Product')}}">Lace up Fashion Sneaker</a></h2>
                         <div class="prd-description">
                           Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                         </div>
@@ -440,7 +440,7 @@
                 <div class="prd prd--in-wishlist prd--style2 prd-labels--max prd-labels-shadow ">
                   <div class="prd-inside">
                     <div class="prd-img-area">
-                      <a href="product.html" class="prd-img image-hover-scale image-container">
+                      <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
                         <img src="{{asset('data:image/gif')}};base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/skins/fashion/products/product-25-1.jpg')}}" alt="Fashion Waist Bag" class="js-prd-img lazyload fade-up">
                         <div class="foxic-loader"></div>
                         <div class="prd-big-squared-labels">
@@ -463,7 +463,7 @@
                         </div>
                         <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                         <div class="prd-tag"><a href="#">FOXic</a></div>
-                        <h2 class="prd-title"><a href="product.html">Fashion Waist Bag</a></h2>
+                        <h2 class="prd-title"><a href="{{route('Product')}}">Fashion Waist Bag</a></h2>
                         <div class="prd-description">
                           Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                         </div>

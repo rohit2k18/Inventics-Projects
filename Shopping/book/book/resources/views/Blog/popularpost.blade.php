@@ -1,7 +1,7 @@
 <div class="aside-block">
                 <h2 class="text-uppercase">Popular Posts</h2>
                 <div class="post-prw-simple-sm">
-                  <a href="blog-post.html" class="post-prw-img">
+                  <a href="{{route('BlogPost')}}" class="post-prw-img">
                     <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/blog/blog-05.png" class="lazyload fade-up" alt="">
                   </a>
                   <div class="post-prw-links">

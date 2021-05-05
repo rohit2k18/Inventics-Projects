@@ -16,7 +16,7 @@
                 </div>
                 <div class="cart-table-prd-content-wrap">
                   <div class="cart-table-prd-info">
-                    <h2 class="cart-table-prd-name"><a href="product.html">Leather Pegged Pants</a></h2>
+                    <h2 class="cart-table-prd-name"><a href="{{route('Product')}}">Leather Pegged Pants</a></h2>
                   </div>
                   <div class="cart-table-prd-qty">
                     <div class="qty qty-changer">
@@ -34,7 +34,7 @@
                 </div>
                 <div class="cart-table-prd-content-wrap">
                   <div class="cart-table-prd-info">
-                    <h2 class="cart-table-prd-name"><a href="product.html">Cascade Casual Shirt</a></h2>
+                    <h2 class="cart-table-prd-name"><a href="{{route('Product')}}">Cascade Casual Shirt</a></h2>
                   </div>
                   <div class="cart-table-prd-qty">
                     <div class="qty qty-changer">
