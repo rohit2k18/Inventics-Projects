@@ -125,7 +125,9 @@ class AccountController extends Controller
     public function commingsoonindex()
     {
         return view('CommingSoon.index');
+    
     }
+    
     public function contactusindex()
     {
         $hidefooterinfo=true;
@@ -177,6 +179,7 @@ class AccountController extends Controller
     {
         return view('Blog.BlogPost.index');
     }
+    //test
     //-----------------------------------------------end blog
     
     // public function accountaddressindex()
