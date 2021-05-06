@@ -43,3 +43,5 @@ Image intervention
 				$blogs->image=$filename;
 			}
 		
+	7.Getting images from blade page
+		<img style="height:40%;width:40%;" src="{{asset('image/'.$blog->image)}}" alt="">
