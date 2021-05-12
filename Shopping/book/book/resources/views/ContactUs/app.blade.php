@@ -597,7 +597,7 @@
                       <li><a href="blog-grid.html">Grid</a></li>
                       <li><a href="blog-post.html">Blog post</a></li>
                     </ul>
-                  </li>
+                  </li> 
                   <li><a href="gallery.html">Gallery</a></li>
                   <li><a href="faq.html">Faq</a></li>
                   <li><a href="about.html">About Us</a></li>

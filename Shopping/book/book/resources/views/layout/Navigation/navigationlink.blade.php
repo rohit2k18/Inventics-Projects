@@ -1,40 +1,37 @@
+@php 
+  $flag=0;
+  
+@endphp
 <div class="hdr-nav hide-mobile nav-holder justify-content-center">
+
               <!--mmenu-->
               <ul class="mmenu mmenu-js">
-                <li class="mmenu-item--simple"><a href="#" class="active"><span>Home</span></a>
+                @foreach($categories as $cat)
+                  @php
+                    $subcat=array();
+                    foreach($sub_categories as $sub_cat){
+                    if($sub_cat->cat_sub_name==$cat->name)
+                     array_push($subcat,$sub_cat->name);
+                    }
+                  @endphp
+                <li class="mmenu-item--simple"><a href="#" ><span>{{$cat->name}}</span></a>
                   <div class="mmenu-submenu d-flex">
                     <ul class="submenu-list mt-0">
-                      <li><a href="index.html">Fashion (Default) Skin</a><span class="submenu-link-image"><img src="images/screen/screen01.png" alt=""></span></li>
-                      <li><a href="index-sport.html">Sport Skin</a><span class="submenu-link-image"><img src="images/screen/screen-sport.png" alt=""></span></li>
-                      <li><a href="{{route('Books')}}">Books Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="images/screen/screen-books.png" alt=""></span></li>
-                      <li><a href="index-electronics.html">Electronics Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="images/screen/screen-electronics.png" alt=""></span></li>
-                      <li><a href="index-viping.html">Vaping Skin <span class="menu-label  menu-label--color3">NEW</span></a><span class="submenu-link-image"><img src="images/screen/screen-vaping.png" alt=""></span></li>
-                      <li><a href="index-pets.html">Pets Skin</a><span class="submenu-link-image"><img src="images/screen/screen-pets.png" alt=""></span></li>
-                      <li><a href="index-lingeries.html">Lingeries Skin</a><span class="submenu-link-image"><img src="images/screen/screen-lingeries.png" alt=""></span></li>
-                      <li><a href="index-games.html">Games Skin</a><span class="submenu-link-image"><img src="images/screen/screen-games.png" alt=""></span></li>
-                      <li><a href="index-helloween.html">Halloween Skin</a><span class="submenu-link-image"><img src="images/screen/screen-halloween.png" alt=""></span></li>
-                      <li><a href="index-medical.html">Medical Skin</a><span class="submenu-link-image"><img src="images/screen/screen-medical.png" alt=""></span></li>
-                      <li><a href="index-food.html">Food Market Skin</a><span class="submenu-link-image"><img src="images/screen/screen-food.png" alt=""></span></li>
-                      <li><a href="index-cosmetics.html">Cosmetics Skin</a><span class="submenu-link-image"><img src="images/screen/screen-cosmetics.png" alt=""></span></li>
-                      <li><a href="index-fishing.html">Fishing Skin</a><span class="submenu-link-image"><img src="images/screen/screen-fishing.png" alt=""></span></li>
+                    @for($i=0;$i<count($subcat)/2;$i++)
+                      <li><a href="index.html">{{$subcat[$i]}}</a></li>
+                    @endfor
+
+                    @if(count($subcat)>1)
                     </ul>
                     <ul class="submenu-list mt-0">
-                      <li><a href="#">Cups&Mugs Skin <span class="menu-label menu-label--color1">Coming Soon</span></a><span class="submenu-link-image"><img src="images/screen/screen-cups.png" alt=""></span></li>
-                      <li><a href="#">Bikes Skin <span class="menu-label menu-label--color2">Coming Soon</span></a><span class="submenu-link-image"><img src="images/screen/screen-bikes.png" alt=""></span></li>
-                      <li><a href="#">T-Shirts Skin <span class="menu-label">Coming Soon</span></a><span class="submenu-link-image"><img src="images/screen/screen-tshirts.png" alt=""></span></li>
-                      <li><a href="index-02.html">Home page 2</a><span class="submenu-link-image"><img src="images/screen/screen02.png" alt=""></span></li>
-                      <li><a href="index-03.html">Home page 3</a><span class="submenu-link-image"><img src="images/screen/screen03.png" alt=""></span></li>
-                      <li><a href="index-04.html">Home page 4</a><span class="submenu-link-image"><img src="images/screen/screen04.png" alt=""></span></li>
-                      <li><a href="index-05.html">Home page 5</a><span class="submenu-link-image"><img src="images/screen/screen05.png" alt=""></span></li>
-                      <li><a href="index-06.html">Home page 6</a><span class="submenu-link-image"><img src="images/screen/screen06.png" alt=""></span></li>
-                      <li><a href="index-07.html">Home page 7</a><span class="submenu-link-image"><img src="images/screen/screen07.png" alt=""></span></li>
-                      <li><a href="index-08.html">Home page 8</a><span class="submenu-link-image"><img src="images/screen/screen08.png" alt=""></span></li>
-                      <li><a href="index-09.html">Home page 9</a><span class="submenu-link-image"><img src="images/screen/screen09.png" alt=""></span></li>
-                      <li><a href="index-10.html">Home page 10</a><span class="submenu-link-image"><img src="images/screen/screen10.png" alt=""></span></li>
-                      <li><a href="index-rtl.html">Home page RTL</a><span class="submenu-link-image"><img src="images/screen/screen-rtl.png" alt=""></span></li>
+                      @for($i=count($subcat)/2;$i<count($subcat);$i++)
+                        <li><a href="index.html">{{$subcat[$i]}}</a></li>
+                      @endfor
                     </ul>
+                    @endif
                   </div>
                 </li>
+                @endforeach
                 <li class="mmenu-item--simple"><a href="#">Pages</a>
                   <div class="mmenu-submenu">
                     <ul class="submenu-list">
@@ -85,6 +82,7 @@
                     </ul>
                   </div>
                 </li>
+                
                 <li class="mmenu-item--mega"><a href="collections.html"><span>Books<span class="menu-label menu-label--color1">SKIN</span></span></a>
                   <div class="mmenu-submenu mmenu-submenu--has-bottom">
                     <div class="mmenu-submenu-inside">
@@ -162,7 +160,10 @@
                     </div>
                   </div>
                 </li>
-                <li><a href="#buytheme" style="color:#d63434"><span>Buy Theme</span></a></li>
+                
+
+                
+
               </ul>
               <!--/mmenu-->
             </div>

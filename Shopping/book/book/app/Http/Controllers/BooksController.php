@@ -2,20 +2,38 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use App\Books;
 use Illuminate\Http\Request;
 
 class BooksController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
+        $categories=DB::table('category_groups')
+        ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
+        ->where('category_groups.name','Electronics')->get();
+        
+        //$books=DB::table('category_sub_groups')->paginate(10);
+        $sub_categories=DB::table('category_groups')
+        ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
+        ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
+        ->where('category_groups.name','Electronics')
+        ->select('categories.*','category_sub_groups.name as cat_sub_name')->get();
+
+        $cat_product=DB::table('category_groups')
+        ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
+        ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
+        
+        ->join('category_product', 'categories.id', '=', 'category_product.category_id')
+        ->join('products', 'category_product.product_id', '=', 'products.id')
+        ->where('category_groups.name','Apparel')
+        ->select('products.*',)->get();
+        //dd($cat_product);
         $tempBooks=true;
-       return view('Books.index',compact('tempBooks'));
+
+        return view('Books.index',compact('tempBooks','categories','sub_categories'));
     }
 
     public function productindex()
@@ -24,67 +42,36 @@ class BooksController extends Controller
         return view('Product.index',compact('tempProduct'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Books  $books
-     * @return \Illuminate\Http\Response
-     */
+    
     public function show(Books $books)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Books  $books
-     * @return \Illuminate\Http\Response
-     */
+    
     public function edit(Books $books)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Books  $books
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, Books $books)
     {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Books  $books
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Books $books)
     {
         //

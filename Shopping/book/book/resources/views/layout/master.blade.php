@@ -34,14 +34,14 @@ $temptitle = Route::currentRouteName();
 
 </head>
 
-<body
+<body 
 @if(isset($tempcategory))
 class="template-collection has-smround-btns has-loader-bg equal-height has-sm-container"
 @elseif(!isset($tempBooks))
 class="template-product has-smround-btns has-loader-bg equal-height has-sm-container"
 @endif
 >
-    <div>
+    
       @php
         if(isset($tempBooks))
         {
@@ -55,8 +55,8 @@ class="template-product has-smround-btns has-loader-bg equal-height has-sm-conta
           @endphp @include('layout.Navigation.navbar_second') @php
         }
       @endphp
-      </div>
-    <br>
+      
+    
 
     <!-- main content -->
     @yield('content')
@@ -79,7 +79,7 @@ class="template-product has-smround-btns has-loader-bg equal-height has-sm-conta
         {
           @endphp @include('layout.footer.second_footer') @php
         }
-      @endphp
+    @endphp
  
     </div>
     <div>
@@ -95,7 +95,7 @@ class="template-product has-smround-btns has-loader-bg equal-height has-sm-conta
     @include('layout.popupnews')
     </div>
 
-    <script src="{{asset('js/vendor-special/lazysizes.min.js')}}"></script>
+  <script src="{{asset('js/vendor-special/lazysizes.min.js')}}"></script>
   <script src="{{asset('js/vendor-special/ls.bgset.min.js')}}"></script>
   <script src="{{asset('js/vendor-special/ls.aspectratio.min.js')}}"></script>
   <script src="{{asset('js/vendor-special/jquery.min.js')}}"></script>
