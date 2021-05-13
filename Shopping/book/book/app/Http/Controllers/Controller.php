@@ -10,4 +10,8 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public $server_image_path="http://zcommerce.online/image/";
+    public $my_category='Electronics';//Apparel,Books,Electronics
+
 }

@@ -40,8 +40,9 @@ Route::get('bloglist','AccountController@bloglistindex')->name('BlogList');
 Route::get('blogpost','AccountController@blogpostindex')->name('BlogPost');
 
 Route::get('product','BooksController@productindex')->name('Product');
-Route::get('books','BooksController@index')->name('Books');
-Route::resource('book','BooksController');
+Route::get('/','BooksController@index')->name('Books');
+Route::get('books/product/{name}','BooksController@product_cat_Index')->name('BookProduct');
+Route::resource('books','BooksController');
 
 
 // Route::get('orders','AccountController@accountorderhistoryindex')->name('orders');

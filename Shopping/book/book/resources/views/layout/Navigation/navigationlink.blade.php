@@ -1,7 +1,3 @@
-@php 
-  $flag=0;
-  
-@endphp
 <div class="hdr-nav hide-mobile nav-holder justify-content-center">
 
               <!--mmenu-->
@@ -161,9 +157,6 @@
                   </div>
                 </li>
                 
-
-                
-
               </ul>
               <!--/mmenu-->
             </div>

@@ -5,7 +5,9 @@
         </div>
         <div class="prd-grid-wrap position-relative">
           <div class="prd-grid data-to-show-5 data-to-show-lg-4 data-to-show-md-3 data-to-show-sm-2 data-to-show-xs-1 js-category-grid">
-            <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
+            @include('CommonContent.product')
+            
+            <!-- <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
               <div class="prd-inside">
                 <div class="prd-img-area">
                   <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
@@ -261,7 +263,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>

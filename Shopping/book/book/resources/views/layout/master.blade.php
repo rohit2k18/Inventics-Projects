@@ -19,9 +19,11 @@ $temptitle = Route::currentRouteName();
   <!-- Vendor CSS -->
   <link href="{{asset('css/vendor/bootstrap.min.css')}}" rel="stylesheet">
   <link href="{{asset('css/vendor/vendor.min.css')}}" rel="stylesheet">
+
   <!-- Custom styles for this template -->
   <link href="{{asset('css/style-books.css')}}" rel="stylesheet">
   <link href="{{asset('css/style.css')}}" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- or -->
   <!-- <link href="{{asset('css/style-books.css')}}" rel="stylesheet"> -->
   <!-- if having frontend folder under public -->
@@ -102,6 +104,7 @@ class="template-product has-smround-btns has-loader-bg equal-height has-sm-conta
   <script src="{{asset('js/vendor-special/jquery.ez-plus.js')}}"></script>
   <script src="{{asset('js/vendor/vendor.min.js')}}"></script>
   <script src="{{asset('js/app-html.js')}}"></script>
+  
 </body>
 
 </html>
