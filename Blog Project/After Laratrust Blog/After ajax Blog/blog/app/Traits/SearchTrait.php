@@ -23,4 +23,9 @@ trait SearchTrait
             });
         }
     }
+
+    public function scopeTest($name)
+    {
+        return $name;
+    }
 }

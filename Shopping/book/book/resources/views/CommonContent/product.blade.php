@@ -45,7 +45,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 01", "path":"images/skins/books/products/product-01.png", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "The Book 01", "path":"images/skins/books/products/product-01.png", "url":"{{route('Product',$cat_product[$i]->slug)}}", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>

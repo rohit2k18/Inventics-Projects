@@ -39,7 +39,7 @@ Route::get('blogcategory','AccountController@blogcategoryindex')->name('BlogCate
 Route::get('bloglist','AccountController@bloglistindex')->name('BlogList');
 Route::get('blogpost','AccountController@blogpostindex')->name('BlogPost');
 
-Route::get('product','BooksController@productindex')->name('Product');
+Route::get('product/{slug}','BooksController@productindex')->name('Product');
 Route::get('/','BooksController@index')->name('Books');
 Route::get('books/product/{name}','BooksController@product_cat_Index')->name('BookProduct');
 Route::resource('books','BooksController');

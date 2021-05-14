@@ -33,13 +33,13 @@
                   </div>
                   <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                   <div class="prd-tag"><a href="#">Foxic</a></div>
-                  <h2 class="prd-title"><a href="{{route('Product')}}">The Book 02</a></h2>
+                  <h2 class="prd-title"><a href="{{route('Product','test')}}">The Book 02</a></h2>
                   <div class="prd-description">
                     Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 02", "path":"images/skins/books/products/product-02.png", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "The Book 02", "path":"images/skins/books/products/product-02.png", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -85,7 +85,7 @@
                   </div>
                   <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                   <div class="prd-tag"><a href="#">Foxic</a></div>
-                  <h2 class="prd-title"><a href="{{route('Product')}}">The Book 03</a></h2>
+                  <h2 class="prd-title"><a href="{{route('Product','test')}}">The Book 03</a></h2>
                   <div class="prd-description">
                     Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                   </div>
@@ -135,7 +135,7 @@
                   </div>
                   <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                   <div class="prd-tag"><a href="#">Foxic</a></div>
-                  <h2 class="prd-title"><a href="{{route('Product')}}">The Book 04</a></h2>
+                  <h2 class="prd-title"><a href="{{route('Product','test')}}">The Book 04</a></h2>
                   <div class="prd-description">
                     Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                   </div>
@@ -185,7 +185,7 @@
                   </div>
                   <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                   <div class="prd-tag"><a href="#">Foxic</a></div>
-                  <h2 class="prd-title"><a href="{{route('Product')}}">The Book 05</a></h2>
+                  <h2 class="prd-title"><a href="{{route('Product','test')}}">The Book 05</a></h2>
                   <div class="prd-description">
                     Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                   </div>

@@ -8,7 +8,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product','test')}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-1.jpg" alt="Midi Dress with Belt" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -39,13 +39,13 @@
                   </div>
                   <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                   <div class="prd-tag"><a href="#">Seiko</a></div>
-                  <h2 class="prd-title"><a href="{{route('Product')}}">Midi Dress with Belt</a></h2>
+                  <h2 class="prd-title"><a href="{{route('Product','test')}}">Midi Dress with Belt</a></h2>
                   <div class="prd-description">
                     Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.jpg", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.jpg", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -60,7 +60,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.jpg", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.jpg", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -71,7 +71,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product','test')}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-17-1.jpg" alt="Stand Collar Shirt" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -99,13 +99,13 @@
                   </div>
                   <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                   <div class="prd-tag"><a href="#">FOXic</a></div>
-                  <h2 class="prd-title"><a href="{{route('Product')}}">Stand Collar Shirt</a></h2>
+                  <h2 class="prd-title"><a href="{{route('Product','test')}}">Stand Collar Shirt</a></h2>
                   <div class="prd-description">
                     Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"images/skins/fashion/products/product-17-1.jpg", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"images/skins/fashion/products/product-17-1.jpg", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -121,7 +121,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"images/skins/fashion/products/product-17-1.jpg", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"images/skins/fashion/products/product-17-1.jpg", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -132,7 +132,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product','test')}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-1.jpg" alt="Genuine Leather Strap Watch" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -156,13 +156,13 @@
                   </div>
                   <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                   <div class="prd-tag"><a href="#">FOXic</a></div>
-                  <h2 class="prd-title"><a href="{{route('Product')}}">Genuine Leather Strap Watch</a></h2>
+                  <h2 class="prd-title"><a href="{{route('Product','test')}}">Genuine Leather Strap Watch</a></h2>
                   <div class="prd-description">
                     Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"images/skins/fashion/products/product-21-1.jpg", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"images/skins/fashion/products/product-21-1.jpg", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -177,7 +177,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"images/skins/fashion/products/product-21-1.jpg", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"images/skins/fashion/products/product-21-1.jpg", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -188,7 +188,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product','test')}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-26-1.jpg" alt="Pureboost Running Shoes" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -211,13 +211,13 @@
                   </div>
                   <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                   <div class="prd-tag"><a href="#">FOXic</a></div>
-                  <h2 class="prd-title"><a href="{{route('Product')}}">Pureboost Running Shoes</a></h2>
+                  <h2 class="prd-title"><a href="{{route('Product','test')}}">Pureboost Running Shoes</a></h2>
                   <div class="prd-description">
                     Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"images/skins/fashion/products/product-26-1.jpg", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"images/skins/fashion/products/product-26-1.jpg", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -232,7 +232,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"images/skins/fashion/products/product-26-1.jpg", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"images/skins/fashion/products/product-26-1.jpg", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -243,7 +243,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('Product')}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product','test')}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-30-1.jpg" alt="Multiple Pocket Waist Pack" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
@@ -266,13 +266,13 @@
                   </div>
                   <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                   <div class="prd-tag"><a href="#">FOXic</a></div>
-                  <h2 class="prd-title"><a href="{{route('Product')}}">Multiple Pocket Waist Pack</a></h2>
+                  <h2 class="prd-title"><a href="{{route('Product','test')}}">Multiple Pocket Waist Pack</a></h2>
                   <div class="prd-description">
                     Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante sed lacinia.
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"images/skins/fashion/products/product-30-1.jpg", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"images/skins/fashion/products/product-30-1.jpg", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -287,7 +287,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"images/skins/fashion/products/product-30-1.jpg", "url":"{{route('Product')}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"images/skins/fashion/products/product-30-1.jpg", "url":"{{route('Product','test')}}", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>

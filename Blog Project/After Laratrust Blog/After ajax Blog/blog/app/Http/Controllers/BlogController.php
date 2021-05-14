@@ -18,7 +18,8 @@ class BlogController extends Controller
         $blogs=Blog::search('name',$name)->paginate(10);
         //$blogs=Blog::search('name',$name)->paginate(10);
         //$blogs=Blog::all();
-        
+        $temp=test("helloworld");
+        dd($temp);
         return view('Blog.index',compact('blogs','name'));
     }
 

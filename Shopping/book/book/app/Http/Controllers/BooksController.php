@@ -12,35 +12,12 @@ class BooksController extends Controller
     public function index()
     {
         
-        $categories=DB::table('category_groups')
-        ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
-        ->where('category_groups.name',$this->my_category)->get();
+        $categories=$this->getsubgroup();
         
-        $sub_categories=DB::table('category_groups')
-        ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
-        ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
-        ->where('category_groups.name',$this->my_category)
-        ->select('categories.*','category_sub_groups.name as cat_sub_name')->get();
-
-        //getting without images
-        // $cat_product=DB::table('category_groups')
-        // ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
-        // ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
-        // ->join('category_product', 'categories.id', '=', 'category_product.category_id')
-        // ->join('products', 'category_product.product_id', '=', 'products.id')
-        // ->where('category_groups.name','Electronics')
-        // ->select('products.*')->inRandomOrder()->get();
+        $sub_categories=$this->getsubgroupcategories();
 
         //getting with images
-        $cat_product=DB::table('category_groups')
-        ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
-        ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
-        ->join('category_product', 'categories.id', '=', 'category_product.category_id')
-        ->join('products', 'category_product.product_id', '=', 'products.id')
-        ->join('images', 'products.id', '=', 'images.imageable_id')
-        ->where('category_groups.name',$this->my_category)
-        ->where('images.imageable_type','App\Product')
-        ->select('products.*','images.path as img_path','images.name as img_name')->inRandomOrder()->get();
+        $cat_product=$this->getcategoriesproduct();
 
         //dd($sub_categories);
         $tempBooks=true;
@@ -50,22 +27,18 @@ class BooksController extends Controller
 
     public function product_cat_Index($name)
     {
-        $cat_product=DB::table('category_groups')
-        ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
-        ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
-        ->join('category_product', 'categories.id', '=', 'category_product.category_id')
-        ->join('products', 'category_product.product_id', '=', 'products.id')
-        ->join('images', 'products.id', '=', 'images.imageable_id')
-        ->where('category_groups.name',$this->my_category)
-        ->where('images.imageable_type','App\Product')
-        ->select('products.*','images.path as img_path','images.name as img_name')->inRandomOrder()->get();
+        $cat_product=$this->getcategoriesproduct();
         return view('CommonContent.producttest',compact('cat_product'));
     }
 
-    public function productindex()
+    public function productindex($slug)
     {
+        $categories=$this->getsubgroup();
+        $sub_categories=$this->getsubgroupcategories();
+        $cat_product=$this->getcategoriesproduct();
+        $img_url=$this->server_image_path;
         $tempProduct=true;
-        return view('Product.index',compact('tempProduct'));
+        return view('Product.index',compact('tempProduct','categories','sub_categories','cat_product','img_url'));
     }
 
    

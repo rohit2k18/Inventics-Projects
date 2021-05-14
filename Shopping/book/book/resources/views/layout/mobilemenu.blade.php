@@ -39,9 +39,9 @@
               </li>
               <li><a href="#">Pages<span class="arrow"><i class="icon-angle-right"></i></span></a>
                 <ul class="nav-level-2">
-                  <li><a href="{{route('Product')}}">Product page<span class="arrow"><i class="icon-angle-right"></i></span></a>
+                  <li><a href="{{route('Product','test')}}">Product page<span class="arrow"><i class="icon-angle-right"></i></span></a>
                     <ul class="nav-level-3">
-                      <li><a href="{{route('Product')}}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
+                      <li><a href="{{route('Product','test')}}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
                     </ul>
                   </li>
                   <li><a href="{{route('Category')}}">Category page<span class="arrow"><i class="icon-angle-right"></i></span></a>
@@ -211,7 +211,7 @@
         <div class="minicart-drop-content js-dropdn-content-scroll">
           <div class="minicart-prd row">
             <div class="minicart-prd-image image-hover-scale-circle col">
-              <a href="{{route('Product')}}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-01-1.jpg" alt=""></a>
+              <a href="{{route('Product','test')}}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-01-1.jpg" alt=""></a>
             </div>
             <div class="minicart-prd-info col">
               <div class="minicart-prd-tag">FOXic</div>
@@ -228,7 +228,7 @@
           </div>
           <div class="minicart-prd row">
             <div class="minicart-prd-image image-hover-scale-circle col">
-              <a href="{{route('Product')}}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-16-1.jpg" alt=""></a>
+              <a href="{{route('Product','test')}}"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-16-1.jpg" alt=""></a>
             </div>
             <div class="minicart-prd-info col">
               <div class="minicart-prd-tag">FOXic</div>
