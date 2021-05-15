@@ -2,10 +2,12 @@
             <div class="prd-block_info prd-block_info--style1" data-prd-handle="/products/copy-of-suede-leather-mini-skirt">
               <div class="prd-block_info-top prd-block_info_item order-0 order-md-2">
                 <div class="prd-block_price prd-block_price--style2">
-                  <div class="prd-block_price--actual">$180.00</div>
+                  <div class="prd-block_price--actual">{{$current_currency}} {{$product->min_price+0}}</div>
                   <div class="prd-block_price-old-wrap">
-                    <span class="prd-block_price--old">$210.00</span>
-                    <span class="prd-block_price--text">You Save: $131.99 (28%)</span>
+                    @if($product->max_price>$product->min_price)
+                    <span class="prd-block_price--old">{{$current_currency}} {{$product->max_price+0}}</span>
+                    <span class="prd-block_price--text">You Save: {{$current_currency}} {{($product->max_price-$product->min_price)+0}} ({{($product->min_price/$product->max_price)*100}}%)</span>
+                    @endif
                   </div>
                 </div>
                 <div class="prd-block_viewed-wrap d-none d-md-flex">
@@ -17,7 +19,7 @@
               </div>
               <div class="prd-block_description prd-block_info_item ">
                 <h3>Short description</h3>
-                <p>Model is 5'9" wearing Size XS TallAnd without further ado, we give you our finest Shopify Theme FOXic! It is a subtle, complex and yet an extremely easy to use template for anyone, who wants to create own website in ANY area of expertise.</p>
+                <p>{{$product->description}}</p>
                 <div class="mt-1"></div>
                 <div class="row vert-margin-less">
                   <div class="col-sm">

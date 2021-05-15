@@ -4,9 +4,9 @@
     <div class="holder breadcrumbs-wrap mt-0">
       <div class="container">
         <ul class="breadcrumbs">
-          <li><a href="{{route('Books')}}">Home</a></li>
-          <li><a href="category.html">Women</a></li>
-          <li><span>Leather Pegged Pants</span></li>
+          <li><a href="{{route('Books')}}">{{$current_subgroup}}</a></li>
+          <li><a href="category.html">{{$current_category}}</a></li>
+          <li><span>{{$product->name}}</span></li>
         </ul>
       </div>
     </div>
@@ -20,7 +20,6 @@
       </div>
     </div>
     @include('Product.product_text_holder')
-
     @include('Product.more_details')
     @include('CommonContent.youmayalsolike')
   </div>

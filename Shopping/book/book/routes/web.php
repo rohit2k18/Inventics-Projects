@@ -41,7 +41,7 @@ Route::get('blogpost','AccountController@blogpostindex')->name('BlogPost');
 
 Route::get('product/{slug}','BooksController@productindex')->name('Product');
 Route::get('/','BooksController@index')->name('Books');
-Route::get('books/product/{name}','BooksController@product_cat_Index')->name('BookProduct');
+Route::get('books/product/{name}/{cat}/{sub}','BooksController@product_cat_Index')->name('BookProduct');
 Route::resource('books','BooksController');
 
 

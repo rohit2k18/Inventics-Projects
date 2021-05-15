@@ -16,9 +16,8 @@
                     @for($i=0;$i<count($subcat)/2;$i++)
                       <li><a href="index.html">{{$subcat[$i]}}</a></li>
                     @endfor
-
-                    @if(count($subcat)>1)
                     </ul>
+                    @if(count($subcat)>1)
                     <ul class="submenu-list mt-0">
                       @for($i=count($subcat)/2;$i<count($subcat);$i++)
                         <li><a href="index.html">{{$subcat[$i]}}</a></li>

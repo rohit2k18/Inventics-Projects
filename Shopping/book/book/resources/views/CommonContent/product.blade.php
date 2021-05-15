@@ -6,7 +6,7 @@
           <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
             <div class="prd-inside">
               <div class="prd-img-area">
-                <a href="{{route('Product',$cat_product[$i]->slug)}}" class="prd-img image-hover-scale image-container">
+                <a href="{{route('Product',[$cat_product[$i]->slug,'c='.$cat_product[$i]->product_cat,'s='.$cat_product[$i]->product_sub_cat])}}" class="prd-img image-hover-scale image-container">
                   <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{$img_url}}{{$cat_product[$i]->img_path}}" alt="The Book 01" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
