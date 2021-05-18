@@ -42,7 +42,7 @@ class Controller extends BaseController
         ->join('images', 'products.id', '=', 'images.imageable_id')
         ->where('category_groups.name',$this->my_category)
         ->where('images.imageable_type','App\Product')
-        ->select('products.*','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat')->inRandomOrder()->get();
+        ->select('products.*','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->inRandomOrder()->get();
     }
 
     //getting without images

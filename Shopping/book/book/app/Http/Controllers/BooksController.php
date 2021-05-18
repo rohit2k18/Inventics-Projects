@@ -16,12 +16,13 @@ class BooksController extends Controller
         $current_currency=$this->current_currency;
         $categories=$this->getsubgroup();
         $sub_categories=$this->getsubgroupcategories();
-        //getting with images
         $cat_product=$this->getcategoriesproduct();
-
-        //dd($cat_product);
         $tempBooks=true;
         
+        // $banners=DB::table('banners')->get();
+        //dd($cat_product);
+
+
         return view('Books.index',compact('tempBooks','categories','sub_categories','cat_product','img_url','current_currency'));
     }
 
