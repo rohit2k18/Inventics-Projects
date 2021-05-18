@@ -30,15 +30,15 @@
                 <li class="mmenu-item--simple"><a href="#">Pages</a>
                   <div class="mmenu-submenu">
                     <ul class="submenu-list">
-                      <li><a href="{{route('Product','test')}}">Product page</a>
+                      <li><a href="##">Product page</a>
                         <ul>
-                          <li><a href="{{route('Product','test')}}">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
+                          <li><a href="##">Product page variant 1<span class="menu-label menu-label--color3">Popular</span></a></li>
                           
                         </ul>
                       </li>
-                      <li><a href="{{route('Category')}}">Category page</a>
+                      <li><a href="{{route('Category','home')}}">Category page</a>
                         <ul>
-                          <li><a href="{{route('Category')}}">Listing View</a></li>
+                          <li><a href="{{route('Category','home')}}">Listing View</a></li>
                           <li><a href="{{route('EmptyCategory')}}">Empty category</a></li>
                         </ul>
                       </li>

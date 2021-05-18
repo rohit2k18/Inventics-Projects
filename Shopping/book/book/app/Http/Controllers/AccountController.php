@@ -25,44 +25,25 @@ class AccountController extends Controller
         return view('Account.index',compact('page'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Account  $account
-     * @return \Illuminate\Http\Response
-     */
+    
     public function show(Account $account)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Account  $account
-     * @return \Illuminate\Http\Response
-     */
+    
     public function edit(Account $account)
     {
         //
@@ -80,12 +61,7 @@ class AccountController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Account  $account
-     * @return \Illuminate\Http\Response
-     */
+    
     public function destroy(Account $account)
     {
         //
@@ -134,53 +110,6 @@ class AccountController extends Controller
         return view('ContactUs.index',compact('hidefooterinfo'));
     }
 
-    //-------------------------------------category-------------------------
-    public function ecategoryindex()
-    {
-        $tempcategory=true;
-        return view('Category.EmptyCategory.index',compact('tempcategory'));
-    }
-
-    public function categoryindex()
-    {
-        $tempcategory=true;
-        $titlename="Account Category";
-        return view('Category.index',compact('tempcategory','titlename'));
-    }
-    //--------------------------------------------------------------categoryend
-
-    //-------------------------------------cart-------------------------
-    public function cartpageindex()
-    {
-        return view('Cart.CartPage.index');
-    }
-
-    public function emptycartpageindex()
-    {
-        return view('Cart.EmptyCart.index');
-    }
-
-    public function cehckoutindex()
-    {
-        return view('Cart.CheckOut.index');
-    }
-    //----------------------------------------------------end cart-
-
-    //----------------------------------------blog--------------
-    public function blogcategoryindex()
-    {
-        return view('Blog.BlogCategory.index');
-    }
-    public function bloglistindex()
-    {
-        return view('Blog.BlogList.index');
-    }
-    public function blogpostindex()
-    {
-        return view('Blog.BlogPost.index');
-    }
-    //test
-    //-----------------------------------------------end blog
     
     // public function accountaddressindex()
     // {

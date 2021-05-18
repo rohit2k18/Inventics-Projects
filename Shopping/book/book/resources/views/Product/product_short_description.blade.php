@@ -19,7 +19,7 @@
               </div>
               <div class="prd-block_description prd-block_info_item ">
                 <h3>Short description</h3>
-                <p>{{$product->description}}</p>
+                <p>{!! $product->description !!}</p>
                 <div class="mt-1"></div>
                 <div class="row vert-margin-less">
                   <div class="col-sm">

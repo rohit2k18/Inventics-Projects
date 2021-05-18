@@ -9,7 +9,7 @@
             <div class="payment-notification-content-wrapper">
               <div class="payment-notification-content">
                 <div class="payment-notification-text">Someone purchased</div>
-                <a href="{{route('Product','test')}}" class="payment-notification-name js-pn-name js-pn-link">Applewatch</a>
+                <a href="###" class="payment-notification-name js-pn-name js-pn-link">Applewatch</a>
                 <div class="payment-notification-bottom">
                   <div class="payment-notification-when"><span class="js-pn-time">32</span> min ago</div>
                   <div class="payment-notification-from">from <span class="js-pn-from">Riverside</span></div>

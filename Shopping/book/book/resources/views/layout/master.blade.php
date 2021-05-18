@@ -63,7 +63,7 @@ class="template-product has-smround-btns has-loader-bg equal-height has-sm-conta
     <!-- main content -->
     @yield('content')
     <!-- main content end -->
-
+    
     <div>
     @include('layout.mobilemenu')
     </div>
@@ -89,13 +89,11 @@ class="template-product has-smround-btns has-loader-bg equal-height has-sm-conta
     </div>
     <div>
     @include('layout.paymentnotification')
-    </div>
-    <div>
+  
     @include('layout.paymentnotefooter')
-    </div>
-    <div>
+
     @include('layout.popupnews')
-    </div>
+
 
   <script src="{{asset('js/vendor-special/lazysizes.min.js')}}"></script>
   <script src="{{asset('js/vendor-special/ls.bgset.min.js')}}"></script>

@@ -4,8 +4,8 @@
     <div class="holder breadcrumbs-wrap mt-0">
       <div class="container">
         <ul class="breadcrumbs">
-          <li><a href="{{route('Books')}}">{{$current_subgroup}}</a></li>
-          <li><a href="category.html">{{$current_category}}</a></li>
+          <li><a href="{{route('Category',$current_category->slug)}}">{{$current_subgroup->name}}</a></li>
+          <li><a href="{{route('Category',$current_category->slug)}}">{{$current_category->name}}</a></li>
           <li><span>{{$product->name}}</span></li>
         </ul>
       </div>

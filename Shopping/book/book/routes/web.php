@@ -28,18 +28,18 @@ Route::get('contactus','AccountController@contactusindex')->name('ContactUs');
 Route::get('error','AccountController@errorindex')->name('Error');
 Route::get('commingsoon','AccountController@commingsoonindex')->name('CommingSoon');
 
-Route::get('emptycategory','AccountController@ecategoryindex')->name('EmptyCategory');
-Route::get('category','AccountController@categoryindex')->name('Category');
+Route::get('emptycategory','CategoryController@ecategoryindex')->name('EmptyCategory');
+Route::get('category/{slug}','CategoryController@index')->name('Category');
 
-Route::get('cart','AccountController@cartpageindex')->name('Cart');
-Route::get('emptycart','AccountController@cartpageindex')->name('EmptyCart');
-Route::get('checkout','AccountController@cehckoutindex')->name('Checkout');
+Route::get('cart','CartController@index')->name('Cart');
+Route::get('emptycart','CartController@emptycartindex')->name('EmptyCart');
+Route::get('checkout','CartController@checkoutcartindex')->name('Checkout');
 
-Route::get('blogcategory','AccountController@blogcategoryindex')->name('BlogCategory');
-Route::get('bloglist','AccountController@bloglistindex')->name('BlogList');
-Route::get('blogpost','AccountController@blogpostindex')->name('BlogPost');
+Route::get('blogcategory','BlogController@blogcategoryindex')->name('BlogCategory');
+Route::get('bloglist','BlogController@bloglistindex')->name('BlogList');
+Route::get('blogpost','BlogController@blogpostindex')->name('BlogPost');
 
-Route::get('product/{slug}','BooksController@productindex')->name('Product');
+Route::get('product/{catgroup}/{catname}/{slug}','ProductController@productindex')->name('Product');
 Route::get('/','BooksController@index')->name('Books');
 Route::get('books/product/{name}/{cat}/{sub}','BooksController@product_cat_Index')->name('BookProduct');
 Route::resource('books','BooksController');

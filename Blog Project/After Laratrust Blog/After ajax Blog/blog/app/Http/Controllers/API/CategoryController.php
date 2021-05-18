@@ -12,7 +12,6 @@ use App\User;
 
 class CategoryController extends Controller
 {
-
     public function registration_process(Request $request)
     {
         if($request->key==12345678)//this will happen on the very first time for creating new connection id
@@ -67,8 +66,7 @@ class CategoryController extends Controller
         else
         {
             $response=$this->response('auth code dosent match',null,'1000');
-        }
-        
+        }    
         return $response;
     }
 
@@ -155,10 +153,8 @@ class CategoryController extends Controller
             return $user;
         }
         else
-        return false;
-        
+        return false;      
     }
-
 
     public function check_user($connection_id,$auth_code)
     {

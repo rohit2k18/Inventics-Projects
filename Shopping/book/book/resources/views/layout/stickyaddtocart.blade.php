@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col-auto sticky-addcart_image">
-            <a href="{{route('Product','test')}}">
+            <a href="###">
               <img src="images/skins/fashion/products/product-01-1.jpg" alt="" />
             </a>
           </div>
@@ -50,13 +50,13 @@
           </div>
           <div class="col popup-addedtocart_info">
             <div class="row">
-              <a href="{{route('Product','test')}}" class="col-auto popup-addedtocart_image">
+              <a href="###" class="col-auto popup-addedtocart_image">
                 <span class="image-container w-100">
                   <img src="images/skins/fashion/products/product-01-1.jpg" alt="" />
                 </span>
               </a>
               <div class="col popup-addedtocart_text">
-                <a href="{{route('Product','test')}}" class="popup-addedtocart_title"></a>
+                <a href="###" class="popup-addedtocart_title"></a>
                 <span class="popup-addedtocart_message">Added to <a href="{{route('Cart')}}" class="underline">Cart</a></span>
                 <span class="popup-addedtocart_error_message"></span>
               </div>
