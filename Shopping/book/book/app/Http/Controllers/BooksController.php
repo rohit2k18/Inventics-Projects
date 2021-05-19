@@ -19,11 +19,19 @@ class BooksController extends Controller
         $cat_product=$this->getcategoriesproduct();
         $tempBooks=true;
         
-        // $banners=DB::table('banners')->get();
-        //dd($cat_product);
-
-
-        return view('Books.index',compact('tempBooks','categories','sub_categories','cat_product','img_url','current_currency'));
+        //banners
+        $banners=$this->getBanners();
+        $promo_banner=array();
+        $bottom_banner=array();
+        foreach($banners as $bann)
+        {
+            if($bann->group_id=="promo_banner")
+                $promo_banner=$bann;
+            elseif($bann->group_id=="bottom")
+                array_push($bottom_banner,$bann);
+        }
+        
+        return view('Books.index',compact('tempBooks','categories','sub_categories','cat_product','img_url','current_currency','promo_banner','bottom_banner'));
     }
 
     public function product_cat_Index($name)

@@ -1,7 +1,26 @@
+@php 
+  $subcounter=0;
+@endphp
+
 <div class="holder holder-with-bg holder-pb-medium" style="background-color: #fcfcfc">
       <div class="container">
         <div class="row bnr-grid vert-margin-small">
+          @foreach($bottom_banner as $botban)
           <div class="col-18 col-sm-6">
+            <a href="{{$botban->link}}" target="_self" class="bnr-wrap">
+              <div class="bnr custom-caption image-hover-scale image-hover-scale--slow bnr--top bnr--left" data-fontratio=5.7>
+                <div class="bnr-img  image-container" style="padding-bottom: 140.526%">
+                  <img data-srcset="{{$img_url}}{{$botban->img_path}}" class="lazyload fade-up" alt="">
+                </div>
+                <div class="bnr-caption" style="padding: 20% 14%; width: 100%;">
+                  <div class="bnr-text3 mt-sm order-1 inherit" style="color:#000000; font-size:0.725em; font-weight:700; line-height:1em">{!! $botban->title !!}</div>
+                  <div class="bnr-text3 mt-lg order-2 inherit" style="color:#000000; font-size:0.275em; font-weight:800; line-height:1.4em;">{!! $botban->description !!}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+          @endforeach
+          <!-- <div class="col-18 col-sm-6">
             <a href="###" target="_self" class="bnr-wrap">
               <div class="bnr custom-caption image-hover-scale image-hover-scale--slow bnr--top bnr--left" data-fontratio=5.7>
                 <div class="bnr-img  image-container" style="padding-bottom: 140.526%">
@@ -78,7 +97,7 @@
                 </div>
               </div>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

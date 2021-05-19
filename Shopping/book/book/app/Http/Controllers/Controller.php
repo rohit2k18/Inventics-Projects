@@ -14,6 +14,7 @@ class Controller extends BaseController
 
     public $server_image_path="http://zcommerce.online/image/";
     public $my_category='Electronics';//Apparel,Books,Electronics
+    public $my_banner_category="Electronics";
     public $current_currency="Rs.";
 
     public function getsubgroup()
@@ -43,6 +44,15 @@ class Controller extends BaseController
         ->where('category_groups.name',$this->my_category)
         ->where('images.imageable_type','App\Product')
         ->select('products.*','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->inRandomOrder()->get();
+    }
+
+    public function getBanners()
+    {
+        return DB::table('banners')
+        ->join('images', 'banners.id', '=', 'images.imageable_id')
+        ->where('banners.store_type',$this->my_banner_category)
+        ->where('images.imageable_type','App\Banner')
+        ->select('banners.*','images.path as img_path')->get();
     }
 
     //getting without images
