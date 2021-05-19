@@ -33,17 +33,34 @@ class Controller extends BaseController
         ->select('categories.*','category_sub_groups.name as cat_sub_name')->get();
     }
 
-    public function getcategoriesproduct()
+    public function getcategoriesproduct($order="random")//random, latest
     {
-        return DB::table('category_groups')
-        ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
-        ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
-        ->join('category_product', 'categories.id', '=', 'category_product.category_id')
-        ->join('products', 'category_product.product_id', '=', 'products.id')
-        ->join('images', 'products.id', '=', 'images.imageable_id')
-        ->where('category_groups.name',$this->my_category)
-        ->where('images.imageable_type','App\Product')
-        ->select('products.*','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->inRandomOrder()->get();
+        if($order=="random")
+        {
+            return DB::table('category_groups')
+            ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
+            ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
+            ->join('category_product', 'categories.id', '=', 'category_product.category_id')
+            ->join('products', 'category_product.product_id', '=', 'products.id')
+            ->join('images', 'products.id', '=', 'images.imageable_id')
+            ->where('category_groups.name',$this->my_category)
+            ->where('images.imageable_type','App\Product')
+            ->select('products.*','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->inRandomOrder()->get();
+        }
+        elseif($order=="latest")
+        {
+            return DB::table('category_groups')
+            ->join('category_sub_groups', 'category_groups.id', '=', 'category_sub_groups.category_group_id')
+            ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
+            ->join('category_product', 'categories.id', '=', 'category_product.category_id')
+            ->join('products', 'category_product.product_id', '=', 'products.id')
+            ->join('images', 'products.id', '=', 'images.imageable_id')
+            ->where('category_groups.name',$this->my_category)
+            ->where('images.imageable_type','App\Product')
+            ->select('products.*','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->orderBy('updated_at', 'DESC')->get();
+        
+        }
+        
     }
 
     public function getBanners()

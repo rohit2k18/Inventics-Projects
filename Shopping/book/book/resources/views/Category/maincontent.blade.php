@@ -3,6 +3,7 @@
               <!-- Products Grid -->
               <div class="prd-listview product-listing data-to-show-3 data-to-show-md-3 data-to-show-sm-2 js-category-grid" data-grid-tab-content>
               @foreach($cat_product as $product)
+              @if($product->product_cat==$slug || $slug=="home")
               <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">
                   <div class="prd-inside">
                     <div class="prd-img-area">
@@ -59,6 +60,7 @@
                     </div>
                   </div>
                 </div>
+                @endif
                 @endforeach
 
                 <!-- <div class="prd prd--style2 prd-labels--max prd-labels-shadow ">

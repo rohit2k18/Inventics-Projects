@@ -596,6 +596,7 @@
                       <li><a href="blog-sticky-sidebar.html">Sticky sidebar</a></li>
                       <li><a href="blog-grid.html">Grid</a></li>
                       <li><a href="blog-post.html">Blog post</a></li>
+      
                     </ul>
                   </li>
                   <li><a href="gallery.html">Gallery</a></li>

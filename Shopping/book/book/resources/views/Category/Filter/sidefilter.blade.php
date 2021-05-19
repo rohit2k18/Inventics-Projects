@@ -2,7 +2,7 @@
             <div class="filter-col-content filter-mobile-content">
               <div class="sidebar-block">
                 <div class="sidebar-block_title">
-                  <span>Current selection</span>
+                  <span>Current testse</span>
                 </div>
                 <div class="sidebar-block_content">
                   <div class="selected-filters-wrap">
@@ -35,7 +35,27 @@
                 </div>
                 <div class="sidebar-block_content">
                   <ul class="category-list">
-                    <li class="active"><a href="{{route('Category')}}" title="Casual" class="open">Casual&nbsp;<span>(30)</span></a>
+                  @foreach($categories as $cat)
+                  @php
+                  $count=0;
+                  foreach($sub_categories as $sub_cat)
+                        if($sub_cat->cat_sub_name==$cat->name)
+                        $count++;
+                  @endphp
+                    <li class=""><a href="#" title="Casual" class="open">{{$cat->name}}&nbsp;<span>({{$count}})</span></a>
+                      <div class="toggle-category js-toggle-category"><span><i class="icon-angle-down"></i></span></div>
+                      <ul class="category-list category-list">
+                      @foreach($sub_categories as $sub_cat)
+                        @if($sub_cat->cat_sub_name==$cat->name)
+                        <li><a href="#" title="Men">{{$sub_cat->name}}&nbsp;<span></span></a></li>
+                        @endif
+                      @endforeach
+                        <!-- <li><a href="category.html" title="Women">Women&nbsp;<span>(10)</span></a></li>
+                        <li><a href="category.html" title="Accessories">Accessories&nbsp;<span>(10)</span></a></li> -->
+                      </ul>
+                    </li>
+                  @endforeach
+                    <!-- <li class="active"><a href="{{route('Category','home')}}" title="Casual" class="open">Casual&nbsp;<span>(30)</span></a>
                       <div class="toggle-category js-toggle-category"><span><i class="icon-angle-down"></i></span></div>
                       <ul class="category-list category-list">
                         <li><a href="category.html" title="Men">Men&nbsp;<span>(10)</span></a></li>
@@ -50,7 +70,7 @@
                     <li><a href="category.html" title="Cosmetics" class="open">Cosmetics&nbsp;<span>(16)</span></a></li>
                     <li><a href="category.html" title="Fishing" class="open">Fishing&nbsp;<span>(20)</span></a></li>
                     <li><a href="category.html" title="Electronics" class="open">Electronics&nbsp;<span>(15)</span></a></li>
-                    <li><a href="category.html" title="Games" class="open">Games&nbsp;<span>(14)</span></a></li>
+                    <li><a href="category.html" title="Games" class="open">Games&nbsp;<span>(14)</span></a></li> -->
                   </ul>
                 </div>
               </div>
@@ -98,11 +118,15 @@
                 </div>
                 <div class="sidebar-block_content">
                   <ul class="category-list">
-                    <li><a href="#">Adidas</a></li>
+                  @foreach($allBrands as $brand)
+                    <li><a href="#">{{$brand}}</a></li>
+                  @endforeach
+
+                    <!-- <li><a href="#">Adidas</a></li>
                     <li><a href="#">Nike</a></li>
                     <li class="active"><a href="#">Reebok</a></li>
                     <li><a href="#">Ralph Lauren</a></li>
-                    <li><a href="#">Delpozo</a></li>
+                    <li><a href="#">Delpozo</a></li> -->
                   </ul>
                 </div>
               </div>
@@ -141,3 +165,4 @@
               </a>
             </div>
           </div>
+

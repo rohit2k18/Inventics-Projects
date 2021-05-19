@@ -13,11 +13,37 @@ class CategoryController extends Controller
         $categories=$this->getsubgroup();
         $sub_categories=$this->getsubgroupcategories();
         //getting with images
-        $cat_product=$this->getcategoriesproduct();
+        $cat_product=$this->getcategoriesproduct("latest");
 
-        //dd($categories);
         
-        return view('Category.index',compact('categories','sub_categories','cat_product','img_url','current_currency'));
+        $allBrands=array();
+        foreach($cat_product as $product)
+        {
+            
+            $flag=0;
+            foreach($allBrands as $br)
+            {
+                if($product->brand==$br)
+                {
+                    $flag=1;
+                    break;
+                }
+            }
+            if($flag==0)
+            {
+                array_push($allBrands,$product->brand);
+            }
+        }
+
+        //dd($allBrands);
+
+        $tempcategory=true;
+        return view('Category.index',compact('tempcategory','categories','sub_categories','cat_product','img_url','current_currency','slug','allBrands'));
+    }
+
+    public function getmorecategoryData($catname,$upto)
+    {
+        
     }
 
     public function ecategoryindex()

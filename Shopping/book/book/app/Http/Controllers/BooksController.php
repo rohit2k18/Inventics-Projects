@@ -19,6 +19,7 @@ class BooksController extends Controller
         $cat_product=$this->getcategoriesproduct();
         $tempBooks=true;
         
+        //dd($cat_product);
         //banners
         $banners=$this->getBanners();
         $promo_banner=array();
@@ -30,6 +31,7 @@ class BooksController extends Controller
             elseif($bann->group_id=="bottom")
                 array_push($bottom_banner,$bann);
         }
+        
         
         return view('Books.index',compact('tempBooks','categories','sub_categories','cat_product','img_url','current_currency','promo_banner','bottom_banner'));
     }
