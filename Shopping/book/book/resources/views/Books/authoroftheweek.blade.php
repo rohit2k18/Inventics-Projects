@@ -12,7 +12,7 @@
             </div>
           </div>
           <div class="col-18 col-md-6">
-            <a href="{{route('BlogPost')}}" class="image-container d-block" style="padding-bottom: 137.2703412%">
+            <a href="##" class="image-container d-block" style="padding-bottom: 137.2703412%">
               <img class="lazyload fade-up" data-src="images/skins/books/image-book-01.png" alt="">
             </a>
           </div>

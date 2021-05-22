@@ -6,4 +6,8 @@
     @include('Category.app')
     @include('CommonContent.youmayalsolike')
 </div>
+<script>
+    var custom_slug="{{$slug}}";
+    
+</script>
 @endsection

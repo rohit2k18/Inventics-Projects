@@ -14,7 +14,8 @@ class CategoryController extends Controller
         $sub_categories=$this->getsubgroupcategories();
         //getting with images
         $cat_product=$this->getcategoriesproduct("latest");
-
+        
+        //dd($categories);
         
         $allBrands=array();
         foreach($cat_product as $product)

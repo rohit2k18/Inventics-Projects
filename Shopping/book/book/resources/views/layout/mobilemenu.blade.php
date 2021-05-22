@@ -71,7 +71,7 @@
                     <ul class="nav-level-3">
                       <li><a href="{{route('BlogList')}}">Sticky sidebar</a></li>
                       <li><a href="{{route('BlogCategory')}}">Grid</a></li>
-                      <li><a href="{{route('BlogPost')}}">Blog post</a></li>
+                      <li><a href="##">Blog post</a></li>
                     </ul>
                   </li>
                   <li><a href="{{route('Gallery')}}">Gallery</a></li>

@@ -7,9 +7,12 @@
                 <div class="sidebar-block_content">
                   <div class="selected-filters-wrap">
                     <ul class="selected-filters">
-                      <li><a href="#">Grey</a></li>
+                      @if($slug!='home')
+                        <li><a href="{{route('Category','home')}}">{{$slug}}</a></li>
+                      @endif
+                      <!-- <li><a href="#">Grey</a></li>
                       <li><a href="#">Men</a></li>
-                      <li><a href="#">Above $200</a></li>
+                      <li><a href="#">Above $200</a></li> -->
                     </ul>
                     <div class="d-flex flex-wrap align-items-center">
                       <a href="#" class="clear-filters"><span>Clear All</span></a>
@@ -81,16 +84,16 @@
                 </div>
                 <div class="sidebar-block_content">
                   <ul class="color-list two-column">
-                    <li class="active"><a href="#" data-tooltip="Dark Red" title="Dark Red"><span class="value"><img src="images/colorswatch/color-red.png" alt=""></span><span class="colorname">Red (87)</span></a></li>
-                    <li><a href="#" data-tooltip="Pink" title="Pink"><span class="value"><img src="images/colorswatch/color-pink.png" alt=""></span><span class="colorname">Pink (95)</span></a></li>
-                    <li><a href="#" data-tooltip="Violet" title="Violet"><span class="value"><img src="images/colorswatch/color-violet.png" alt=""></span><span class="colorname">Violet (18)</span></a></li>
-                    <li><a href="#" data-tooltip="Blue" title="Blue"><span class="value"><img src="images/colorswatch/color-blue.png" alt=""></span><span class="colorname">Blue (78)</span></a></li>
-                    <li><a href="#" data-tooltip="Marine" title="Marine"><span class="value"><img src="images/colorswatch/color-marine.png" alt=""></span><span class="colorname">Marine (45)</span></a></li>
-                    <li><a href="#" data-tooltip="Orange" title="Orange"><span class="value"><img src="images/colorswatch/color-orange.png" alt=""></span><span class="colorname">Orange (96)</span></a></li>
-                    <li><a href="#" data-tooltip="Yellow" title="Yellow"><span class="value"><img src="images/colorswatch/color-yellow.png" alt=""></span><span class="colorname">Yellow (55)</span></a></li>
-                    <li><a href="#" data-tooltip="Dark Yellow" title="Dark Yellow"><span class="value"><img src="images/colorswatch/color-darkyellow.png" alt=""></span><span class="colorname">Dark Yellow (2)</span></a></li>
-                    <li><a href="#" data-tooltip="Black" title="Black"><span class="value"><img src="images/colorswatch/color-black.png" alt=""></span><span class="colorname">Black (15)</span></a></li>
-                    <li><a href="#" data-tooltip="White" title="White"><span class="value"><img src="images/colorswatch/color-white.png" alt=""></span><span class="colorname">White (58)</span></a></li>
+                    <li class="active"><a href="#" data-tooltip="Dark Red" title="Dark Red"><span class="value"><img src="{{asset('images/colorswatch/color-red.png')}}" alt=""></span><span class="colorname">Red (87)</span></a></li>
+                    <li><a href="#" data-tooltip="Pink" title="Pink"><span class="value"><img src="{{asset('images/colorswatch/color-pink.png')}}" alt=""></span><span class="colorname">Pink (95)</span></a></li>
+                    <li><a href="#" data-tooltip="Violet" title="Violet"><span class="value"><img src="{{asset('images/colorswatch/color-violet.png')}}" alt=""></span><span class="colorname">Violet (18)</span></a></li>
+                    <li><a href="#" data-tooltip="Blue" title="Blue"><span class="value"><img src="{{asset('images/colorswatch/color-blue.png')}}" alt=""></span><span class="colorname">Blue (78)</span></a></li>
+                    <li><a href="#" data-tooltip="Marine" title="Marine"><span class="value"><img src="{{asset('images/colorswatch/color-marine.png')}}" alt=""></span><span class="colorname">Marine (45)</span></a></li>
+                    <li><a href="#" data-tooltip="Orange" title="Orange"><span class="value"><img src="{{asset('images/colorswatch/color-orange.png')}}" alt=""></span><span class="colorname">Orange (96)</span></a></li>
+                    <li><a href="#" data-tooltip="Yellow" title="Yellow"><span class="value"><img src="{{asset('images/colorswatch/color-yellow.png')}}" alt=""></span><span class="colorname">Yellow (55)</span></a></li>
+                    <li><a href="#" data-tooltip="Dark Yellow" title="Dark Yellow"><span class="value"><img src="{{asset('images/colorswatch/color-darkyellow.png')}}" alt=""></span><span class="colorname">Dark Yellow (2)</span></a></li>
+                    <li><a href="#" data-tooltip="Black" title="Black"><span class="value"><img src="{{asset('images/colorswatch/color-black.png')}}" alt=""></span><span class="colorname">Black (15)</span></a></li>
+                    <li><a href="#" data-tooltip="White" title="White"><span class="value"><img src="{{asset('images/colorswatch/color-white.png')}}" alt=""></span><span class="colorname">White (58)</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -160,7 +163,7 @@
               </div>
               <a href="https://bit.ly/3eJX5XE" class="bnr image-hover-scale bnr--bottom bnr--left" data-fontratio="3.95">
                 <div class="bnr-img">
-                  <img src="images/banners/banner-collection-aside.png" alt="">
+                  <img src="{{asset('images/banners/banner-collection-aside.png')}}" alt="">
                 </div>
               </a>
             </div>

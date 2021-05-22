@@ -1,5 +1,4 @@
 @php
-  $product_cat="Adventure";
   $testcounter=1;
 @endphp
 <div class="holder holder-mt-medium section-name-products-grid holder-with-bg holder-pt-medium holder-pb-medium" id="productsGrid01" style="background-color: #fcfcfc">

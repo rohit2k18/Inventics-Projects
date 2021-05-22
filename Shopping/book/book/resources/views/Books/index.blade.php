@@ -16,5 +16,11 @@
     @include('Books.collection')
     
   </div>
-  
+
+  <script>
+
+    
+
+
+  </script>
 @endsection

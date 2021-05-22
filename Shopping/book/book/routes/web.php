@@ -37,7 +37,7 @@ Route::get('checkout','CartController@checkoutcartindex')->name('Checkout');
 
 Route::get('blogcategory','BlogController@blogcategoryindex')->name('BlogCategory');
 Route::get('bloglist','BlogController@bloglistindex')->name('BlogList');
-Route::get('blogpost','BlogController@blogpostindex')->name('BlogPost');
+Route::get('blogpost/{slug}','BlogController@blogpostindex')->name('BlogPost');
 
 Route::get('product/{catgroup}/{catname}/{slug}','ProductController@productindex')->name('Product');
 Route::get('/','BooksController@index')->name('Books');

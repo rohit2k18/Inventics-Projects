@@ -66,7 +66,7 @@
               <!-- /Menu Toggle -->
             </div>
             <div class="col-auto hdr-logo">
-              <a href="{{route('Books')}}" class="logo"><img srcset="images/skins/books/logo-books.png 1x, images/skins/books/logo-books2x.png 2x" alt="Logo"></a>
+              <a href="{{route('Books')}}" class="logo"><img srcset="{{asset('images/skins/books/logo-books.png')}} 1x, {{asset('images/skins/books/logo-books2x.png')}} 2x" alt="Logo"></a>
             </div>
             <!--navigation-->
             @include('layout.Navigation.navigationlink')

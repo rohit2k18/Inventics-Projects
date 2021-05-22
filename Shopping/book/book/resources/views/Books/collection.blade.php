@@ -6,6 +6,7 @@
       <div class="container">
         <div class="row bnr-grid vert-margin-small">
           @foreach($bottom_banner as $botban)
+          @if($subcounter<6)
           <div class="col-18 col-sm-6">
             <a href="{{$botban->link}}" target="_self" class="bnr-wrap">
               <div class="bnr custom-caption image-hover-scale image-hover-scale--slow bnr--top bnr--left" data-fontratio=5.7>
@@ -19,6 +20,8 @@
               </div>
             </a>
           </div>
+          @endif
+          @php $subcounter++; @endphp
           @endforeach
           <!-- <div class="col-18 col-sm-6">
             <a href="###" target="_self" class="bnr-wrap">

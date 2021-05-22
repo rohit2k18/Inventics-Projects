@@ -13,7 +13,7 @@
             <div class="prd-inside">
               <div class="prd-img-area">
                 <a href="##" class="prd-img image-hover-scale image-container">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-1.jpg" alt="Midi Dress with Belt" class="js-prd-img lazyload fade-up">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-1.jpg')}}" alt="Midi Dress with Belt" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
                   </div>
@@ -24,16 +24,16 @@
                   <div class="colorswatch-label colorswatch-label--variants js-prd-colorswatch">
                     <i class="icon-palette"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span></i>
                     <ul>
-                      <li data-image="images/skins/fashion/products/product-06-1.jpg"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-grey.png" alt=""></a></li>
-                      <li data-image="images/skins/fashion/products/product-06-color-2.jpg"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-green.png" alt=""></a></li>
-                      <li data-image="images/skins/fashion/products/product-06-color-3.jpg"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-black.png" alt=""></a></li>
+                      <li data-image="{{asset('images/skins/fashion/products/product-06-1.jpg')}}"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-grey.png" alt=""></a></li>
+                      <li data-image="{{asset('images/skins/fashion/products/product-06-color-2.jpg')}}"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-green.png" alt=""></a></li>
+                      <li data-image="{{asset('images/skins/fashion/products/product-06-color-3.jpg')}}"><a class="js-color-toggle" data-toggle="tooltip" data-placement="left" title="Color Name"><img src="images/colorswatch/color-black.png" alt=""></a></li>
                     </ul>
                   </div>
                 </div>
                 <ul class="list-options color-swatch">
-                  <li data-image="images/skins/fashion/products/product-06-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  <li data-image="images/skins/fashion/products/product-06-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  <li data-image="images/skins/fashion/products/product-06-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-06-1.jpg')}}" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-1.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-06-2.jpg')}}"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-2.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-06-3.jpg')}}"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-06-3.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
                 </ul>
               </div>
               <div class="prd-info">
@@ -49,7 +49,7 @@
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.jpg", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.jpg')}}", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -64,7 +64,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.jpg", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "Midi Dress with Belt", "path":"images/skins/fashion/products/product-06-1.jpg')}}", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -76,7 +76,7 @@
             <div class="prd-inside">
               <div class="prd-img-area">
                 <a href="##" class="prd-img image-hover-scale image-container">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-17-1.jpg" alt="Stand Collar Shirt" class="js-prd-img lazyload fade-up">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-17-1.jpg')}}" alt="Stand Collar Shirt" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
                     <div class="label-sale"><span>-10% <span class="sale-text">Sale</span></span>
@@ -91,9 +91,9 @@
                   <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
                 </div>
                 <ul class="list-options color-swatch">
-                  <li data-image="images/skins/fashion/products/product-17-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-17-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  <li data-image="images/skins/fashion/products/product-17-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-17-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  <li data-image="images/skins/fashion/products/product-17-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-17-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-17-1.jpg')}}" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-17-1.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-17-2.jpg')}}"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-17-2.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-17-3.jpg')}}"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-17-3.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
                 </ul>
               </div>
               <div class="prd-info">
@@ -109,7 +109,7 @@
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"images/skins/fashion/products/product-17-1.jpg", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"images/skins/fashion/products/product-17-1.jpg')}}", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -125,7 +125,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"images/skins/fashion/products/product-17-1.jpg", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "Stand Collar Shirt", "path":"images/skins/fashion/products/product-17-1.jpg')}}", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -137,7 +137,7 @@
             <div class="prd-inside">
               <div class="prd-img-area">
                 <a href="##" class="prd-img image-hover-scale image-container">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-1.jpg" alt="Genuine Leather Strap Watch" class="js-prd-img lazyload fade-up">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-1.jpg')}}" alt="Genuine Leather Strap Watch" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
                     <div class="label-new"><span>New</span></div>
@@ -148,9 +148,9 @@
                   <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
                 </div>
                 <ul class="list-options color-swatch">
-                  <li data-image="images/skins/fashion/products/product-21-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  <li data-image="images/skins/fashion/products/product-21-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  <li data-image="images/skins/fashion/products/product-21-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-21-1.jpg')}}" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-1.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-21-2.jpg')}}"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-2.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-21-3.jpg')}}"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-21-3.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
                 </ul>
               </div>
               <div class="prd-info">
@@ -166,7 +166,7 @@
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"images/skins/fashion/products/product-21-1.jpg", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"images/skins/fashion/products/product-21-1.jpg')}}", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -181,7 +181,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"images/skins/fashion/products/product-21-1.jpg", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "Genuine Leather Strap Watch", "path":"images/skins/fashion/products/product-21-1.jpg')}}", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -193,7 +193,7 @@
             <div class="prd-inside">
               <div class="prd-img-area">
                 <a href="##" class="prd-img image-hover-scale image-container">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-26-1.jpg" alt="Pureboost Running Shoes" class="js-prd-img lazyload fade-up">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-26-1.jpg')}}" alt="Pureboost Running Shoes" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
                   </div>
@@ -203,9 +203,9 @@
                   <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
                 </div>
                 <ul class="list-options color-swatch">
-                  <li data-image="images/skins/fashion/products/product-26-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-26-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  <li data-image="images/skins/fashion/products/product-26-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-26-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  <li data-image="images/skins/fashion/products/product-26-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-26-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-26-1.jpg')}}" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-26-1.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-26-2.jpg')}}"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-26-2.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-26-3.jpg')}}"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-26-3.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
                 </ul>
               </div>
               <div class="prd-info">
@@ -221,7 +221,7 @@
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"images/skins/fashion/products/product-26-1.jpg", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"images/skins/fashion/products/product-26-1.jpg')}}", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -236,7 +236,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"images/skins/fashion/products/product-26-1.jpg", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "Pureboost Running Shoes", "path":"images/skins/fashion/products/product-26-1.jpg')}}", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>
@@ -248,7 +248,7 @@
             <div class="prd-inside">
               <div class="prd-img-area">
                 <a href="##" class="prd-img image-hover-scale image-container">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-30-1.jpg" alt="Multiple Pocket Waist Pack" class="js-prd-img lazyload fade-up">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-30-1.jpg')}}" alt="Multiple Pocket Waist Pack" class="js-prd-img lazyload fade-up">
                   <div class="foxic-loader"></div>
                   <div class="prd-big-squared-labels">
                   </div>
@@ -258,9 +258,9 @@
                   <a href="#" class="circle-label-qview js-prd-quickview prd-hide-mobile" data-src="ajax/ajax-quickview.html"><i class="icon-eye"></i><span>QUICK VIEW</span></a>
                 </div>
                 <ul class="list-options color-swatch">
-                  <li data-image="images/skins/fashion/products/product-30-1.jpg" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-30-1.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  <li data-image="images/skins/fashion/products/product-30-2.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-30-2.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
-                  <li data-image="images/skins/fashion/products/product-30-3.jpg"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-30-3.jpg" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-30-1.jpg')}}" class="active"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-30-1.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-30-2.jpg')}}"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-30-2.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
+                  <li data-image="{{asset('images/skins/fashion/products/product-30-3.jpg')}}"><a href="#" class="js-color-toggle" data-toggle="tooltip" data-placement="right" title="Color Name"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-30-3.jpg')}}" class="lazyload fade-up" alt="Color Name"></a></li>
                 </ul>
               </div>
               <div class="prd-info">
@@ -276,7 +276,7 @@
                   </div>
                   <div class="prd-action">
                     <form action="#">
-                      <button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"images/skins/fashion/products/product-30-1.jpg", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"images/skins/fashion/products/product-30-1.jpg')}}", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
                     </form>
                   </div>
                 </div>
@@ -291,7 +291,7 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                       <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"images/skins/fashion/products/product-30-1.jpg", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
+                        <button class="btn js-prd-addtocart" data-product='{"name": "Multiple Pocket Waist Pack", "path":"images/skins/fashion/products/product-30-1.jpg')}}", "url":"##", "aspect_ratio":0.778}'>Add To Cart</button>
                       </form>
                     </div>
                   </div>

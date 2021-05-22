@@ -93,13 +93,13 @@
                       </select>
                       <ul class="images-list js-size-list" data-select-id="SingleOptionSelector-0">
                         <li class="active">
-                          <a href="#" data-value="Beige" data-toggle="tooltip" data-placement="top" data-original-title="Beige"><span class="image-container image-container--product"><img src="images/skins/fashion/product-page/product-01.jpg" alt=""></span></a>
+                          <a href="#" data-value="Beige" data-toggle="tooltip" data-placement="top" data-original-title="Beige"><span class="image-container image-container--product"><img src="{{asset('images/skins/fashion/product-page/product-01.jpg')}}" alt=""></span></a>
                         <li>
                         <li>
-                          <a href="#" data-value="Black" data-toggle="tooltip" data-placement="top" data-original-title="Black"><span class="image-container image-container--product"><img src="images/skins/fashion/product-page/product-04.jpg" alt=""></span></a>
+                          <a href="#" data-value="Black" data-toggle="tooltip" data-placement="top" data-original-title="Black"><span class="image-container image-container--product"><img src="{{asset('images/skins/fashion/product-page/product-04.jpg')}}" alt=""></span></a>
                         <li>
                         <li>
-                          <a href="#" data-value="Red" data-toggle="tooltip" data-placement="top" data-original-title="Red"><span class="image-container image-container--product"><img src="images/skins/fashion/product-page/product-07.jpg" alt=""></span></a>
+                          <a href="#" data-value="Red" data-toggle="tooltip" data-placement="top" data-original-title="Red"><span class="image-container image-container--product"><img src="{{asset('images/skins/fashion/product-page/product-07.jpg')}}" alt=""></span></a>
                         </li>
                       </ul>
                     </div>
@@ -126,7 +126,7 @@
                       </div>
                     </div>
                     <div class="btn-wrap">
-                      <button class="btn btn--add-to-cart js-trigger-addtocart js-prd-addtocart" data-product='{"name":  "Leather Pegged Pants ",  "url ": "product.html",  "path ": "images/skins/fashion/product-page/product-01.jpg",  "aspect_ratio ": "0.78"}'>Add to cart</button>
+                      <button class="btn btn--add-to-cart js-trigger-addtocart js-prd-addtocart" data-product='{"name":  "Leather Pegged Pants ",  "url ": "product.html",  "path ": "{{asset('images/skins/fashion/product-page/product-01.jpg')}},  "aspect_ratio ": "0.78"}'>Add to cart</button>
                     </div>
                     <div class="btn-wishlist-wrap">
                       <a href="#" class="btn-add-to-wishlist ml-auto btn-add-to-wishlist--add js-add-wishlist" title="Add To Wishlist"><i class="icon-heart-stroke"></i></a>
@@ -249,8 +249,8 @@
                 </div>
               </div>
               <div class="prd-block_info_item">
-                <img class="img-responsive lazyload d-none d-sm-block" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/payment/safecheckout.png" alt="">
-                <img class="img-responsive lazyload d-sm-none" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/payment/safecheckout-m.png" alt="">
+                <img class="img-responsive lazyload d-none d-sm-block" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/payment/safecheckout.png')}}" alt="">
+                <img class="img-responsive lazyload d-sm-none" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{asset('images/payment/safecheckout-m.png')}}" alt="">
               </div>
             </div>
           </div>

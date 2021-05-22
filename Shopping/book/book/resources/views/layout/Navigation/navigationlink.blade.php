@@ -5,22 +5,27 @@
                 @foreach($categories as $cat)
                   @php
                     $subcat=array();
-                    foreach($sub_categories as $sub_cat){
-                    if($sub_cat->cat_sub_name==$cat->name)
-                     array_push($subcat,$sub_cat->name);
+                    $subcatslug=array();
+                    foreach($sub_categories as $sub_cat)
+                    {
+                      if($sub_cat->cat_sub_name==$cat->name)
+                      {
+                        array_push($subcat,$sub_cat->name);
+                        array_push($subcatslug,$sub_cat->slug);
+                      }
                     }
                   @endphp
                 <li class="mmenu-item--simple"><a href="#" ><span>{{$cat->name}}</span></a>
                   <div class="mmenu-submenu d-flex">
                     <ul class="submenu-list mt-0">
                     @for($i=0;$i<count($subcat)/2;$i++)
-                      <li><a href="index.html">{{$subcat[$i]}}</a></li>
+                      <li><a href="{{route('Category',$subcatslug[$i])}}">{{$subcat[$i]}}</a></li>
                     @endfor
                     </ul>
                     @if(count($subcat)>1)
                     <ul class="submenu-list mt-0">
                       @for($i=count($subcat)/2;$i<count($subcat);$i++)
-                        <li><a href="index.html">{{$subcat[$i]}}</a></li>
+                        <li><a href="{{route('Category',$subcatslug[$i])}}">{{$subcat[$i]}}</a></li>
                       @endfor
                     </ul>
                     @endif
@@ -64,7 +69,7 @@
                         <ul>
                           <li><a href="{{route('BlogList')}}">Sticky sidebar</a></li>
                           <li><a href="{{route('BlogCategory')}}">Grid</a></li>
-                          <li><a href="{{route('BlogPost')}}">Blog post</a></li>
+                          <li><a href="##">Blog post</a></li>
                         </ul>
                       </li>
                       <li><a href="{{route('Gallery')}}">Gallery</a></li>
