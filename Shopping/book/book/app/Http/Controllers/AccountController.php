@@ -11,6 +11,13 @@ class AccountController extends Controller
 
     public function index($page)
     {
+        $img_url=$this->server_image_path;
+        $current_currency=$this->current_currency;
+        $categories=$this->getsubgroup();
+        $sub_categories=$this->getsubgroupcategories();
+        $cat_product=$this->getcategoriesproduct();
+        $tempBooks=true;
+
         $flag=false;
         foreach($this->accountPages as $ss)
         {
@@ -22,7 +29,7 @@ class AccountController extends Controller
         if(!$flag)
         return redirect()->route('Error');
 
-        return view('Account.index',compact('page'));
+        return view('Account.index',compact('page','img_url','current_currency','categories','sub_categories','cat_product'));
     }
 
     
@@ -65,6 +72,12 @@ class AccountController extends Controller
     public function destroy(Account $account)
     {
         //
+    }
+    
+    public function createNewAccount(Request $request)
+    {
+        $ipAddress = $request->ip();
+        dd($request->first_name);
     }
 
 

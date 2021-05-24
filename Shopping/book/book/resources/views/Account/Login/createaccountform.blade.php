@@ -5,7 +5,9 @@
             <h2 class="text-center">Create an Account</h2>
             <div class="form-wrapper">
               <p>To access your whishlist, address book and contact preferences and to take advantage of our speedy checkout, create an account with us now.</p>
-              <form action="#">
+              <form action="{{route('SignUpStore')}}" method="post">
+              @csrf()
+              
                 <div class="row">
                   <div class="col-sm-9">
                     <div class="form-group">
@@ -32,7 +34,7 @@
                   <label for="checkbox1">By registering your details you agree to our <a href="#" class="custom-color" data-fancybox data-src="#modalTerms">Terms and Conditions</a> and <a href="#" class="custom-color" data-fancybox data-src="#modalCookies">Cookie Policy</a></label>
                 </div>
                 <div class="text-center">
-                  <button class="btn">create an account</button>
+                  <button type="submit" class="btn">create an account</button>
                 </div>
               </form>
             </div>

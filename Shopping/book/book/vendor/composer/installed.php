@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'v6.20.0',
-    'version' => '6.20.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '210b4feac2d7c1730e5e0c3a19f154b574a13839',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -361,12 +361,12 @@
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => 'v6.20.0',
-      'version' => '6.20.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '210b4feac2d7c1730e5e0c3a19f154b574a13839',
     ),
     'laravel/tinker' => 
     array (
@@ -376,6 +376,15 @@
       array (
       ),
       'reference' => '04ad32c1a3328081097a181875733fa51f402083',
+    ),
+    'laravel/ui' => 
+    array (
+      'pretty_version' => 'v1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7ea4b47cb9e47117ea8557e1d463d25900a7df0b',
     ),
     'league/commonmark' => 
     array (
@@ -644,8 +653,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 

@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\User;
+use App\Customer;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Http\Controllers\Auth\TestAutController;
 
 class LoginController extends Controller
 {
@@ -33,8 +36,28 @@ class LoginController extends Controller
      *
      * @return void
      */
-    public function __construct()
+
+    protected $reportingService;
+
+    public function __construct(TestAutController $testclass)
     {
         $this->middleware('guest')->except('logout');
+        $this->reportingService = $testclass;
     }
+
+    public function getThings()
+    {
+        dd($this->reportingService->sendinfotest());
+    }
+
+    //-------------------------------------------------------------
+
+
+    public function readDataTest()
+    {
+        dd(Customer::all());
+    }
+
+
+
 }

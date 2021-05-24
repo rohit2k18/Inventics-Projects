@@ -17,9 +17,7 @@ Route::get('/', function () {
     return redirect()->route('Books');
 });
 
-Route::get('account/{name}','AccountController@index')->name('Account');
-Route::get('login','AccountController@loginindex')->name('Login');
-Route::get('signup','AccountController@signupindex')->name('SignUp');
+include('authroute.php');
 
 Route::get('gallery','AccountController@galleryindex')->name('Gallery');
 Route::get('faq','AccountController@faqindex')->name('FAQ');
@@ -49,3 +47,6 @@ Route::resource('books','BooksController');
 // Route::get('wishlist','AccountController@accountwishlistindex')->name('wishlist');
 // Route::get('address','AccountController@accountaddressindex')->name('address');
 // Route::get('details','AccountController@accountdetailsindex')->name('details');
+Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');

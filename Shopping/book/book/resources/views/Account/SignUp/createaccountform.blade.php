@@ -5,34 +5,35 @@
             <h2 class="text-center">Create an Account</h2>
             <div class="form-wrapper">
               <p>To access your whishlist, address book and contact preferences and to take advantage of our speedy checkout, create an account with us now.</p>
-              <form action="#">
+              <form action="{{route('SignUpStore')}}" method="post">
+              @csrf()
                 <div class="row">
                   <div class="col-sm-9">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="First name">
+                      <input type="text" class="form-control" name="first_name" placeholder="First name">
                     </div>
                   </div>
                   <div class="col-sm-9">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Last name">
+                      <input type="text" class="form-control" name="last_name" placeholder="Last name">
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="E-mail">
+                  <input type="text" class="form-control" name="email" placeholder="E-mail">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control" placeholder="Password">
+                  <input type="password" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="form-group">
-                  <input type="password" class="form-control" placeholder="Confirm Password">
+                  <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password">
                 </div>
                 <div class="clearfix">
                   <input id="checkbox1" name="checkbox1" type="checkbox" checked="checked">
                   <label for="checkbox1">By registering your details you agree to our <a href="#" class="custom-color" data-fancybox data-src="#modalTerms">Terms and Conditions</a> and <a href="#" class="custom-color" data-fancybox data-src="#modalCookies">Cookie Policy</a></label>
                 </div>
                 <div class="text-center">
-                  <button class="btn">create an account</button>
+                  <button type="submit" class="btn">create an account</button>
                 </div>
               </form>
             </div>

@@ -17,6 +17,18 @@ class Controller extends BaseController
     public $my_banner_category="Fashion";
     public $current_currency="Rs.";
 
+    public function __construct()  //contructor test
+    {
+        $this->getCurrentCurrency();
+    }
+
+    public function getCurrentCurrency()
+    {
+        $this->current_currency="$ ";
+    }
+
+    
+
     public function getsubgroup()
     {
         return DB::table('category_groups')

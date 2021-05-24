@@ -1,7 +1,7 @@
 @extends('layout.master')
 @section('content')
 <div class="page-content">
-    @include('Account.Login.upperbar')
-    @include('Account.Login.createaccountform')
+    @include('Account.SignUp.upperbar')
+    @include('Account.SignUp.createaccountform')
   </div>
 @endsection
