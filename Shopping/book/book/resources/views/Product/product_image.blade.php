@@ -5,7 +5,7 @@
               <div class="prd-block_main-image">
                 <div class="prd-block_main-image-holder" id="prdMainImage">
                   <div class="product-main-carousel js-product-main-carousel" data-zoom-position="inner">
-                    <div data-value="Beige"><span class="prd-img"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{$img_url}}{{$product_images[0]->path}}" class="lazyload fade-up elzoom" alt="" data-zoom-image="{{$img_url}}{{$product_images[0]->path}}" /></span></div>
+                    <div data-value="Beige"><span class="prd-img"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{$img_url}}{{$product_images}}" class="lazyload fade-up elzoom" alt="" data-zoom-image="{{$img_url}}{{$product_images}}" /></span></div>
                     <!-- <div data-value="Beige"><span class="prd-img"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/product-page/product-02.jpg" class="lazyload fade-up elzoom" alt="" data-zoom-image="images/skins/fashion/product-page/product-02.jpg" /></span></div>
                      -->
                     <!-- <div class="inner-video js-inner-video">

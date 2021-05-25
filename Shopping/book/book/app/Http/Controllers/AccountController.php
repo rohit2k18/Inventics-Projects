@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Account;
 use Illuminate\Http\Request;
+use App\User;
 
 class AccountController extends Controller
 {
@@ -11,13 +12,6 @@ class AccountController extends Controller
 
     public function index($page)
     {
-        $img_url=$this->server_image_path;
-        $current_currency=$this->current_currency;
-        $categories=$this->getsubgroup();
-        $sub_categories=$this->getsubgroupcategories();
-        $cat_product=$this->getcategoriesproduct();
-        $tempBooks=true;
-
         $flag=false;
         foreach($this->accountPages as $ss)
         {
@@ -29,7 +23,9 @@ class AccountController extends Controller
         if(!$flag)
         return redirect()->route('Error');
 
-        return view('Account.index',compact('page','img_url','current_currency','categories','sub_categories','cat_product'));
+        
+
+        return view('Account.index',compact('page'));
     }
 
     
@@ -73,16 +69,12 @@ class AccountController extends Controller
     {
         //
     }
-    
-    public function createNewAccount(Request $request)
-    {
-        $ipAddress = $request->ip();
-        dd($request->first_name);
-    }
 
 
     public function loginindex()
     {
+        $users=User::all();
+        dd($users);
         return view('Account.Login.index');
     }
 

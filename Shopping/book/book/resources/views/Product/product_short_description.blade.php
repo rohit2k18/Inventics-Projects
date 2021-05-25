@@ -4,10 +4,12 @@
                 <div class="prd-block_price prd-block_price--style2">
                   <div class="prd-block_price--actual">{{$current_currency}} {{$product->min_price+0}}</div>
                   <div class="prd-block_price-old-wrap">
+                  {{--
                     @if($product->max_price>$product->min_price)
-                    <span class="prd-block_price--old">{{$current_currency}} {{$product->max_price+0}}</span>
+                    <span class="prd-block_price--old"></span>
                     <span class="prd-block_price--text">You Save: {{$current_currency}} {{($product->max_price-$product->min_price)+0}} ({{($product->min_price/$product->max_price)*100}}%)</span>
                     @endif
+                  --}}
                   </div>
                 </div>
                 <div class="prd-block_viewed-wrap d-none d-md-flex">

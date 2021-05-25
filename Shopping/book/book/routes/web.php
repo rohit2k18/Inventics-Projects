@@ -17,7 +17,18 @@ Route::get('/', function () {
     return redirect()->route('Books');
 });
 
-include('authroute.php');
+Route::get('account/{name}','AccountController@index')->name('Account');
+Route::get('loginn','AccountController@loginindex')->name('Login');
+Route::get('signupp','AccountController@signupindex')->name('SignUp');
+
+
+Route::post('add_to_cart','CartController@addToCart')->name('addtocart');
+
+Route::get('add_to_cart1/{id}','CartController@addToGetTest')->name('addtocart1');
+
+include('cartroute.php');
+
+
 
 Route::get('gallery','AccountController@galleryindex')->name('Gallery');
 Route::get('faq','AccountController@faqindex')->name('FAQ');
@@ -49,4 +60,4 @@ Route::resource('books','BooksController');
 // Route::get('details','AccountController@accountdetailsindex')->name('details');
 Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');

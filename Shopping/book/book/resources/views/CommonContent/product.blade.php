@@ -46,10 +46,15 @@
                   </div>
                   <div class="prd-action">
                     <div class="prd-action-left">
-                      <form action="#">
-                        <button class="btn js-prd-addtocart" data-product='{"name": "{{$cat_product[$i]->name}}", "path":"{{$img_url}}{{$cat_product[$i]->img_path}}", "url":"product/{{$cat_product[$i]->product_sub_cat}}/{{$cat_product[$i]->product_cat}}/{{$cat_product[$i]->slug}}", "aspect_ratio":0.778}'>Add To Cart</button>
+                    <form action="{{route('addtocart')}}" method="POST">
+                          @csrf()
+                          
+                        <input type="hidden" id="productid" name="productid" value="{{$cat_product[$i]->id}}">
+                        <button onclick="onaddtocartclick({{$cat_product[$i]->id}})" class="btn js-prd-addtocart">Hello</button>
+                        <!-- <button onclick="onaddtocartclick({{$cat_product[$i]->id}})" class="btn js-prd-addtocart" data-product='{"name": "{{$cat_product[$i]->name}}", "path":"{{$img_url}}{{$cat_product[$i]->img_path}}", "url":"#", "aspect_ratio":0.778}'>Add To Cart</button> -->
                       </form>
                     </div>
+                    
                   </div>
                 </div>
               </div>
@@ -62,3 +67,27 @@
           @endif
           
 @endfor
+
+
+<script>
+function onaddtocartclick(id)
+{
+  $.ajax({
+    type:'POST',
+    url:"{{route('addtocart')}}",
+    data:{productid:id},
+  });
+}
+
+function onaddtocartclick1(id)
+{
+  $.ajax({
+    type:'GET',
+    url:'add_to_cart1/'+id,
+    success:function(data) {
+      $("#data").html(data);
+    }
+  });
+}
+
+</script>

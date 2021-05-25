@@ -2,12 +2,9 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
-use App\Customer;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-use App\Http\Controllers\Auth\TestAutController;
 
 class LoginController extends Controller
 {
@@ -29,35 +26,26 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-
-    protected $reportingService;
-
-    public function __construct(TestAutController $testclass)
+    public function __construct()
     {
         $this->middleware('guest')->except('logout');
-        $this->reportingService = $testclass;
     }
 
-    public function getThings()
+    public function showLoginForm()
     {
-        dd($this->reportingService->sendinfotest());
+        $img_url=$this->server_image_path;
+        $current_currency=$this->current_currency;
+        $categories=$this->getsubgroup();
+        $sub_categories=$this->getsubgroupcategories();
+        $cat_product=$this->getcategoriesproduct();
+        
+        return view('Account.Login.index',compact('cat_product','categories','sub_categories','img_url','current_currency'));
     }
-
-    //-------------------------------------------------------------
-
-
-    public function readDataTest()
-    {
-        dd(Customer::all());
-    }
-
-
-
 }

@@ -5,17 +5,22 @@ namespace App\Http\Controllers;
 use DB;
 use App\Books;
 use Illuminate\Http\Request;
+use Session;
+use Illuminate\Support\Facades\Auth;
 
 class BooksController extends Controller
 {
     
     public function index()
     {
+        //Session::flush();
+        // if($this->middleware('auth'))
+        // dd(Auth::user());
         $img_url=$this->server_image_path;
         $current_currency=$this->current_currency;
         $categories=$this->getsubgroup();
         $sub_categories=$this->getsubgroupcategories();
-        $cat_product=$this->getcategoriesproduct();
+        $cat_product=$this->getcategoriesproduct("latest");
         $tempBooks=true;
         
         //dd($cat_product);
@@ -31,8 +36,8 @@ class BooksController extends Controller
             elseif($bann->group_id=="bottom")
                 array_push($bottom_banner,$bann);
         }
-        //dd($sliders);
-
+        //dd($cat_product);
+        
         return view('Books.index',compact('tempBooks','categories','sub_categories','cat_product','img_url','current_currency','promo_banner','bottom_banner','sliders'));
     }
 

@@ -13,21 +13,9 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
     public $server_image_path="http://zcommerce.online/image/";
-    public $my_category='Electronics';//Apparel,Books,Electronics
+    public $my_category='Apparel';//Apparel,Books,Electronics
     public $my_banner_category="Fashion";
     public $current_currency="Rs.";
-
-    public function __construct()  //contructor test
-    {
-        $this->getCurrentCurrency();
-    }
-
-    public function getCurrentCurrency()
-    {
-        $this->current_currency="$ ";
-    }
-
-    
 
     public function getsubgroup()
     {
@@ -54,10 +42,11 @@ class Controller extends BaseController
             ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
             ->join('category_product', 'categories.id', '=', 'category_product.category_id')
             ->join('products', 'category_product.product_id', '=', 'products.id')
+            ->join('inventories', 'products.id', '=', 'inventories.product_id')
             ->join('images', 'products.id', '=', 'images.imageable_id')
             ->where('category_groups.name',$this->my_category)
-            ->where('images.imageable_type','App\Product')
-            ->select('products.*','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->inRandomOrder()->get();
+            ->where('images.imageable_type','App\Inventory')
+            ->select('inventories.*','inventories.title as name','inventories.sale_price as min_price','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->inRandomOrder()->get();
         }
         elseif($order=="latest")
         {
@@ -66,10 +55,11 @@ class Controller extends BaseController
             ->join('categories', 'category_sub_groups.id', '=', 'categories.category_sub_group_id')
             ->join('category_product', 'categories.id', '=', 'category_product.category_id')
             ->join('products', 'category_product.product_id', '=', 'products.id')
-            ->join('images', 'products.id', '=', 'images.imageable_id')
+            ->join('inventories', 'products.id', '=', 'inventories.product_id')
+            ->join('images', 'inventories.id', '=', 'images.imageable_id')
             ->where('category_groups.name',$this->my_category)
-            ->where('images.imageable_type','App\Product')
-            ->select('products.*','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->orderBy('updated_at', 'DESC')->get();
+            ->where('images.imageable_type','App\Inventory')
+            ->select('inventories.*','inventories.title as name','inventories.sale_price as min_price','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->orderBy('updated_at', 'DESC')->get();
         
         }
         
@@ -154,6 +144,24 @@ class Controller extends BaseController
             ->orderBy('created_at', 'DESC')->get();
         }
     }
+
+
 //---------------------------------------------------------blogs area ------end
+
+    public function getCompleteInventoryData()
+    {
+        return DB::table('inventories')
+        ->join('products', 'products.id', '=', 'inventories.product_id')
+        ->select('inventories.*','products.name as product_name')
+        ->get();
+    }
+
+    public function getInventoryId($productid)
+    {
+        return DB::table('inventories')
+        ->where('product_id',$productid)
+        ->first();
+    }
+    
 
 }

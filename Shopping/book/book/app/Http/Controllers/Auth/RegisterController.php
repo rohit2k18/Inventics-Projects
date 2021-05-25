@@ -9,7 +9,6 @@ use App\Customer;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
@@ -31,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -53,8 +52,8 @@ class RegisterController extends Controller
     {
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:customers'],
+            'password' => 'required|string|min:6|confirmed',
         ]);
     }
 
@@ -66,47 +65,21 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        return Customer::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
     }
 
-    public function signupindex()
+    public function showRegistrationForm()
     {
         $img_url=$this->server_image_path;
         $current_currency=$this->current_currency;
         $categories=$this->getsubgroup();
         $sub_categories=$this->getsubgroupcategories();
         $cat_product=$this->getcategoriesproduct();
-        
 
-        return view('Account.SignUp.index',compact('img_url','current_currency','categories','sub_categories','cat_product'));
-    }
-
-    public function createNewAccount(Request $request)
-    {
-        $ipAddress = $request->ip();
-        
-        $request->validate(['first_name'=>'required',
-        'last_name'=>'required',
-        'email'=>'required',
-        'password'=>'required',
-        'confirm_password'=>'required']);
-
-        if($request->password==$request->confirm_password)
-        {
-            //create new account
-            $customer=new Customer();
-            $customer->name=$request->first_name." ".$request->last_name;
-            $customer->nice_name=$request->first_name." ".$request->last_name;
-            $customer->email=$request->email;
-            $customer->password=Hash::make($request->password);
-            $customer->save();
-        }
-
-
-        return redirect()->route('Account','details');
+        return view('Account.SignUp.index',compact('cat_product','categories','sub_categories','img_url','current_currency'));
     }
 }

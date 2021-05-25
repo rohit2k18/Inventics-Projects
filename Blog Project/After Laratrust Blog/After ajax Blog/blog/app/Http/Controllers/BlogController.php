@@ -26,7 +26,7 @@ class BlogController extends Controller
     public function deletedindex()
     {
         // $blogs=Blog::all();
-        $blogs=Blog::onlyTrashed()->paginate(5);
+        $blogs=Blog::onlyTrashed()->paginate(5); 
         return view('Blog.deletedindex')->withBlogs($blogs);
     }
 
