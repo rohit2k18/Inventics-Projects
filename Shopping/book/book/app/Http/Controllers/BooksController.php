@@ -13,9 +13,9 @@ class BooksController extends Controller
     
     public function index()
     {
-        //Session::flush();
-        // if($this->middleware('auth'))
-        // dd(Auth::user());
+        //Auth::logout();
+        //if(Auth::check())
+        //dd(Auth::user());
         $img_url=$this->server_image_path;
         $current_currency=$this->current_currency;
         $categories=$this->getsubgroup();

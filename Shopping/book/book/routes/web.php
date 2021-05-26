@@ -17,6 +17,11 @@ Route::get('/', function () {
     return redirect()->route('Books');
 });
 
+Route::get('ajax',function() {
+    return view('message');
+ });
+ Route::post('/getmsg','CartController@addToGetTest');
+
 Route::get('account/{name}','AccountController@index')->name('Account');
 Route::get('loginn','AccountController@loginindex')->name('Login');
 Route::get('signupp','AccountController@signupindex')->name('SignUp');

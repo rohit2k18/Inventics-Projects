@@ -24,7 +24,7 @@
                     <div class="prd-rating"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
                   </div>
                   <div class="prd-rating justify-content-center"><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i><i class="icon-star-fill fill"></i></div>
-                  <div class="prd-tag"><a href="#">{{$cat_product[$i]->brand}}</a></div>
+                  <div class="prd-tag"><a href="#">{{$cat_product[$i]->id}}||{{$cat_product[$i]->brand}}</a></div>
                   <h2 class="prd-title"><a href="#">{{$cat_product[$i]->name}}</a></h2>
                   <div class="prd-description">
                   {!! $cat_product[$i]->description !!}
@@ -47,11 +47,12 @@
                   <div class="prd-action">
                     <div class="prd-action-left">
                     <form action="{{route('addtocart')}}" method="POST">
-                          @csrf()
+                    @csrf()
                           
                         <input type="hidden" id="productid" name="productid" value="{{$cat_product[$i]->id}}">
-                        <button onclick="onaddtocartclick({{$cat_product[$i]->id}})" class="btn js-prd-addtocart">Hello</button>
-                        <!-- <button onclick="onaddtocartclick({{$cat_product[$i]->id}})" class="btn js-prd-addtocart" data-product='{"name": "{{$cat_product[$i]->name}}", "path":"{{$img_url}}{{$cat_product[$i]->img_path}}", "url":"#", "aspect_ratio":0.778}'>Add To Cart</button> -->
+                        
+                        <button type="submit" onclick="onaddtocartclick({{$cat_product[$i]->id}})" class="btn js-prd-addtocart">Hello</button>
+                        <!-- <button  onclick="onaddtocartclick1({{$cat_product[$i]->id}})" class="btn js-prd-addtocart" data-product='{"name": "{{$cat_product[$i]->name}}", "path":"{{$img_url}}{{$cat_product[$i]->img_path}}", "url":"#", "aspect_ratio":0.778}'>Add To Cart</button> -->
                       </form>
                     </div>
                     
@@ -67,7 +68,9 @@
           @endif
           
 @endfor
+<div id="data">
 
+</div>
 
 <script>
 function onaddtocartclick(id)
@@ -84,10 +87,15 @@ function onaddtocartclick1(id)
   $.ajax({
     type:'GET',
     url:'add_to_cart1/'+id,
-    success:function(data) {
-      $("#data").html(data);
-    }
   });
+  // $.ajax({
+  //   type:'GET',
+  //   url:'add_to_cart1/'+id,
+  //   success:function(data) {
+  //     alert("success");
+  //      $("#data").html(data);
+  //   }
+  // });
 }
 
 </script>

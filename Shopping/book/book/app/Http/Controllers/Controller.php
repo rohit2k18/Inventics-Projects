@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Auth;
 
 class Controller extends BaseController
 {
@@ -16,6 +17,20 @@ class Controller extends BaseController
     public $my_category='Apparel';//Apparel,Books,Electronics
     public $my_banner_category="Fashion";
     public $current_currency="Rs.";
+    public $for_same_cart="different";//it can be same or different at a time
+
+    public function isAuthenticated($things="check")//"check","id","logout","details"
+    {
+        if($things=="check")
+        return Auth::check();
+        elseif($things=="id")
+        return Auth::id();
+        elseif($things=="logout")
+        return Auth::logout();
+        elseif($things=="details")
+        return Auth::user();
+    }
+
 
     public function getsubgroup()
     {
@@ -43,10 +58,12 @@ class Controller extends BaseController
             ->join('category_product', 'categories.id', '=', 'category_product.category_id')
             ->join('products', 'category_product.product_id', '=', 'products.id')
             ->join('inventories', 'products.id', '=', 'inventories.product_id')
-            ->join('images', 'products.id', '=', 'images.imageable_id')
+            ->join('images', 'inventories.id', '=', 'images.imageable_id')
             ->where('category_groups.name',$this->my_category)
             ->where('images.imageable_type','App\Inventory')
-            ->select('inventories.*','inventories.title as name','inventories.sale_price as min_price','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->inRandomOrder()->get();
+            ->where('inventories.stock_quantity','>',0)
+            ->select('inventories.*','inventories.title as name','inventories.sale_price as min_price','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')
+            ->inRandomOrder()->get();
         }
         elseif($order=="latest")
         {
@@ -59,7 +76,9 @@ class Controller extends BaseController
             ->join('images', 'inventories.id', '=', 'images.imageable_id')
             ->where('category_groups.name',$this->my_category)
             ->where('images.imageable_type','App\Inventory')
-            ->select('inventories.*','inventories.title as name','inventories.sale_price as min_price','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')->orderBy('updated_at', 'DESC')->get();
+            ->where('inventories.stock_quantity','>',0)
+            ->select('inventories.*','inventories.title as name','inventories.sale_price as min_price','images.path as img_path','images.name as img_name','categories.slug as product_cat','category_sub_groups.slug as product_sub_cat','category_sub_groups.name as cat_sub_name')
+            ->orderBy('updated_at', 'DESC')->distinct()->get();
         
         }
         
@@ -162,6 +181,27 @@ class Controller extends BaseController
         ->where('product_id',$productid)
         ->first();
     }
+
+
+    //--------------------------------------------------------------------cart list page query--start
+
+    public function GetAllTheCartDataForCartList()
+    {
+        return DB::table('carts')
+            ->join('cart_items', 'cart_items.cart_id', '=', 'carts.id')
+            ->join('inventories', 'cart_items.inventory_id', '=', 'inventories.id')
+            ->join('images', 'inventories.id', '=', 'images.imageable_id')
+            ->where('customer_id',$this->isAuthenticated("id"))
+            ->where('images.imageable_type','App\Inventory')
+            ->select('cart_items.*','carts.*','cart_items.quantity as item_quantity','images.path as img_path','inventories.title as name')
+            ->get();
+    }
+
+
+
+    //--------------------------------------------------------------------cart list page query--end
+
+    
     
 
 }

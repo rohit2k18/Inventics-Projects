@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Cart;
 use DB;
 use App\Inventory;
-use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
@@ -18,18 +17,12 @@ class CartController extends Controller
         $sub_categories=$this->getsubgroupcategories();
         //getting with images
         $cat_product=$this->getcategoriesproduct();
-
-        if($this->middleware('auth'))
+        $cart_data=array();
+        if($this->isAuthenticated())
         {
-            $customerid=Auth::id();
-            $cart=Cart::where('customer_id',$customerid)->get();
-            $cart_items=Cart::with('inventories')->get();
-            dd($cart_items);
-            foreach($cart_items as $item)
-            {
-                
-            }
-            dd(count($cart));
+            $cart_data=$this->GetAllTheCartDataForCartList();
+            //dd($cart_data);
+            
         }else{
             return view('Cart.EmptyCart.index',compact('categories','sub_categories','cat_product','img_url','current_currency'));
         }
@@ -37,7 +30,7 @@ class CartController extends Controller
 
         //dd($categories);
         
-        return view('Cart.CartPage.index',compact('categories','sub_categories','cat_product','img_url','current_currency'));
+        return view('Cart.CartPage.index',compact('categories','sub_categories','cat_product','img_url','current_currency','cart_data'));
     }
 
     public function emptycartindex()
@@ -72,22 +65,23 @@ class CartController extends Controller
 
     public function addToCart(Request $request)
     {
-        $test="";
         $id=$request->productid;
         $inventory=DB::table('inventories')->where('id',$id)->first();
-        //dd($inventory);
-
+    
         $customerid=0;
-
+        
         //check if authenticated
-        if($this->middleware('auth'))
-        $customerid=Auth::id();
+        if($this->isAuthenticated())
+        {
+            $customerid=$this->isAuthenticated("id");
+        }
         else
-        return redirect()->route('login');
-
-
+        {
+            return redirect()->route('login');
+        }
+        
         //check if customer id exist in the cart table or not
-        $cart=Cart::where('customer_id',$customerid)->first();
+        $cart=$this->for_different_shopInCarts($this->for_same_cart,$customerid,$inventory->shop_id);
         
         if($cart==null)
         {
@@ -101,29 +95,110 @@ class CartController extends Controller
             $cart->payment_status=1;
             $cart->save();
         }
-        
-            
-            
-            $cart_item_pivot_data = [];
-            $cart_item_pivot_data[$inventory->id] = [
-                'inventory_id' => $inventory->id,
-                'item_description'=> $inventory->sku . ': ' . $inventory->title . ' - ' . ' - ' . $inventory->condition,
-                'quantity' => 1,
-                'unit_price' => $inventory->sale_price,
-            ];
-            // Save cart items into pivot
-            if ( ! empty($cart_item_pivot_data) ) {
-                $cart->inventories()->syncWithoutDetaching($cart_item_pivot_data);
+
+            $quantity=1;
+            $cart_items=$this->On_same_cart_items("increment",$cart->id,$inventory->id);
+            if($cart_items==false)//means cart item does not exist
+            {
+                $cart_item_pivot_data = [];
+                $cart_item_pivot_data[$inventory->id] = [
+                    'inventory_id' => $inventory->id,
+                    'item_description'=> $inventory->sku . ': ' . $inventory->title . ' - ' . ' - ' . $inventory->condition,
+                    'quantity' => $quantity,
+                    'unit_price' => $inventory->sale_price,
+                ];
+                // Save cart items into pivot
+                if ( ! empty($cart_item_pivot_data) ) {
+                    $cart->inventories()->syncWithoutDetaching($cart_item_pivot_data);
+                }
             }
+            $this->updateMainCartItemDetails($cart->id);
+
         
         return redirect()->back();
     }
 
-    public function addToGetTest($id)
+    public function addToGetTest($idd)
     {
-         dd($id);
-        // dd("Hello world");
+        $id=DB::table('aatest')->insertGetId(
+            ['name' => $idd]
+        );
         
-        return view('welcome');
     }
+
+    //------------------------------------------------------------common functions----------------------
+
+    public function for_different_shopInCarts($term,$customerid,$shop_id)//term="same","different"
+    {
+        if($term=="same")
+        {
+            return Cart::where('customer_id',$customerid)->first();
+        }else{
+            return Cart::where('customer_id',$customerid)->where('shop_id',$shop_id)->first();
+        }
+    }
+
+    public function On_same_cart_items($term,$cart_id,$inventory_id)//term="increment","existornot"
+    {
+        $exist=$this->getCartItemsIfExist($cart_id,$inventory_id);
+        if($term=="increment" && $exist!=null)
+        {
+            DB::table('cart_items')
+            ->where('cart_id',$cart_id)
+            ->where('inventory_id',$inventory_id)
+            ->increment('quantity',1);
+            
+            return true;
+        }
+        else
+        {
+            if($exist!=null)
+            return true;
+            else
+            return false;
+        }
+    }
+
+    public function updateMainCartItemDetails($cart_id)
+    {
+        $totalQuantity=0;
+        $exist=$this->getCartItemsIfExist($cart_id);
+        if($exist!=null)
+        {
+            $total_price=0.0;
+            $total_items=0;
+            foreach($exist as $item)
+            {
+                $totalQuantity+=$item->quantity;
+                $total_price+=$item->quantity*$item->unit_price;
+                $total_items++;
+            }
+
+            //update to main cart
+            DB::table('carts')->where('id',$cart_id)->update(array('item_count'=>$total_items,'quantity'=>$totalQuantity,'total'=>$total_price));
+        }
+        return $totalQuantity;
+
+    }
+
+    public function getCartItemsIfExist($cart_id,$inventory_id=null)
+    {
+        if($inventory_id==null)
+        {
+            return DB::table('cart_items')
+            ->where('cart_id',$cart_id)
+            ->get();
+        }
+        elseif($cart_id!=null&&$inventory_id!=null)
+        {
+            return DB::table('cart_items')
+            ->where('cart_id',$cart_id)
+            ->where('inventory_id',$inventory_id)
+            ->first();
+        }else{
+            return false;
+        }
+
+    }
+
 }

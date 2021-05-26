@@ -1,4 +1,5 @@
 <div class="col-lg-11 col-xl-13">
+
             <div class="cart-table">
               <div class="cart-table-prd cart-table-prd--head py-1 d-none d-md-flex">
                 <div class="cart-table-prd-image text-center">
@@ -11,7 +12,36 @@
                   <div class="cart-table-prd-action">&nbsp;</div>
                 </div>
               </div>
+              @foreach($cart_data as $cart)
               <div class="cart-table-prd">
+                <div class="cart-table-prd-image">
+                  <a href="##" class="prd-img"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{$img_url}}{{$cart->img_path}}" alt=""></a>
+                </div>
+                <div class="cart-table-prd-content-wrap">
+                  <div class="cart-table-prd-info">
+                    <div class="cart-table-prd-price">
+                      <div class="price-old">$200.00</div>
+                      <div class="price-new">$180.00</div>
+                    </div>
+                    <h2 class="cart-table-prd-name"><a href="##">Leather Pegged Pants</a></h2>
+                  </div>
+                  <div class="cart-table-prd-qty">
+                    <div class="qty qty-changer">
+                      <button class="decrease"></button>
+                      <input type="text" class="qty-input" value="2" data-min="0" data-max="1000">
+                      <button class="increase"></button>
+                    </div>
+                  </div>
+                  <div class="cart-table-prd-price-total">
+                   {{$current_currency}} {{$cart->grand_total}}
+                  </div>
+                </div>
+                <div class="cart-table-prd-action">
+                  <a href="#" class="cart-table-prd-remove" data-tooltip="Remove Product"><i class="icon-recycle"></i></a>
+                </div>
+              </div>
+              @endforeach
+              <!-- <div class="cart-table-prd">
                 <div class="cart-table-prd-image">
                   <a href="##" class="prd-img"><img class="lazyload fade-up" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="images/skins/fashion/products/product-01-1.jpg" alt=""></a>
                 </div>
@@ -89,7 +119,7 @@
                 <div class="cart-table-prd-action">
                   <a href="#" class="cart-table-prd-remove" data-tooltip="Remove Product"><i class="icon-recycle"></i></a>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="text-center mt-1"><a href="#" class="btn btn--grey">Clear All</a></div>
             @include('CommonContent.youmayalsolike')
