@@ -20,7 +20,6 @@ Route::get('/', function () {
 Route::get('ajax',function() {
     return view('message');
  });
- Route::post('/getmsg','CartController@addToGetTest');
 
 Route::get('account/{name}','AccountController@index')->name('Account');
 Route::get('loginn','AccountController@loginindex')->name('Login');
@@ -28,7 +27,7 @@ Route::get('signupp','AccountController@signupindex')->name('SignUp');
 
 
 Route::post('add_to_cart','CartController@addToCart')->name('addtocart');
-
+Route::post('add_to_cart_post_try','CartController@addToPostTest')->name('addtocartposttry');
 Route::get('add_to_cart1/{id}','CartController@addToGetTest')->name('addtocart1');
 
 include('cartroute.php');

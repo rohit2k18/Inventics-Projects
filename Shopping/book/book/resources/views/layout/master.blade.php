@@ -67,11 +67,9 @@ class="template-product has-smround-btns has-loader-bg equal-height has-sm-conta
     @yield('content')
     <!-- main content end -->
     
-    <div>
-    @include('layout.mobilemenu')
-    </div>
     
-    <div>
+    @include('layout.mobilemenu')
+    
     @php
         if(isset($tempBooks))
         {
@@ -86,17 +84,22 @@ class="template-product has-smround-btns has-loader-bg equal-height has-sm-conta
         }
     @endphp
  
-    </div>
-    <div>
-    @include('layout.stickyaddtocart')
-    </div>
-    <div>
+    @php
+        if(isset($tempBooks))
+        {
+          if($tempBooks)
+          {
+            @endphp  @include('layout.stickyaddtocart') @php
+          }
+        }
+    @endphp
+
     @include('layout.paymentnotification')
   
-    @include('layout.paymentnotefooter')
+    {{--@include('layout.paymentnotefooter')--}}
 
     @include('layout.popupnews')
-
+    
 
   <script src="{{asset('js/vendor-special/lazysizes.min.js')}}"></script>
   <script src="{{asset('js/vendor-special/ls.bgset.min.js')}}"></script>

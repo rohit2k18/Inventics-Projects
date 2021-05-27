@@ -46,14 +46,14 @@
                   </div>
                   <div class="prd-action">
                     <div class="prd-action-left">
-                    <form action="{{route('addtocart')}}" method="POST">
-                    @csrf()
+                    <!-- <form action="{{route('addtocart')}}" method="POST"> -->
+                    {{--@csrf()--}}
                           
-                        <input type="hidden" id="productid" name="productid" value="{{$cat_product[$i]->id}}">
+                        <!-- <input type="hidden" id="productid" name="productid" value="{{$cat_product[$i]->id}}"> -->
                         
-                        <button type="submit" onclick="onaddtocartclick({{$cat_product[$i]->id}})" class="btn js-prd-addtocart">Hello</button>
-                        <!-- <button  onclick="onaddtocartclick1({{$cat_product[$i]->id}})" class="btn js-prd-addtocart" data-product='{"name": "{{$cat_product[$i]->name}}", "path":"{{$img_url}}{{$cat_product[$i]->img_path}}", "url":"#", "aspect_ratio":0.778}'>Add To Cart</button> -->
-                      </form>
+                        <!-- <button onclick="onaddtocartclick1({{$cat_product[$i]->id}})" class="btn js-prd-addtocart">Hello</button> -->
+                        <button  onclick="onaddtocartclick({{$cat_product[$i]->id}})" class="btn js-prd-addtocart" data-product='{"name": "{{$cat_product[$i]->name}}", "path":"{{$img_url}}{{$cat_product[$i]->img_path}}", "url":"#", "aspect_ratio":0.778}'>Add To Cart</button>
+                      <!-- </form> -->
                     </div>
                     
                   </div>
@@ -68,18 +68,29 @@
           @endif
           
 @endfor
-<div id="data">
-
-</div>
 
 <script>
 function onaddtocartclick(id)
 {
+  
   $.ajax({
-    type:'POST',
-    url:"{{route('addtocart')}}",
-    data:{productid:id},
-  });
+      url: "{{route('addtocart')}}",
+      type: 'POST',
+      // dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+      data: {
+        productid: id,
+        _token:'{{ csrf_token() }}'
+      },
+         success: function(response){
+          console.log(response);
+          var dataResult = JSON.parse(response);
+          if(dataResult.data=="login")
+          window.location = "{{route('login')}}";
+          else
+          document.getElementById("addedtocarttext").innerHTML=dataResult.data;
+          
+          }
+  })
 }
 
 function onaddtocartclick1(id)
@@ -88,14 +99,7 @@ function onaddtocartclick1(id)
     type:'GET',
     url:'add_to_cart1/'+id,
   });
-  // $.ajax({
-  //   type:'GET',
-  //   url:'add_to_cart1/'+id,
-  //   success:function(data) {
-  //     alert("success");
-  //      $("#data").html(data);
-  //   }
-  // });
+  
 }
 
 </script>

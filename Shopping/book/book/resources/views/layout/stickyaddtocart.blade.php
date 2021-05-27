@@ -57,7 +57,7 @@
               </a>
               <div class="col popup-addedtocart_text">
                 <a href="###" class="popup-addedtocart_title"></a>
-                <span class="popup-addedtocart_message">Added to <a href="{{route('Cart')}}" class="underline">Cart</a></span>
+                <span class="popup-addedtocart_message" id="addedtocarttext">Added to Cart </span>
                 <span class="popup-addedtocart_error_message"></span>
               </div>
             </div>

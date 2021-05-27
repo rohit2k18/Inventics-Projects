@@ -20,17 +20,21 @@ class CartController extends Controller
         $cart_data=array();
         if($this->isAuthenticated())
         {
+            $cart_ids=Cart::where('customer_id',$this->isAuthenticated("id"))->get();
             $cart_data=$this->GetAllTheCartDataForCartList();
-            //dd($cart_data);
+            $inventory_images=$this->getInventoryImages();
+            if($cart_data==null)
+            return view('Cart.EmptyCart.index',compact('categories','sub_categories','cat_product','img_url','current_currency'));
+        
             
         }else{
-            return view('Cart.EmptyCart.index',compact('categories','sub_categories','cat_product','img_url','current_currency'));
+            return redirect()->route('login');
         }
         
 
         //dd($categories);
         
-        return view('Cart.CartPage.index',compact('categories','sub_categories','cat_product','img_url','current_currency','cart_data'));
+        return view('Cart.CartPage.index',compact('categories','sub_categories','cat_product','img_url','current_currency','cart_data','cart_ids','inventory_images'));
     }
 
     public function emptycartindex()
@@ -77,7 +81,7 @@ class CartController extends Controller
         }
         else
         {
-            return redirect()->route('login');
+            return json_encode(array('data'=>"login"));
         }
         
         //check if customer id exist in the cart table or not
@@ -97,7 +101,7 @@ class CartController extends Controller
         }
 
             $quantity=1;
-            $cart_items=$this->On_same_cart_items("increment",$cart->id,$inventory->id);
+            $cart_items=$this->On_same_cart_items("existornot",$cart->id,$inventory->id);
             if($cart_items==false)//means cart item does not exist
             {
                 $cart_item_pivot_data = [];
@@ -112,11 +116,18 @@ class CartController extends Controller
                     $cart->inventories()->syncWithoutDetaching($cart_item_pivot_data);
                 }
             }
+            else
+            {
+                //show message that item already exist
+                return json_encode(array('data'=>"Already Exist"));
+            }
             $this->updateMainCartItemDetails($cart->id);
 
         
-        return redirect()->back();
+            return json_encode(array('data'=>"Added To Cart"));
     }
+
+    // public function incresecurrentProduct(Requet)
 
     public function addToGetTest($idd)
     {
@@ -124,6 +135,14 @@ class CartController extends Controller
             ['name' => $idd]
         );
         
+    }
+
+    public function addToPostTest(Request $request)
+    {
+        $id=DB::table('aatest')->insertGetId(
+            ['name' => $request->ip()]
+        );
+        return json_encode(array('data'=>$request->ip()));
     }
 
     //------------------------------------------------------------common functions----------------------
@@ -175,7 +194,7 @@ class CartController extends Controller
             }
 
             //update to main cart
-            DB::table('carts')->where('id',$cart_id)->update(array('item_count'=>$total_items,'quantity'=>$totalQuantity,'total'=>$total_price));
+            DB::table('carts')->where('id',$cart_id)->update(array('item_count'=>$total_items,'quantity'=>$totalQuantity,'total'=>$total_price,'grand_total'=>$total_price));
         }
         return $totalQuantity;
 

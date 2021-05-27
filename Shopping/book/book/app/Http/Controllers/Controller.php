@@ -84,6 +84,15 @@ class Controller extends BaseController
         
     }
 
+    public function getInventoryImages()
+    {
+        return DB::table('images')
+        ->join('inventories', 'images.imageable_id', '=', 'inventories.id')
+        ->where('images.imageable_type','App\Inventory')
+        ->select('inventories.*','images.path as img_path')
+        ->get();
+    }
+
     public function getBanners()
     {
         return DB::table('banners')
@@ -187,14 +196,18 @@ class Controller extends BaseController
 
     public function GetAllTheCartDataForCartList()
     {
-        return DB::table('carts')
+
+            return DB::table('carts')
             ->join('cart_items', 'cart_items.cart_id', '=', 'carts.id')
             ->join('inventories', 'cart_items.inventory_id', '=', 'inventories.id')
-            ->join('images', 'inventories.id', '=', 'images.imageable_id')
+            // ->join('images', 'inventories.id', '=', 'images.imageable_id')
             ->where('customer_id',$this->isAuthenticated("id"))
-            ->where('images.imageable_type','App\Inventory')
-            ->select('cart_items.*','carts.*','cart_items.quantity as item_quantity','images.path as img_path','inventories.title as name')
+            // ->where('images.imageable_type','App\Inventory')
+            ->select('cart_items.*','carts.*','cart_items.quantity as item_quantity','inventories.title as name')
+            ->orderBy('carts.created_at', 'DESC')
             ->get();
+        
+         
     }
 
 

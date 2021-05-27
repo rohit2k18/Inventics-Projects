@@ -9,7 +9,7 @@
         </div>
         <div class="row">
           @include('Cart.CartPage.cartlist')
-          @include('Cart.CartPage.cartoptions')
+          
         </div>
       </div>
     </div>
