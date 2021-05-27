@@ -1,6 +1,6 @@
 
 @foreach($cart_ids as $cartid)
-<!-- <hr style="height:2px;border-width:0;color:gray;background-color:gray"> -->
+<div class="row">
 <div class="col-lg-11 col-xl-13">
 
             <div class="cart-table">
@@ -138,19 +138,24 @@
               </div> -->
             </div>
 
-            <div class="text-center mt-1"><a href="#" class="btn btn--grey">Clear All</a></div>
+            <!-- <div class="text-center mt-1"><a href="#" class="btn btn--grey">Clear All</a></div> -->
             
           </div>
           
           @include('Cart.CartPage.cartoptions')
-         
-          @endforeach
-       
+          
+         </div>
+         <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+         <br><br><br><br><br><br>
+@endforeach
+
+<div class="row">    
         <div class="col-lg-11 col-xl-13">
             <div class="d-none d-lg-block">
               <div class="mt-4"></div>
               @include('CommonContent.youmayalsolike')
             </div>
+            <div class="text-center mt-1"><a href="#" class="btn btn--grey">Clear All</a></div>
           </div>
           
           <div class="col-lg-7 col-xl-5 mt-3 mt-md-0">
@@ -243,7 +248,7 @@
             </div>
           </div>
         
-        
+</div>       
 
 <script>
 
